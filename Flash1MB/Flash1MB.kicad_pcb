@@ -86,7 +86,7 @@
 	(net 4 "/GND")
 	(net 5 "Net-(J1-Pin_5)")
 	(net 6 "Net-(J1-Pin_7)")
-	(net 7 "Net-(J1-Pin_8)")
+	(net 7 "unconnected-(J1-Pin_8-Pad8)")
 	(net 8 "Net-(J1-Pin_2)")
 	(net 9 "unconnected-(H1-Pad1)")
 	(net 10 "unconnected-(H2-Pad1)")
@@ -604,16 +604,16 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_2.5mm_Pad"
+	(footprint "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 		(layer "F.Cu")
 		(uuid "2a2f45e9-3e97-429a-ac0f-82666fe7dc44")
-		(at 104 122.5)
-		(descr "Mounting Hole 2.5mm")
-		(tags "mounting hole 2.5mm")
+		(at 104 123)
+		(descr "Mounting Hole 2.2mm, M2, DIN965")
+		(tags "mounting hole 2.2mm m2 din965")
 		(property "Reference" "H4"
-			(at 0 -3.5 0)
+			(at 0 -2.9 0)
 			(layer "F.SilkS")
-			(uuid "56263292-2d8d-478a-98ff-2869dbf95ef7")
+			(uuid "b7ac2c66-f548-4d38-a171-47626aabbb2b")
 			(effects
 				(font
 					(size 1 1)
@@ -622,9 +622,9 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 0 3.5 0)
+			(at 0 2.9 0)
 			(layer "F.Fab")
-			(uuid "b9d87013-6300-4243-b728-0d1ccb13682d")
+			(uuid "83b4fccd-ec69-4e66-8158-0b8605bd2922")
 			(effects
 				(font
 					(size 1 1)
@@ -632,12 +632,12 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9e6c86f9-740a-488a-b1f8-7600408cc40c")
+			(uuid "f74cb30d-126e-467a-9580-ee99a3c35a81")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -650,7 +650,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "87ae6d83-ac8b-457c-999b-6b235bf448c1")
+			(uuid "c673c3e6-f770-49dd-8aaa-142167c6e295")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -663,7 +663,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3e8070ad-e3de-467b-a838-fe3c3538eb81")
+			(uuid "dea54e02-8445-4d4f-89bd-231ea6103a7b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -678,30 +678,30 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
-			(end 2.5 0)
+			(end 1.9 0)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "99740adf-aba2-44bb-91b8-0393578b4bb5")
+			(uuid "7f6fdbad-550c-481f-b44a-137e1dbb786c")
 		)
 		(fp_circle
 			(center 0 0)
-			(end 2.75 0)
+			(end 2.15 0)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "0609cc3b-aded-4ee6-a41a-fdbef285b25c")
+			(uuid "8a3b31c7-977f-4fcc-b4ac-4d54ac437502")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "449a526c-879e-4190-bacc-9ee202918bb8")
+			(uuid "2a934117-7f51-45ca-a607-526714dbfe86")
 			(effects
 				(font
 					(size 1 1)
@@ -711,14 +711,14 @@
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
-			(size 5 5)
-			(drill 2.5)
+			(size 3.8 3.8)
+			(drill 2.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 12 "unconnected-(H4-Pad1)")
 			(pinfunction "1")
 			(pintype "input")
-			(uuid "c16e73fd-2f3f-4af6-a7b3-ca5a5dd9de1e")
+			(uuid "c7c15842-e064-4840-9afb-aab696605fa5")
 		)
 	)
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical"
@@ -1057,9 +1057,9 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 7 "Net-(J1-Pin_8)")
+			(net 7 "unconnected-(J1-Pin_8-Pad8)")
 			(pinfunction "Pin_8")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "f1ae6d9e-0f06-4717-9b66-a1e1f9d92b36")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x04_P2.54mm_Vertical.wrl"
@@ -1074,16 +1074,16 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_2.5mm_Pad"
+	(footprint "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 		(layer "F.Cu")
 		(uuid "46838d68-e481-4d14-b5bd-9938cb549f4d")
-		(at 200 122.5)
-		(descr "Mounting Hole 2.5mm")
-		(tags "mounting hole 2.5mm")
+		(at 200 123)
+		(descr "Mounting Hole 2.2mm, M2, DIN965")
+		(tags "mounting hole 2.2mm m2 din965")
 		(property "Reference" "H3"
-			(at 0 -3.5 0)
+			(at 0 -2.9 0)
 			(layer "F.SilkS")
-			(uuid "3e96b883-34aa-4c0d-9818-a9911af0a9eb")
+			(uuid "00c60fd0-aa9b-4f09-b31b-a4d0db8da691")
 			(effects
 				(font
 					(size 1 1)
@@ -1092,9 +1092,9 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 0 3.5 0)
+			(at 0 2.9 0)
 			(layer "F.Fab")
-			(uuid "1c2e69e3-3b5b-4b49-b463-379802fb78e0")
+			(uuid "afd3a511-78b4-4787-b7d4-da1060615e71")
 			(effects
 				(font
 					(size 1 1)
@@ -1102,12 +1102,12 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ff718644-2d35-4833-9bc7-7908fc9704b8")
+			(uuid "9a05871b-14e1-497d-b820-0337f08fee36")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1120,7 +1120,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "21f76859-76bd-46e1-bc80-d299bba7141c")
+			(uuid "e267c977-504b-43e0-9ae3-7e28e47c67c5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1133,7 +1133,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e972ea02-de38-4891-8c1a-10b558413891")
+			(uuid "5cf6d0d2-9d46-45fb-85a7-0860485895e5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1148,30 +1148,30 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
-			(end 2.5 0)
+			(end 1.9 0)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "df8dff97-463f-4480-ab20-916149894a3b")
+			(uuid "afa014bc-e4b9-443c-82ef-c216ec1e3e05")
 		)
 		(fp_circle
 			(center 0 0)
-			(end 2.75 0)
+			(end 2.15 0)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "aadf84c8-0412-42b2-89c1-8caadff23a97")
+			(uuid "f9b57728-cbb2-4175-9d2c-77090ea2cb20")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "b900f31e-c13d-4ddc-9bc0-bdb70da7723f")
+			(uuid "4be78b1b-4d1a-4df3-82f5-a597c055045c")
 			(effects
 				(font
 					(size 1 1)
@@ -1181,26 +1181,26 @@
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
-			(size 5 5)
-			(drill 2.5)
+			(size 3.8 3.8)
+			(drill 2.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 11 "unconnected-(H3-Pad1)")
 			(pinfunction "1")
 			(pintype "input")
-			(uuid "fae567d7-fe3a-4f1b-933e-3c3581df2487")
+			(uuid "b3583aad-08a9-4fd7-8e63-12a325fff479")
 		)
 	)
-	(footprint "MountingHole:MountingHole_2.5mm_Pad"
+	(footprint "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 		(layer "F.Cu")
 		(uuid "4caf79f7-aeed-47e8-8a8d-d5280ad7630c")
 		(at 200 59.5)
-		(descr "Mounting Hole 2.5mm")
-		(tags "mounting hole 2.5mm")
+		(descr "Mounting Hole 2.2mm, M2, DIN965")
+		(tags "mounting hole 2.2mm m2 din965")
 		(property "Reference" "H2"
-			(at 0 -3.5 0)
+			(at 0 -2.9 0)
 			(layer "F.SilkS")
-			(uuid "27955405-417e-4aa3-ac68-356273f75a3e")
+			(uuid "39834b2f-cf8e-4cc2-bed3-0a06130de106")
 			(effects
 				(font
 					(size 1 1)
@@ -1209,9 +1209,9 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 0 3.5 0)
+			(at 0 2.9 0)
 			(layer "F.Fab")
-			(uuid "4beb831e-2b1e-44a2-bcff-683e4d33a497")
+			(uuid "3311ca6e-0d8c-4faa-8891-b01ce0116f06")
 			(effects
 				(font
 					(size 1 1)
@@ -1219,12 +1219,12 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e8d142c2-d09d-4b57-9f1f-65bdf34e7074")
+			(uuid "f2aa123b-fb95-433c-a8a8-893f9a9da43b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1237,7 +1237,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ec840f66-9427-4066-abdd-546b74eb7268")
+			(uuid "094574fa-39b9-423d-9a2a-6ed076bf794c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1250,7 +1250,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "36a88769-25f2-463e-b946-e5b28d340532")
+			(uuid "37e9b06b-4e18-489e-b565-4c14f5c34bd7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1265,30 +1265,30 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
-			(end 2.5 0)
+			(end 1.9 0)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "29d9f69f-6daf-4775-a223-63967309ccef")
+			(uuid "5eda3f60-6ab5-418d-9acf-4eff8604b004")
 		)
 		(fp_circle
 			(center 0 0)
-			(end 2.75 0)
+			(end 2.15 0)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "4981b402-7e36-4103-be96-f584683a38df")
+			(uuid "77120c06-cb84-466b-b2d0-74af1464e65c")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "be37910a-e5a3-4054-b599-b0beaabca213")
+			(uuid "6138d27a-9ac3-403e-823e-913d0cc45cb1")
 			(effects
 				(font
 					(size 1 1)
@@ -1298,14 +1298,14 @@
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
-			(size 5 5)
-			(drill 2.5)
+			(size 3.8 3.8)
+			(drill 2.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 10 "unconnected-(H2-Pad1)")
 			(pinfunction "1")
 			(pintype "input")
-			(uuid "04c72dc8-b807-4aa1-8810-1286d1e68f3c")
+			(uuid "3b6d94b4-be27-476a-9c7d-c22eee2bccfd")
 		)
 	)
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
@@ -1820,16 +1820,16 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_2.5mm_Pad"
+	(footprint "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 		(layer "F.Cu")
 		(uuid "af76f86d-c29c-47d8-9b07-9f772883a5bd")
 		(at 104 59.5)
-		(descr "Mounting Hole 2.5mm")
-		(tags "mounting hole 2.5mm")
+		(descr "Mounting Hole 2.2mm, M2, DIN965")
+		(tags "mounting hole 2.2mm m2 din965")
 		(property "Reference" "H1"
-			(at 0 -3.5 0)
+			(at 0 -2.9 0)
 			(layer "F.SilkS")
-			(uuid "048770f3-3af0-47d3-b79e-be8fd224c7d2")
+			(uuid "0ec8877e-faf7-433f-a20b-8b5a08ce2a9a")
 			(effects
 				(font
 					(size 1 1)
@@ -1838,9 +1838,9 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 0 3.5 0)
+			(at 0 2.9 0)
 			(layer "F.Fab")
-			(uuid "a7b29d52-625e-4648-be71-681a9839a292")
+			(uuid "aa74c574-8686-45e0-a005-0e2b254113f0")
 			(effects
 				(font
 					(size 1 1)
@@ -1848,12 +1848,12 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm_Pad"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2e67edc0-90ae-46bb-a81b-29cbd214847b")
+			(uuid "697b744d-1afd-4c64-94d2-725f52d93691")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1866,7 +1866,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "155e6e59-c7fd-4782-833b-5860ac90850c")
+			(uuid "e1b9acac-1af4-4682-9e70-38483a06929b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1879,7 +1879,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "152fd072-152e-43f9-bd13-b039c36ae46c")
+			(uuid "de998b77-46da-43c1-9c9f-e0d37bd04347")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1894,30 +1894,30 @@
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
-			(end 2.5 0)
+			(end 1.9 0)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "3df80489-6c5e-49e6-8d88-5c67e2d04c6d")
+			(uuid "dc9c4110-f9ec-46dc-a9fd-d564c9845860")
 		)
 		(fp_circle
 			(center 0 0)
-			(end 2.75 0)
+			(end 2.15 0)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "d68b5a36-b68f-4484-a188-13e2a0d6bfb0")
+			(uuid "654948c3-cb02-4408-979d-68f0ceca02cf")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "94d57c9f-3b37-458b-aadc-54f288d01479")
+			(uuid "201f5060-caa1-4b8f-9eab-cde2cb6f3e38")
 			(effects
 				(font
 					(size 1 1)
@@ -1927,14 +1927,14 @@
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
-			(size 5 5)
-			(drill 2.5)
+			(size 3.8 3.8)
+			(drill 2.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 9 "unconnected-(H1-Pad1)")
 			(pinfunction "1")
 			(pintype "input")
-			(uuid "0b56737f-a84c-44e2-8ec2-538f9798bc53")
+			(uuid "4799e74d-f51e-4a81-a014-8be7b2d77ee3")
 		)
 	)
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
@@ -2707,7 +2707,7 @@
 	)
 	(gr_rect
 		(start 100.965 56.515)
-		(end 203.2 125.73)
+		(end 202.7 125.73)
 		(stroke
 			(width 0.05)
 			(type default)

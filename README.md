@@ -1,2 +1,4 @@
 # Automatenplatinen
- Kleinkram der kein eigenes Repo braucht
+Kleinkram der kein eigenes Repo braucht
+
+Also Adapter und so Zeugs
