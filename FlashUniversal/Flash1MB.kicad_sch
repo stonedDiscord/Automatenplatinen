@@ -849,6 +849,17 @@
 		)
 		(uuid "1bbe8a2c-e902-437a-b906-0fd5d49907ee")
 	)
+	(label "VCC"
+		(at 129.54 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "57ada10b-06fd-4104-9134-72cd9f77c77c")
+	)
 	(label "GND"
 		(at 116.84 50.8 180)
 		(fields_autoplaced yes)
@@ -859,6 +870,28 @@
 			(justify right bottom)
 		)
 		(uuid "6690a65a-5663-41a7-977c-32879cfb5bd6")
+	)
+	(label "PD4"
+		(at 116.84 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6936c808-4d5f-4845-bb65-24530de462f5")
+	)
+	(label "MISO"
+		(at 116.84 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "702b31bf-7461-445e-8f7f-07bbafdae045")
 	)
 	(label "GND"
 		(at 20.32 25.4 180)
@@ -882,6 +915,28 @@
 		)
 		(uuid "ae57d560-db20-4228-bf39-e518194accc2")
 	)
+	(label "MOSI"
+		(at 129.54 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "caf65824-6374-4801-9e9a-cd8884c7c1ef")
+	)
+	(label "SCK"
+		(at 129.54 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea448724-3b58-4a8f-95c7-9b70a4fe2d85")
+	)
 	(label "GND"
 		(at 20.32 52.07 180)
 		(fields_autoplaced yes)
@@ -892,6 +947,17 @@
 			(justify right bottom)
 		)
 		(uuid "fa1bbe0d-c6b6-40cc-a1a6-d96c0d8dee8a")
+	)
+	(label "RST"
+		(at 116.84 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fa8456e7-7938-4cbc-9cbd-4af9bac7939b")
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
