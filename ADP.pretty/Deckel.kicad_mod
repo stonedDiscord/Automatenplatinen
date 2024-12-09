@@ -1,0 +1,106 @@
+(footprint "Deckel"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f80a7b6c-254c-4610-a040-1675dbc6b854")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Deckel"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f7cb993b-3512-4680-9fdd-de972861ae17")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "98d2eab9-d4f2-49b3-8587-1ad2bfe3931f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e1fc372b-f8dc-4a2a-bafa-ec8804c74cc3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fbbbed93-8c08-44a3-b475-29833438b2c6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f77c82cc-d4ec-4631-9b18-ea02796b8cb0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.667 5.08)
+		(size 1.27 2.159)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b7d1b75c-1294-4c36-b211-f9ad00a6f1fe")
+	)
+	(pad "2" smd rect
+		(at -0.889 5.08)
+		(size 1.27 2.159)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "913d08f5-e5e0-4e63-9ecd-a7dfb098ebca")
+	)
+	(pad "3" smd rect
+		(at 0.889 5.08)
+		(size 1.27 2.159)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "f84da1de-a8f5-4d68-8de0-f4eb1ae0184c")
+	)
+	(pad "4" smd rect
+		(at 2.667 5.08)
+		(size 1.27 2.159)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "827d23fd-f156-4821-91f7-d329d985beee")
+	)
+)
