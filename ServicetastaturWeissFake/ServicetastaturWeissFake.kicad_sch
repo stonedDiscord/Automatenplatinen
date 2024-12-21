@@ -3634,6 +3634,12 @@
 		(uuid "26179288-4299-4202-9e6b-38d7548d3d98")
 	)
 	(junction
+		(at 87.63 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "282b778a-c74b-423e-90ac-529886fda7c3")
+	)
+	(junction
 		(at 167.64 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5754,6 +5760,74 @@
 			(project ""
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 83.82 30.48 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0498d107-a460-4497-8435-b84d0374c75a")
+		(property "Reference" "D4"
+			(at 85.4075 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 85.4075 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 83.82 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 83.82 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1a8930ca-6000-4329-b1c0-1ab4481bb54d")
+		)
+		(pin "1"
+			(uuid "eacac7c4-3283-4bbd-9f95-038a4425ce89")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "D4")
 					(unit 1)
 				)
 			)
