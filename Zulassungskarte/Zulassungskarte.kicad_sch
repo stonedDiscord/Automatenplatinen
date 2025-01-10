@@ -1500,85 +1500,6 @@
 				)
 			)
 		)
-		(symbol "Mechanical:Fiducial"
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "FID"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Fiducial"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Fiducial Marker"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "fiducial marker"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Fiducial*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Fiducial_0_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-		)
 		(symbol "Protection:ESDA6V1U1"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2435,6 +2356,12 @@
 		(uuid "74beec94-f310-4b42-982d-554f46b52284")
 	)
 	(junction
+		(at 87.63 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f18ab3b-58ae-45a1-a63f-a50dc8145b91")
+	)
+	(junction
 		(at 74.93 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2469,10 +2396,6 @@
 		(uuid "09dd0f4b-a904-435f-9e4f-64215a5abd52")
 	)
 	(no_connect
-		(at 87.63 59.69)
-		(uuid "0ee1bf07-878f-4c79-afc6-9a1d9adb8e77")
-	)
-	(no_connect
 		(at 90.17 29.21)
 		(uuid "158bb5ed-0701-4303-93be-28f1e6024c25")
 	)
@@ -2481,16 +2404,8 @@
 		(uuid "1a9ae565-8172-4f51-a3a2-06a7e4ef551d")
 	)
 	(no_connect
-		(at 87.63 62.23)
-		(uuid "8fcbea3a-577a-429d-8e1d-3e482a641b5a")
-	)
-	(no_connect
 		(at 45.72 29.21)
 		(uuid "a080d247-0bde-468d-97b3-5513377f9a54")
-	)
-	(no_connect
-		(at 87.63 57.15)
-		(uuid "f5b3dd59-de42-4210-91ac-62adb49a5a65")
 	)
 	(wire
 		(pts
@@ -2724,6 +2639,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 57.15) (xy 87.63 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "961eefaf-cb8a-4149-8d32-17af38b5aa2e")
+	)
+	(wire
+		(pts
 			(xy 144.78 69.85) (xy 87.63 69.85)
 		)
 		(stroke
@@ -2741,6 +2666,16 @@
 			(type default)
 		)
 		(uuid "aa3ac676-56d9-4d2b-912f-5e21c7db2a5f")
+	)
+	(wire
+		(pts
+			(xy 87.63 59.69) (xy 87.63 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abf97903-3e22-42cf-85af-b70c7b2d4081")
 	)
 	(wire
 		(pts
@@ -3366,7 +3301,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 157.48 117.348 90)
 			(effects
 				(font
@@ -3569,7 +3504,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 52.07 57.15 0)
 			(effects
 				(font
@@ -3703,7 +3638,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 104.14 67.31 0)
 			(effects
 				(font
@@ -4183,73 +4118,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 157.48 97.79 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b1a55db-9cda-481a-a54c-c565295b1c39")
-		(property "Reference" "#PWR025"
-			(at 163.83 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 161.29 97.7899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 157.48 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3853d45c-da93-471e-9e08-a37b9ec3889f")
-		)
-		(instances
-			(project "Zulassungskarte"
-				(path "/f437cf05-d297-460e-8639-991b777c08ac"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 87.63 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4541,7 +4409,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 157.48 112.268 90)
 			(effects
 				(font
@@ -4809,7 +4677,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 114.3 103.378 90)
 			(effects
 				(font
@@ -4877,7 +4745,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 137.16 123.698 90)
 			(effects
 				(font
@@ -5013,7 +4881,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 119.0752 109.22 0)
 			(effects
 				(font
@@ -5050,70 +4918,6 @@
 			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:Fiducial")
-		(at 19.05 26.67 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8188e00b-1ff6-410a-b11c-8a9d4d534515")
-		(property "Reference" "FID1"
-			(at 21.59 25.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Fiducial"
-			(at 21.59 27.9399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Fiducial:Fiducial_1.5mm_Mask3mm"
-			(at 19.05 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 19.05 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fiducial Marker"
-			(at 19.05 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/f437cf05-d297-460e-8639-991b777c08ac"
-					(reference "FID1")
 					(unit 1)
 				)
 			)
@@ -5374,7 +5178,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
 			(at 74.93 45.72 0)
 			(effects
 				(font
@@ -5661,7 +5465,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 153.67 99.568 90)
 			(effects
 				(font
@@ -5765,6 +5569,73 @@
 			(project ""
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 157.48 97.79 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af2c022f-2e6a-4144-86fc-cdd0dc7a7edd")
+		(property "Reference" "#PWR025"
+			(at 153.67 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 161.29 97.7899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 157.48 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a5de5db8-7964-4141-8828-3d0f4311099a")
+		)
+		(instances
+			(project "Zulassungskarte"
+				(path "/f437cf05-d297-460e-8639-991b777c08ac"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -6066,7 +5937,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 96.52 48.5648 0)
 			(effects
 				(font
@@ -6202,7 +6073,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 160.9852 62.23 0)
 			(effects
 				(font
@@ -6670,7 +6541,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 121.92 103.378 90)
 			(effects
 				(font
@@ -7005,7 +6876,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 157.48 114.808 90)
 			(effects
 				(font
@@ -7042,70 +6913,6 @@
 			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:Fiducial")
-		(at 19.05 33.02 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ebe55ceb-0b73-447d-b52d-103d7f26c344")
-		(property "Reference" "FID2"
-			(at 21.59 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Fiducial"
-			(at 21.59 34.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Fiducial:Fiducial_1.5mm_Mask3mm"
-			(at 19.05 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 19.05 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fiducial Marker"
-			(at 19.05 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "Zulassungskarte"
-				(path "/f437cf05-d297-460e-8639-991b777c08ac"
-					(reference "FID2")
 					(unit 1)
 				)
 			)
