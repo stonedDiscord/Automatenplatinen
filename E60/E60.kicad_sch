@@ -3086,10 +3086,22 @@
 		(uuid "3e4d883f-5424-4de0-9d46-b8a0cf15197a")
 	)
 	(junction
+		(at 154.94 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40db2080-6da7-4373-a684-3d34d2c9e018")
+	)
+	(junction
 		(at 105.41 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41e09b9b-02a5-400d-a736-c0ba08362896")
+	)
+	(junction
+		(at 105.41 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "602feb32-aebe-4184-8114-41e5b843e88a")
 	)
 	(junction
 		(at 90.17 57.15)
@@ -3102,12 +3114,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8171d7e2-eea6-4425-a13b-2efb05b34a35")
-	)
-	(junction
-		(at 105.41 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a14e7e74-7d63-4683-b74f-46c81cc480da")
 	)
 	(junction
 		(at 105.41 57.15)
@@ -3143,6 +3149,26 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 29.21) (xy 154.94 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a1f67e0-5edc-40da-a9bb-6b52a417fec2")
+	)
+	(wire
+		(pts
+			(xy 154.94 53.34) (xy 154.94 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d57041a-0b29-4861-a68e-6b2cf1fd21e6")
+	)
+	(wire
+		(pts
 			(xy 147.32 33.02) (xy 154.94 33.02)
 		)
 		(stroke
@@ -3150,6 +3176,16 @@
 			(type default)
 		)
 		(uuid "21f09adb-b32b-4382-ac1c-1be8b2abdf14")
+	)
+	(wire
+		(pts
+			(xy 157.48 40.64) (xy 157.48 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55fa918a-5e0d-417c-bd3c-5d4d5d55cdef")
 	)
 	(wire
 		(pts
@@ -3215,7 +3251,7 @@
 	)
 	(global_label "TX"
 		(shape input)
-		(at 113.03 100.33 0)
+		(at 113.03 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3225,7 +3261,7 @@
 		)
 		(uuid "2753fe50-95a3-4988-80a5-f6edf32b9549")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.1923 100.33 0)
+			(at 118.1923 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4073,6 +4109,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 157.48 25.4 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1c6d5385-f236-422b-802a-a82a1bbc685f")
+		(property "Reference" "R8"
+			(at 163.83 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3k3"
+			(at 161.29 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 155.702 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 157.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "217be826-43b8-49a4-b9cc-528076d79fec")
+		)
+		(pin "1"
+			(uuid "fc0c0b41-406d-4981-923b-971f558b32f8")
+		)
+		(instances
+			(project "E60"
+				(path "/5637d1c6-9040-41c3-a504-54fc026698d0"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 64.77 87.63 90)
 		(unit 1)
@@ -4201,80 +4305,6 @@
 			(project ""
 				(path "/5637d1c6-9040-41c3-a504-54fc026698d0"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Q_NPN_BEC")
-		(at 107.95 100.33 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2ae987db-1dc7-4816-9f65-efaa46048b4c")
-		(property "Reference" "Q1"
-			(at 102.87 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Q_NPN_BEC"
-			(at 102.87 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 102.87 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 107.95 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "NPN transistor, base/emitter/collector"
-			(at 107.95 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3ceb1605-7961-469f-a16e-12ce8732051d")
-		)
-		(pin "1"
-			(uuid "e73736b8-4355-4c9f-babd-fed6f9dda9a8")
-		)
-		(pin "3"
-			(uuid "de50fc4f-de19-4910-92da-79d9a3786e16")
-		)
-		(instances
-			(project ""
-				(path "/5637d1c6-9040-41c3-a504-54fc026698d0"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -4855,73 +4885,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 105.41 105.41 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3da7a5ea-685a-455b-bd7a-beff0289d6c9")
-		(property "Reference" "#PWR018"
-			(at 105.41 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 105.41 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.41 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 105.41 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a897a7cd-b6b6-48fc-8dd9-1f19d1c1a9d5")
-		)
-		(instances
-			(project "E60"
-				(path "/5637d1c6-9040-41c3-a504-54fc026698d0"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 124.46 27.94 90)
 		(unit 1)
@@ -5133,17 +5096,18 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 154.94 53.34 180)
+		(lib_id "power:GND")
+		(at 105.41 95.25 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "59bbd463-6d53-410c-baeb-015cbf918dc9")
-		(property "Reference" "#PWR022"
-			(at 154.94 49.53 0)
+		(uuid "50b621d9-4438-44d2-b5ab-ed15f9920f01")
+		(property "Reference" "#PWR018"
+			(at 105.41 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5151,8 +5115,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 154.94 58.42 0)
+		(property "Value" "GND"
+			(at 105.41 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5160,7 +5124,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 53.34 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5169,7 +5133,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 53.34 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5177,8 +5141,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 154.94 53.34 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5187,12 +5151,79 @@
 			)
 		)
 		(pin "1"
-			(uuid "976c462f-61f2-4196-a532-a1780f2c28f3")
+			(uuid "5466297c-0042-4e33-951c-3d11803b695a")
 		)
 		(instances
 			(project "E60"
 				(path "/5637d1c6-9040-41c3-a504-54fc026698d0"
-					(reference "#PWR022")
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 154.94 25.4 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "571a6f9a-4b71-47ef-bb08-cb0156c388c6")
+		(property "Reference" "R9"
+			(at 148.59 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3k3"
+			(at 151.13 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 156.718 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 154.94 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "22c547b1-9d80-4d74-b561-393a84fc4790")
+		)
+		(pin "1"
+			(uuid "64ad9ccd-3609-45c5-9df1-e5f787a49933")
+		)
+		(instances
+			(project "E60"
+				(path "/5637d1c6-9040-41c3-a504-54fc026698d0"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -5363,7 +5394,7 @@
 				)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "1000"
 			(at 86.36 86.36 90)
 			(effects
 				(font
@@ -5408,6 +5439,72 @@
 			(project "E60"
 				(path "/5637d1c6-9040-41c3-a504-54fc026698d0"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 157.48 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b18e7d3-e11b-4ecc-bff7-a56236c8ec59")
+		(property "Reference" "#PWR022"
+			(at 157.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 157.48 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 157.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b294be55-57a9-4625-91e5-f35bbea80bff")
+		)
+		(instances
+			(project "E60"
+				(path "/5637d1c6-9040-41c3-a504-54fc026698d0"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -5697,7 +5794,7 @@
 				)
 			)
 		)
-		(property "Value" "3,3k"
+		(property "Value" "1000"
 			(at 86.36 53.34 90)
 			(effects
 				(font
@@ -6027,6 +6124,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 154.94 68.58 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9c68f69-d529-4175-a4b2-b35010393f27")
+		(property "Reference" "#PWR019"
+			(at 154.94 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 154.94 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 154.94 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab041efd-0805-411b-8359-39c39845682b")
+		)
+		(instances
+			(project "E60"
+				(path "/5637d1c6-9040-41c3-a504-54fc026698d0"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VPP")
 		(at 64.77 67.31 270)
 		(unit 1)
@@ -6096,7 +6259,6 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 157.48 64.77 0)
-		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6104,15 +6266,15 @@
 		(dnp no)
 		(uuid "ce82a0d0-cfa2-490a-90a5-6b2aeedc1cf8")
 		(property "Reference" "R4"
-			(at 151.13 64.77 90)
+			(at 163.83 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "10k"
-			(at 153.67 64.77 90)
+		(property "Value" "3k3"
+			(at 161.29 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6120,7 +6282,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 159.258 64.77 90)
+			(at 155.702 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6804,17 +6966,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 113.03 90.17 270)
+		(lib_id "Device:R")
+		(at 154.94 64.77 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f744998a-72b9-4c81-bb12-c25bcd06e046")
-		(property "Reference" "#PWR019"
-			(at 109.22 90.17 0)
+		(uuid "eaece92e-5ef1-4b93-b6b8-7f7e50aaa11d")
+		(property "Reference" "R6"
+			(at 148.59 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3k3"
+			(at 151.13 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 156.718 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6822,17 +7000,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 116.84 90.1699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.03 90.17 0)
+		(property "Datasheet" "~"
+			(at 154.94 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6840,8 +7009,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 113.03 90.17 0)
+		(property "Description" "Resistor"
+			(at 154.94 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6849,22 +7018,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 113.03 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "a37dd60f-cafc-448c-89d4-55b86bc2bc40")
 		)
 		(pin "1"
-			(uuid "07de157a-1bec-428f-b714-a8437c90d918")
+			(uuid "a134e5f5-8f3e-4371-9ebe-a8d0d545ab6f")
 		)
 		(instances
 			(project "E60"
 				(path "/5637d1c6-9040-41c3-a504-54fc026698d0"
-					(reference "#PWR019")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -6932,6 +7095,72 @@
 			(project "E60"
 				(path "/5637d1c6-9040-41c3-a504-54fc026698d0"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 154.94 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffdde326-be16-46b0-8cef-1c6d0c543946")
+		(property "Reference" "#PWR025"
+			(at 154.94 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 154.94 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 154.94 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "386a63a0-9e01-4aa9-9a1f-333accb17e06")
+		)
+		(instances
+			(project "E60"
+				(path "/5637d1c6-9040-41c3-a504-54fc026698d0"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
