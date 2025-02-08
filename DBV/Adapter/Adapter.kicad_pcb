@@ -2704,7 +2704,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "258bcdc2-08f3-4fbc-8e04-bbdf83a55fa8")
@@ -3865,7 +3865,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "b6218975-ae27-46a0-929d-744911c0f0c9")
@@ -4552,7 +4552,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x04_MountingPin"
+		(property "Value" "BM04B-SRSS-TB"
 			(at 0 3.3 0)
 			(layer "F.Fab")
 			(uuid "601687dd-e0ad-41c9-9d03-78a08bcbd4cc")
@@ -5027,7 +5027,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "4bc0babc-61a5-4a9d-a28a-6774d293762b")
@@ -5240,7 +5240,7 @@
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "f2775816-b546-4dcb-8a63-efa0049d13c1")
@@ -9651,6 +9651,62 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "ffe68a23-572f-48a3-ba21-ebb316f39fc7")
+	)
+	(gr_rect
+		(start 60.96 91.059)
+		(end 83.185 92.075)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.2")
+		(uuid "1c6b0dfb-7847-4845-bd78-59376779026d")
+	)
+	(gr_rect
+		(start 60.96 65.405)
+		(end 83.185 66.421)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.2")
+		(uuid "338859e3-f2be-48f7-9842-3a52bda5343b")
+	)
+	(gr_rect
+		(start 84.328 67.564)
+		(end 85.217 89.535)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.2")
+		(uuid "d8c3ae3c-5e26-4972-92c1-17e36dbb3f67")
+	)
+	(gr_rect
+		(start 58.42 67.183)
+		(end 59.69 89.916)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.2")
+		(uuid "ede84a5b-95c1-417b-a758-0edd1be7b36d")
+	)
+	(gr_text "Edge plate"
+		(at 67.945 64.77 0)
+		(layer "User.2")
+		(uuid "11b5902a-238a-47d7-9817-7c8611331a0d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
 	)
 	(segment
 		(start 80.634044 74.265)
