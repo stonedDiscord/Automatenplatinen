@@ -4201,7 +4201,7 @@
 		(descr "SOIC, 16 Pin (https://toshiba.semicon-storage.com/info/docget.jsp?did=12858&prodName=TLP291-4), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U6"
-			(at 0 -6.1 0)
+			(at 2.465 -6.985 0)
 			(layer "F.SilkS")
 			(uuid "9e324ec3-0c8a-434c-a6b4-fdef22eed54b")
 			(effects
@@ -17727,7 +17727,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C3"
-			(at 0 -1.68 0)
+			(at -0.066 1.905 0)
 			(layer "F.SilkS")
 			(uuid "c25e8058-f7f6-4ab3-8e70-1f27d2817450")
 			(effects
@@ -18205,7 +18205,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1"
-			(at 2.5 -2.2 0)
+			(at 2.46 1.905 0)
 			(layer "F.SilkS")
 			(uuid "e63ea68e-7cb1-43c3-8251-0dcd52af09fa")
 			(effects
@@ -24342,7 +24342,7 @@
 		(uuid "79405bca-e566-4f9d-91e5-c7a40ea13da8")
 	)
 	(via
-		(at 154.178 30.734)
+		(at 153.035 28.194)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -24367,15 +24367,6 @@
 		(free yes)
 		(net 16)
 		(uuid "88dd4c4b-9d6f-4a47-8f13-29e5bf57c53a")
-	)
-	(via
-		(at 154.178 28.194)
-		(size 0.6)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net 16)
-		(uuid "8b2f5548-d8e3-495b-b46f-8596d3da0844")
 	)
 	(via
 		(at 34.925 73.025)
@@ -24702,28 +24693,36 @@
 		(uuid "fe945721-1a21-482f-b3a4-836782a7a6e7")
 	)
 	(segment
+		(start 153.035 28.194)
+		(end 151.765 29.464)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 16)
+		(uuid "2dde8e55-2c74-4740-91c3-2a108f2082eb")
+	)
+	(segment
+		(start 151.765 29.464)
+		(end 137.287 29.464)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 16)
+		(uuid "4a3462ee-17d1-4d14-ab61-78a3c510e6a3")
+	)
+	(segment
 		(start 157.988 28.194)
-		(end 156.548 29.634)
+		(end 153.035 28.194)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 16)
-		(uuid "53c61376-cb99-4c12-8bf0-510a96ab4772")
+		(uuid "66240a7d-cd88-4f83-ab3d-9f3e24cfb2ac")
 	)
 	(segment
-		(start 156.548 29.634)
-		(end 137.117 29.634)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 16)
-		(uuid "8b4160b7-27c8-4f56-9c7f-1214d9941057")
-	)
-	(segment
-		(start 137.117 29.634)
+		(start 137.287 29.464)
 		(end 136.144 30.607)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 16)
-		(uuid "f05ee9f7-c8fe-4853-9109-95efad851934")
+		(uuid "8c3a26d9-0d74-4aea-9a36-5afbb65f6b39")
 	)
 	(segment
 		(start 133.047 63.241)
@@ -26958,12 +26957,12 @@
 		(uuid "1197b424-3ac7-4f0b-8549-14f6b43881a5")
 	)
 	(segment
-		(start 168.402008 44.45)
-		(end 167.132004 43.179996)
+		(start 168.425 44.45)
+		(end 167.132 44.45)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 48)
-		(uuid "413d74df-0cf6-47ca-a1c7-7d25ba33dd90")
+		(uuid "1b7abf54-56f4-4ccf-b7cd-d52f92aeabde")
 	)
 	(segment
 		(start 172.085 46.99)
@@ -26972,14 +26971,6 @@
 		(layer "F.Cu")
 		(net 48)
 		(uuid "5831bb6d-bccc-4b13-ab8e-c6dc2c82a2ee")
-	)
-	(segment
-		(start 168.425 44.45)
-		(end 168.402008 44.45)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 48)
-		(uuid "69ff9205-b541-41bb-bcf7-a289110f504e")
 	)
 	(segment
 		(start 168.425 43.18)
@@ -27014,6 +27005,14 @@
 		(uuid "ea2502e3-1f6c-4950-a4c0-bc04f77b770e")
 	)
 	(via
+		(at 167.132 44.45)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 48)
+		(uuid "6c87f921-a145-47e1-8f2f-8811ba463923")
+	)
+	(via
 		(at 167.132004 43.179996)
 		(size 0.6)
 		(drill 0.3)
@@ -27028,6 +27027,22 @@
 		(layer "B.Cu")
 		(net 48)
 		(uuid "237301c7-6cbf-4c8e-8ed1-4a3d9861b322")
+	)
+	(segment
+		(start 167.132 43.18)
+		(end 167.132004 43.179996)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 48)
+		(uuid "2f82798d-888c-44d0-9fae-e40102e593c7")
+	)
+	(segment
+		(start 167.132 44.45)
+		(end 167.132 43.18)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 48)
+		(uuid "330419bb-c6d1-48a5-b044-3fb52963167d")
 	)
 	(segment
 		(start 163.254 31.412)
