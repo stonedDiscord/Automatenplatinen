@@ -671,13 +671,33 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "MINUS"
+		(exclude_from_sim no)
+		(at 74.93 57.658 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "724c9bd6-b9c8-4125-b70e-c7161a217d70")
+	)
+	(text "6V"
+		(exclude_from_sim no)
+		(at 64.77 58.166 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f570dfbd-d768-4c72-b1e1-e0ac58e8116c")
+	)
 	(no_connect
-		(at 74.93 64.77)
+		(at 76.2 73.66)
 		(uuid "4417544d-8dc8-4dc0-b159-0f820f254319")
 	)
 	(wire
 		(pts
-			(xy 87.63 59.69) (xy 87.63 66.04)
+			(xy 81.28 60.96) (xy 74.93 60.96)
 		)
 		(stroke
 			(width 0)
@@ -687,7 +707,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 76.2) (xy 83.82 76.2)
+			(xy 64.77 60.96) (xy 64.77 64.77)
 		)
 		(stroke
 			(width 0)
@@ -697,7 +717,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 57.15) (xy 92.71 41.91)
+			(xy 83.82 55.88) (xy 99.06 55.88)
 		)
 		(stroke
 			(width 0)
@@ -707,7 +727,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 59.69) (xy 87.63 59.69)
+			(xy 81.28 73.66) (xy 81.28 60.96)
 		)
 		(stroke
 			(width 0)
@@ -717,7 +737,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 62.23) (xy 74.93 62.23)
+			(xy 78.74 64.77) (xy 78.74 73.66)
 		)
 		(stroke
 			(width 0)
@@ -727,7 +747,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 52.07) (xy 95.25 54.61)
+			(xy 88.9 53.34) (xy 86.36 53.34)
 		)
 		(stroke
 			(width 0)
@@ -737,7 +757,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 54.61) (xy 74.93 54.61)
+			(xy 86.36 53.34) (xy 86.36 73.66)
 		)
 		(stroke
 			(width 0)
@@ -747,7 +767,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 76.2) (xy 83.82 62.23)
+			(xy 64.77 64.77) (xy 78.74 64.77)
 		)
 		(stroke
 			(width 0)
@@ -757,7 +777,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 57.15) (xy 92.71 57.15)
+			(xy 83.82 73.66) (xy 83.82 55.88)
 		)
 		(stroke
 			(width 0)
@@ -767,7 +787,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 52.07) (xy 90.17 52.07)
+			(xy 88.9 73.66) (xy 88.9 58.42)
 		)
 		(stroke
 			(width 0)
@@ -775,9 +795,70 @@
 		)
 		(uuid "e2cfe57f-e9b0-4958-9485-11a463d9f0f0")
 	)
+	(label "FREI"
+		(at 76.2 73.66 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3b55d76d-5a25-42fb-9c31-654c1d8cdb64")
+	)
+	(label "+12V"
+		(at 83.82 73.66 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "49e49327-15e9-4d1e-ac9a-9211c24d6fdd")
+	)
+	(label "LS"
+		(at 78.74 73.66 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4bdac239-ea90-4af7-8a3f-a671c59162e5")
+	)
+	(label "TASTE"
+		(at 88.9 73.66 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7628257a-fde1-4d9b-9605-40251d866279")
+	)
+	(label "LZ"
+		(at 81.28 73.66 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7aa43ea9-8e27-4ffc-93dc-eff6f815fb4b")
+	)
+	(label "ZE5"
+		(at 86.36 73.66 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9b4375ee-edaf-4c13-a974-6d6a8dd8d495")
+	)
 	(symbol
 		(lib_id "Device:Lamp")
-		(at 87.63 71.12 0)
+		(at 69.85 60.96 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -786,7 +867,7 @@
 		(fields_autoplaced yes)
 		(uuid "00224fd9-043f-4ca3-92aa-8031f0fb26f2")
 		(property "Reference" "LA1"
-			(at 91.44 69.8499 0)
+			(at 71.1201 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -795,7 +876,7 @@
 			)
 		)
 		(property "Value" "T10 10x27 W2,1x9,5d 6V 2W"
-			(at 91.44 72.3899 0)
+			(at 68.5801 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -804,7 +885,7 @@
 			)
 		)
 		(property "Footprint" "Taster:LampSocket"
-			(at 87.63 68.58 90)
+			(at 72.39 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -813,7 +894,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 87.63 68.58 90)
+			(at 72.39 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -822,7 +903,7 @@
 			)
 		)
 		(property "Description" "Lamp"
-			(at 87.63 71.12 0)
+			(at 69.85 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -847,7 +928,8 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_SPDT")
-		(at 92.71 46.99 270)
+		(at 93.98 55.88 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -856,7 +938,7 @@
 		(fields_autoplaced yes)
 		(uuid "0078e4da-c57c-4510-a51c-f4623c284edd")
 		(property "Reference" "SW1"
-			(at 97.79 45.7199 90)
+			(at 95.2501 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -865,7 +947,7 @@
 			)
 		)
 		(property "Value" "Marquardt 1010.8502"
-			(at 97.79 48.2599 90)
+			(at 92.7101 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -874,7 +956,7 @@
 			)
 		)
 		(property "Footprint" "Taster:Marquardt1010"
-			(at 92.71 46.99 0)
+			(at 93.98 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -883,7 +965,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 92.71 46.99 0)
+			(at 93.98 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -892,7 +974,7 @@
 			)
 		)
 		(property "Description" "Momentary Switch, single pole double throw"
-			(at 92.71 46.99 0)
+			(at 93.98 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -920,16 +1002,15 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x06_Pin")
-		(at 69.85 57.15 0)
+		(at 81.28 78.74 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "562e8b25-48d8-473f-8c43-4a67c91d2a43")
 		(property "Reference" "J1"
-			(at 70.485 46.99 0)
+			(at 71.12 78.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -937,7 +1018,7 @@
 			)
 		)
 		(property "Value" "2,5 MSFW 06"
-			(at 70.485 49.53 0)
+			(at 73.66 78.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -945,7 +1026,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_EH_S6B-EH_1x06_P2.50mm_Horizontal"
-			(at 69.85 57.15 0)
+			(at 81.28 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -954,7 +1035,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 57.15 0)
+			(at 81.28 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -963,7 +1044,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated"
-			(at 69.85 57.15 0)
+			(at 81.28 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
