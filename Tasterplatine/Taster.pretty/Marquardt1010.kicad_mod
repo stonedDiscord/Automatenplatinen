@@ -1,0 +1,113 @@
+(footprint "Marquardt1010"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Momentary Switch, single pole double throw")
+	(property "Reference" "REF**"
+		(at 0 -7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "80231c82-74f0-4c3a-a067-165dadb7ff4d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Marquardt1010"
+		(at 0 -5.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9039960f-9b81-4c7b-b3ea-0cf2d1715495")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://products.marquardt.com/Customer%20Drawings/10108502_02_K.pdf"
+		(at 0 -10.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "22527f84-a37a-4353-a84f-3ff098e0af5f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Momentary Switch, single pole double throw"
+		(at 0 -10.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c9a70f17-72d6-4186-b7a6-fe6c8e209a8d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -7 -3)
+		(end 10 3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "5b167014-1ec6-4183-8773-8bcd1a3d198a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f6214350-2c5d-4d39-be1c-90fe824aea22")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 7.5 0)
+		(size 3.5 3.5)
+		(drill 3.5)
+		(layers)
+		(uuid "2146483a-4b59-4962-9389-0d1e6193490b")
+	)
+	(pad "1" thru_hole circle
+		(at -5 1.25)
+		(size 2.5 2.5)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "815d5512-0f42-4c13-a431-ee36922b521f")
+	)
+	(pad "2" thru_hole circle
+		(at -2.5 -1.25)
+		(size 2.5 2.5)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "287d3ba9-fa40-4bf0-a0da-82b1bf82bcec")
+	)
+	(pad "3" thru_hole circle
+		(at 0 1.25)
+		(size 2.5 2.5)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "12247548-9892-4d8b-a394-274c6d2729a1")
+	)
+	(embedded_fonts no)
+)
