@@ -2611,6 +2611,173 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1N4001"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4001"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "50V 1A General Purpose Rectifier Diode, DO-41"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?41*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4001_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4001_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_Module:Arduino_Nano_v3.x"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -5548,94 +5715,94 @@
 			)
 		)
 		(pin "c4"
-			(uuid "ff33a816-c1e4-4722-bc56-00733eac2d56")
+			(uuid "ff33a816-c1e4-4722-bc56-00733eac2d57")
 		)
 		(pin "a1"
-			(uuid "f7bd9363-b74a-47eb-9f09-78831052a042")
+			(uuid "f7bd9363-b74a-47eb-9f09-78831052a043")
 		)
 		(pin "c3"
-			(uuid "b43ba5ed-3eee-4c07-9840-8f826c995215")
+			(uuid "b43ba5ed-3eee-4c07-9840-8f826c995216")
 		)
 		(pin "b8"
-			(uuid "bcb19639-2ab7-4085-95b7-503ed7269f95")
+			(uuid "bcb19639-2ab7-4085-95b7-503ed7269f96")
 		)
 		(pin "c7"
-			(uuid "ffdc325e-a122-42d5-a81e-b02b78cc0af6")
+			(uuid "ffdc325e-a122-42d5-a81e-b02b78cc0af7")
 		)
 		(pin "a3"
-			(uuid "349ac72d-05ba-4aa1-9f7b-3d99e10252d8")
+			(uuid "349ac72d-05ba-4aa1-9f7b-3d99e10252d9")
 		)
 		(pin "a4"
-			(uuid "2de1c7a4-33e1-43ae-a2cf-8507d92f338c")
+			(uuid "2de1c7a4-33e1-43ae-a2cf-8507d92f338d")
 		)
 		(pin "b1"
-			(uuid "8bf6c006-690c-41b2-b5ac-7cde2e4c443b")
+			(uuid "8bf6c006-690c-41b2-b5ac-7cde2e4c443c")
 		)
 		(pin "c1"
-			(uuid "a7442a9e-2974-4b48-a3df-944a44e08733")
+			(uuid "a7442a9e-2974-4b48-a3df-944a44e08734")
 		)
 		(pin "b5"
-			(uuid "6609c4af-38d0-4814-be78-5205fd838fb1")
+			(uuid "6609c4af-38d0-4814-be78-5205fd838fb2")
 		)
 		(pin "c8"
-			(uuid "f06dcb30-5bc7-43e0-b073-f336b2de8802")
+			(uuid "f06dcb30-5bc7-43e0-b073-f336b2de8803")
 		)
 		(pin "b9"
-			(uuid "2c08e512-c749-4ed1-8067-41846cf30d7c")
+			(uuid "2c08e512-c749-4ed1-8067-41846cf30d7d")
 		)
 		(pin "c10"
-			(uuid "c9a50783-5034-49d6-b3a8-53da18cbd129")
+			(uuid "c9a50783-5034-49d6-b3a8-53da18cbd12a")
 		)
 		(pin "b7"
-			(uuid "d0056ea4-9f9b-44f5-b805-fc2b3ea3a2e7")
+			(uuid "d0056ea4-9f9b-44f5-b805-fc2b3ea3a2e8")
 		)
 		(pin "b4"
-			(uuid "869bad2d-7872-4444-964f-c2fea2bcbc28")
+			(uuid "869bad2d-7872-4444-964f-c2fea2bcbc29")
 		)
 		(pin "b10"
-			(uuid "1dbc73ee-eb03-4514-954f-abc8d808182e")
+			(uuid "1dbc73ee-eb03-4514-954f-abc8d808182f")
 		)
 		(pin "a8"
-			(uuid "4cfc0f14-b090-49cf-ae0b-df7f38029db2")
+			(uuid "4cfc0f14-b090-49cf-ae0b-df7f38029db3")
 		)
 		(pin "c9"
-			(uuid "c56e249b-f75b-4958-8d18-5f67c4646970")
+			(uuid "c56e249b-f75b-4958-8d18-5f67c4646971")
 		)
 		(pin "b3"
-			(uuid "1dcdf914-ceff-4f96-a8f8-e74b3171ee31")
+			(uuid "1dcdf914-ceff-4f96-a8f8-e74b3171ee32")
 		)
 		(pin "a10"
-			(uuid "acc3882b-b83b-4959-9be8-bee0a722a6cb")
+			(uuid "acc3882b-b83b-4959-9be8-bee0a722a6cc")
 		)
 		(pin "c2"
-			(uuid "94dc4df0-a753-450b-a3f6-42c1e28de0c7")
+			(uuid "94dc4df0-a753-450b-a3f6-42c1e28de0c8")
 		)
 		(pin "a6"
-			(uuid "c9427323-90a6-42cb-83a6-1564ecebc7c2")
+			(uuid "c9427323-90a6-42cb-83a6-1564ecebc7c3")
 		)
 		(pin "a7"
-			(uuid "dd527c52-ed31-4185-ac80-d80dbf028099")
+			(uuid "dd527c52-ed31-4185-ac80-d80dbf02809a")
 		)
 		(pin "a9"
-			(uuid "e90f067c-39c7-4556-b66a-5b19af8fb4bf")
+			(uuid "e90f067c-39c7-4556-b66a-5b19af8fb4c0")
 		)
 		(pin "b2"
-			(uuid "c9589cad-45bd-4bd1-9e7f-844007d5e3c7")
+			(uuid "c9589cad-45bd-4bd1-9e7f-844007d5e3c8")
 		)
 		(pin "a2"
-			(uuid "0fe70d8f-ca83-4602-a648-44b172e45b58")
+			(uuid "0fe70d8f-ca83-4602-a648-44b172e45b59")
 		)
 		(pin "c5"
-			(uuid "bdb8afd2-eff8-4c4e-a379-287b2c65d398")
+			(uuid "bdb8afd2-eff8-4c4e-a379-287b2c65d399")
 		)
 		(pin "b6"
-			(uuid "151b2041-161c-4c40-a7f2-66a9979e8a28")
+			(uuid "151b2041-161c-4c40-a7f2-66a9979e8a29")
 		)
 		(pin "c6"
-			(uuid "e5940c38-d3bc-4975-9c68-d9f0f634ed15")
+			(uuid "e5940c38-d3bc-4975-9c68-d9f0f634ed16")
 		)
 		(pin "a5"
-			(uuid "93c4a0fd-7459-4115-9d3f-353f9e884783")
+			(uuid "93c4a0fd-7459-4115-9d3f-353f9e884784")
 		)
 		(instances
 			(project ""
@@ -6288,94 +6455,94 @@
 			)
 		)
 		(pin "b9"
-			(uuid "6f68dc6e-5b69-4a87-953d-d9f5ba88c41f")
+			(uuid "6f68dc6e-5b69-4a87-953d-d9f5ba88c420")
 		)
 		(pin "b5"
-			(uuid "b77f9b57-6fb4-44ab-9d84-5f955773a24c")
+			(uuid "b77f9b57-6fb4-44ab-9d84-5f955773a24d")
 		)
 		(pin "a6"
-			(uuid "15365d73-76d7-47c9-83b3-32d7fbbb830d")
+			(uuid "15365d73-76d7-47c9-83b3-32d7fbbb830e")
 		)
 		(pin "c10"
-			(uuid "d6607de9-e429-4ea2-919e-3ba4da4b951e")
+			(uuid "d6607de9-e429-4ea2-919e-3ba4da4b951f")
 		)
 		(pin "b4"
-			(uuid "71edc75f-8937-40dd-83cd-14c2976d2228")
+			(uuid "71edc75f-8937-40dd-83cd-14c2976d2229")
 		)
 		(pin "c2"
-			(uuid "1e1a47d3-c9e2-4b98-947c-23d741ce31e3")
+			(uuid "1e1a47d3-c9e2-4b98-947c-23d741ce31e4")
 		)
 		(pin "b1"
-			(uuid "e4c1dd44-c8d2-4be3-bc8d-32eec2286067")
+			(uuid "e4c1dd44-c8d2-4be3-bc8d-32eec2286068")
 		)
 		(pin "a5"
-			(uuid "090f0796-c7a4-4475-b656-b134cf196a28")
+			(uuid "090f0796-c7a4-4475-b656-b134cf196a29")
 		)
 		(pin "b10"
-			(uuid "402956e3-ce59-4ba3-ac2e-bd7ef0274f3d")
+			(uuid "402956e3-ce59-4ba3-ac2e-bd7ef0274f3e")
 		)
 		(pin "c4"
-			(uuid "09041dc9-eeb9-4f87-998c-c9b0b90b4267")
+			(uuid "09041dc9-eeb9-4f87-998c-c9b0b90b4268")
 		)
 		(pin "b6"
-			(uuid "6dc9bb84-50d2-4369-a2bd-a247dd3908ab")
+			(uuid "6dc9bb84-50d2-4369-a2bd-a247dd3908ac")
 		)
 		(pin "c1"
-			(uuid "d75d2401-f3db-4934-a5a4-9a529dee4035")
+			(uuid "d75d2401-f3db-4934-a5a4-9a529dee4036")
 		)
 		(pin "c7"
-			(uuid "d37e3821-475f-4827-9e2b-04bea21c3e83")
+			(uuid "d37e3821-475f-4827-9e2b-04bea21c3e84")
 		)
 		(pin "b7"
-			(uuid "9f60b6b9-c9d3-48c2-bc54-a2f9be85313f")
+			(uuid "9f60b6b9-c9d3-48c2-bc54-a2f9be853140")
 		)
 		(pin "c9"
-			(uuid "8ac27e4c-9f6e-4abe-8d71-f743b8a5fb69")
+			(uuid "8ac27e4c-9f6e-4abe-8d71-f743b8a5fb6a")
 		)
 		(pin "a9"
-			(uuid "9fb58e4c-3b27-46b4-bafa-100ee629124b")
+			(uuid "9fb58e4c-3b27-46b4-bafa-100ee629124c")
 		)
 		(pin "a2"
-			(uuid "63a6d112-1b9b-45a7-8669-a75b21628ca4")
+			(uuid "63a6d112-1b9b-45a7-8669-a75b21628ca5")
 		)
 		(pin "a1"
-			(uuid "26946868-5f48-4ae8-9629-fada70a074b0")
+			(uuid "26946868-5f48-4ae8-9629-fada70a074b1")
 		)
 		(pin "a8"
-			(uuid "b18d902e-7330-4b1f-a79f-589c67ed7a39")
+			(uuid "b18d902e-7330-4b1f-a79f-589c67ed7a3a")
 		)
 		(pin "c3"
-			(uuid "6849f451-4f56-4c2a-b09d-b613fa6d1205")
+			(uuid "6849f451-4f56-4c2a-b09d-b613fa6d1206")
 		)
 		(pin "b2"
-			(uuid "f455d6b0-2440-4db1-ae3a-10192c444327")
+			(uuid "f455d6b0-2440-4db1-ae3a-10192c444328")
 		)
 		(pin "a7"
-			(uuid "3310d20a-d46f-468d-9851-6752abd532d1")
+			(uuid "3310d20a-d46f-468d-9851-6752abd532d2")
 		)
 		(pin "c8"
-			(uuid "e3d89ee3-c649-4d8e-926f-0715669503c0")
+			(uuid "e3d89ee3-c649-4d8e-926f-0715669503c1")
 		)
 		(pin "a3"
-			(uuid "e2b78578-f035-4625-bdd2-df1184f9d106")
+			(uuid "e2b78578-f035-4625-bdd2-df1184f9d107")
 		)
 		(pin "b3"
-			(uuid "2e265cda-0b4d-4331-a5a0-97c3aeb48f34")
+			(uuid "2e265cda-0b4d-4331-a5a0-97c3aeb48f35")
 		)
 		(pin "a10"
-			(uuid "79e96104-6f47-4ead-9c66-0913d5f49d16")
+			(uuid "79e96104-6f47-4ead-9c66-0913d5f49d17")
 		)
 		(pin "b8"
-			(uuid "4670db09-2b85-46e4-bd91-4fa3362b891c")
+			(uuid "4670db09-2b85-46e4-bd91-4fa3362b891d")
 		)
 		(pin "c5"
-			(uuid "c37f5b3f-399c-49d0-be30-d11ad01b6c85")
+			(uuid "c37f5b3f-399c-49d0-be30-d11ad01b6c86")
 		)
 		(pin "c6"
-			(uuid "235947d8-76da-42fc-a45b-0ece435269d8")
+			(uuid "235947d8-76da-42fc-a45b-0ece435269d9")
 		)
 		(pin "a4"
-			(uuid "0d21139f-e7c9-4b90-b129-323e893e95bc")
+			(uuid "0d21139f-e7c9-4b90-b129-323e893e95bd")
 		)
 		(instances
 			(project ""
@@ -7954,94 +8121,94 @@
 			)
 		)
 		(pin "b9"
-			(uuid "6f68dc6e-5b69-4a87-953d-d9f5ba88c41f")
+			(uuid "6f68dc6e-5b69-4a87-953d-d9f5ba88c421")
 		)
 		(pin "b5"
-			(uuid "b77f9b57-6fb4-44ab-9d84-5f955773a24c")
+			(uuid "b77f9b57-6fb4-44ab-9d84-5f955773a24e")
 		)
 		(pin "a6"
-			(uuid "15365d73-76d7-47c9-83b3-32d7fbbb830d")
+			(uuid "15365d73-76d7-47c9-83b3-32d7fbbb830f")
 		)
 		(pin "c10"
-			(uuid "d6607de9-e429-4ea2-919e-3ba4da4b951e")
+			(uuid "d6607de9-e429-4ea2-919e-3ba4da4b9520")
 		)
 		(pin "b4"
-			(uuid "71edc75f-8937-40dd-83cd-14c2976d2228")
+			(uuid "71edc75f-8937-40dd-83cd-14c2976d222a")
 		)
 		(pin "c2"
-			(uuid "1e1a47d3-c9e2-4b98-947c-23d741ce31e3")
+			(uuid "1e1a47d3-c9e2-4b98-947c-23d741ce31e5")
 		)
 		(pin "b1"
-			(uuid "e4c1dd44-c8d2-4be3-bc8d-32eec2286067")
+			(uuid "e4c1dd44-c8d2-4be3-bc8d-32eec2286069")
 		)
 		(pin "a5"
-			(uuid "090f0796-c7a4-4475-b656-b134cf196a28")
+			(uuid "090f0796-c7a4-4475-b656-b134cf196a2a")
 		)
 		(pin "b10"
-			(uuid "402956e3-ce59-4ba3-ac2e-bd7ef0274f3d")
+			(uuid "402956e3-ce59-4ba3-ac2e-bd7ef0274f3f")
 		)
 		(pin "c4"
-			(uuid "09041dc9-eeb9-4f87-998c-c9b0b90b4267")
+			(uuid "09041dc9-eeb9-4f87-998c-c9b0b90b4269")
 		)
 		(pin "b6"
-			(uuid "6dc9bb84-50d2-4369-a2bd-a247dd3908ab")
+			(uuid "6dc9bb84-50d2-4369-a2bd-a247dd3908ad")
 		)
 		(pin "c1"
-			(uuid "d75d2401-f3db-4934-a5a4-9a529dee4035")
+			(uuid "d75d2401-f3db-4934-a5a4-9a529dee4037")
 		)
 		(pin "c7"
-			(uuid "d37e3821-475f-4827-9e2b-04bea21c3e83")
+			(uuid "d37e3821-475f-4827-9e2b-04bea21c3e85")
 		)
 		(pin "b7"
-			(uuid "9f60b6b9-c9d3-48c2-bc54-a2f9be85313f")
+			(uuid "9f60b6b9-c9d3-48c2-bc54-a2f9be853141")
 		)
 		(pin "c9"
-			(uuid "8ac27e4c-9f6e-4abe-8d71-f743b8a5fb69")
+			(uuid "8ac27e4c-9f6e-4abe-8d71-f743b8a5fb6b")
 		)
 		(pin "a9"
-			(uuid "9fb58e4c-3b27-46b4-bafa-100ee629124b")
+			(uuid "9fb58e4c-3b27-46b4-bafa-100ee629124d")
 		)
 		(pin "a2"
-			(uuid "63a6d112-1b9b-45a7-8669-a75b21628ca4")
+			(uuid "63a6d112-1b9b-45a7-8669-a75b21628ca6")
 		)
 		(pin "a1"
-			(uuid "26946868-5f48-4ae8-9629-fada70a074b0")
+			(uuid "26946868-5f48-4ae8-9629-fada70a074b2")
 		)
 		(pin "a8"
-			(uuid "b18d902e-7330-4b1f-a79f-589c67ed7a39")
+			(uuid "b18d902e-7330-4b1f-a79f-589c67ed7a3b")
 		)
 		(pin "c3"
-			(uuid "6849f451-4f56-4c2a-b09d-b613fa6d1205")
+			(uuid "6849f451-4f56-4c2a-b09d-b613fa6d1207")
 		)
 		(pin "b2"
-			(uuid "f455d6b0-2440-4db1-ae3a-10192c444327")
+			(uuid "f455d6b0-2440-4db1-ae3a-10192c444329")
 		)
 		(pin "a7"
-			(uuid "3310d20a-d46f-468d-9851-6752abd532d1")
+			(uuid "3310d20a-d46f-468d-9851-6752abd532d3")
 		)
 		(pin "c8"
-			(uuid "e3d89ee3-c649-4d8e-926f-0715669503c0")
+			(uuid "e3d89ee3-c649-4d8e-926f-0715669503c2")
 		)
 		(pin "a3"
-			(uuid "e2b78578-f035-4625-bdd2-df1184f9d106")
+			(uuid "e2b78578-f035-4625-bdd2-df1184f9d108")
 		)
 		(pin "b3"
-			(uuid "2e265cda-0b4d-4331-a5a0-97c3aeb48f34")
+			(uuid "2e265cda-0b4d-4331-a5a0-97c3aeb48f36")
 		)
 		(pin "a10"
-			(uuid "79e96104-6f47-4ead-9c66-0913d5f49d16")
+			(uuid "79e96104-6f47-4ead-9c66-0913d5f49d18")
 		)
 		(pin "b8"
-			(uuid "4670db09-2b85-46e4-bd91-4fa3362b891c")
+			(uuid "4670db09-2b85-46e4-bd91-4fa3362b891e")
 		)
 		(pin "c5"
-			(uuid "c37f5b3f-399c-49d0-be30-d11ad01b6c85")
+			(uuid "c37f5b3f-399c-49d0-be30-d11ad01b6c87")
 		)
 		(pin "c6"
-			(uuid "235947d8-76da-42fc-a45b-0ece435269d8")
+			(uuid "235947d8-76da-42fc-a45b-0ece435269da")
 		)
 		(pin "a4"
-			(uuid "0d21139f-e7c9-4b90-b129-323e893e95bc")
+			(uuid "0d21139f-e7c9-4b90-b129-323e893e95be")
 		)
 		(instances
 			(project ""
@@ -8212,22 +8379,22 @@
 			)
 		)
 		(pin "4"
-			(uuid "23f3e0a3-8a95-4c38-9339-a6ba6d37045b")
+			(uuid "23f3e0a3-8a95-4c38-9339-a6ba6d37045c")
 		)
 		(pin "5"
-			(uuid "72aed582-8761-40a4-a41b-abc3fa8cf8b2")
+			(uuid "72aed582-8761-40a4-a41b-abc3fa8cf8b3")
 		)
 		(pin "2"
-			(uuid "085141aa-34b1-4b91-ae5f-d472ab41f50c")
+			(uuid "085141aa-34b1-4b91-ae5f-d472ab41f50d")
 		)
 		(pin "3"
-			(uuid "cfaa9f39-cd55-4262-b257-fb8f70ff3fd7")
+			(uuid "cfaa9f39-cd55-4262-b257-fb8f70ff3fd8")
 		)
 		(pin "1"
-			(uuid "d014ccae-70b0-4fd3-8106-2b177e9171c6")
+			(uuid "d014ccae-70b0-4fd3-8106-2b177e9171c7")
 		)
 		(pin "6"
-			(uuid "71be200d-e087-4a28-983f-8f2585335656")
+			(uuid "71be200d-e087-4a28-983f-8f2585335657")
 		)
 		(instances
 			(project ""
@@ -8519,6 +8686,92 @@
 			(project ""
 				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4001")
+		(at 180.34 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3281a58-c946-47dd-bea5-90ca4a24687e")
+		(property "Reference" "D4"
+			(at 180.34 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4001"
+			(at 180.34 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 180.34 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
+			(at 180.34 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50V 1A General Purpose Rectifier Diode, DO-41"
+			(at 180.34 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 180.34 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 180.34 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "326b5024-60a2-40f7-8faa-1e76f2614ad6")
+		)
+		(pin "1"
+			(uuid "4ec59561-59f0-4f69-a570-7ea233460101")
+		)
+		(instances
+			(project ""
+				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -9095,94 +9348,94 @@
 			)
 		)
 		(pin "c4"
-			(uuid "ff33a816-c1e4-4722-bc56-00733eac2d56")
+			(uuid "ff33a816-c1e4-4722-bc56-00733eac2d58")
 		)
 		(pin "a1"
-			(uuid "f7bd9363-b74a-47eb-9f09-78831052a042")
+			(uuid "f7bd9363-b74a-47eb-9f09-78831052a044")
 		)
 		(pin "c3"
-			(uuid "b43ba5ed-3eee-4c07-9840-8f826c995215")
+			(uuid "b43ba5ed-3eee-4c07-9840-8f826c995217")
 		)
 		(pin "b8"
-			(uuid "bcb19639-2ab7-4085-95b7-503ed7269f95")
+			(uuid "bcb19639-2ab7-4085-95b7-503ed7269f97")
 		)
 		(pin "c7"
-			(uuid "ffdc325e-a122-42d5-a81e-b02b78cc0af6")
+			(uuid "ffdc325e-a122-42d5-a81e-b02b78cc0af8")
 		)
 		(pin "a3"
-			(uuid "349ac72d-05ba-4aa1-9f7b-3d99e10252d8")
+			(uuid "349ac72d-05ba-4aa1-9f7b-3d99e10252da")
 		)
 		(pin "a4"
-			(uuid "2de1c7a4-33e1-43ae-a2cf-8507d92f338c")
+			(uuid "2de1c7a4-33e1-43ae-a2cf-8507d92f338e")
 		)
 		(pin "b1"
-			(uuid "8bf6c006-690c-41b2-b5ac-7cde2e4c443b")
+			(uuid "8bf6c006-690c-41b2-b5ac-7cde2e4c443d")
 		)
 		(pin "c1"
-			(uuid "a7442a9e-2974-4b48-a3df-944a44e08733")
+			(uuid "a7442a9e-2974-4b48-a3df-944a44e08735")
 		)
 		(pin "b5"
-			(uuid "6609c4af-38d0-4814-be78-5205fd838fb1")
+			(uuid "6609c4af-38d0-4814-be78-5205fd838fb3")
 		)
 		(pin "c8"
-			(uuid "f06dcb30-5bc7-43e0-b073-f336b2de8802")
+			(uuid "f06dcb30-5bc7-43e0-b073-f336b2de8804")
 		)
 		(pin "b9"
-			(uuid "2c08e512-c749-4ed1-8067-41846cf30d7c")
+			(uuid "2c08e512-c749-4ed1-8067-41846cf30d7e")
 		)
 		(pin "c10"
-			(uuid "c9a50783-5034-49d6-b3a8-53da18cbd129")
+			(uuid "c9a50783-5034-49d6-b3a8-53da18cbd12b")
 		)
 		(pin "b7"
-			(uuid "d0056ea4-9f9b-44f5-b805-fc2b3ea3a2e7")
+			(uuid "d0056ea4-9f9b-44f5-b805-fc2b3ea3a2e9")
 		)
 		(pin "b4"
-			(uuid "869bad2d-7872-4444-964f-c2fea2bcbc28")
+			(uuid "869bad2d-7872-4444-964f-c2fea2bcbc2a")
 		)
 		(pin "b10"
-			(uuid "1dbc73ee-eb03-4514-954f-abc8d808182e")
+			(uuid "1dbc73ee-eb03-4514-954f-abc8d8081830")
 		)
 		(pin "a8"
-			(uuid "4cfc0f14-b090-49cf-ae0b-df7f38029db2")
+			(uuid "4cfc0f14-b090-49cf-ae0b-df7f38029db4")
 		)
 		(pin "c9"
-			(uuid "c56e249b-f75b-4958-8d18-5f67c4646970")
+			(uuid "c56e249b-f75b-4958-8d18-5f67c4646972")
 		)
 		(pin "b3"
-			(uuid "1dcdf914-ceff-4f96-a8f8-e74b3171ee31")
+			(uuid "1dcdf914-ceff-4f96-a8f8-e74b3171ee33")
 		)
 		(pin "a10"
-			(uuid "acc3882b-b83b-4959-9be8-bee0a722a6cb")
+			(uuid "acc3882b-b83b-4959-9be8-bee0a722a6cd")
 		)
 		(pin "c2"
-			(uuid "94dc4df0-a753-450b-a3f6-42c1e28de0c7")
+			(uuid "94dc4df0-a753-450b-a3f6-42c1e28de0c9")
 		)
 		(pin "a6"
-			(uuid "c9427323-90a6-42cb-83a6-1564ecebc7c2")
+			(uuid "c9427323-90a6-42cb-83a6-1564ecebc7c4")
 		)
 		(pin "a7"
-			(uuid "dd527c52-ed31-4185-ac80-d80dbf028099")
+			(uuid "dd527c52-ed31-4185-ac80-d80dbf02809b")
 		)
 		(pin "a9"
-			(uuid "e90f067c-39c7-4556-b66a-5b19af8fb4bf")
+			(uuid "e90f067c-39c7-4556-b66a-5b19af8fb4c1")
 		)
 		(pin "b2"
-			(uuid "c9589cad-45bd-4bd1-9e7f-844007d5e3c7")
+			(uuid "c9589cad-45bd-4bd1-9e7f-844007d5e3c9")
 		)
 		(pin "a2"
-			(uuid "0fe70d8f-ca83-4602-a648-44b172e45b58")
+			(uuid "0fe70d8f-ca83-4602-a648-44b172e45b5a")
 		)
 		(pin "c5"
-			(uuid "bdb8afd2-eff8-4c4e-a379-287b2c65d398")
+			(uuid "bdb8afd2-eff8-4c4e-a379-287b2c65d39a")
 		)
 		(pin "b6"
-			(uuid "151b2041-161c-4c40-a7f2-66a9979e8a28")
+			(uuid "151b2041-161c-4c40-a7f2-66a9979e8a2a")
 		)
 		(pin "c6"
-			(uuid "e5940c38-d3bc-4975-9c68-d9f0f634ed15")
+			(uuid "e5940c38-d3bc-4975-9c68-d9f0f634ed17")
 		)
 		(pin "a5"
-			(uuid "93c4a0fd-7459-4115-9d3f-353f9e884783")
+			(uuid "93c4a0fd-7459-4115-9d3f-353f9e884785")
 		)
 		(instances
 			(project ""
