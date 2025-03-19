@@ -844,101 +844,6 @@
 			)
 		)
 	)
-	(footprint "Lampe:Lampenstecker"
-		(layer "F.Cu")
-		(uuid "cb2875f7-5669-4cbd-a7ce-4a0afa1bf2bf")
-		(at 89.6 75.3625 180)
-		(property "Reference" "LA2"
-			(at 0 -0.5 180)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "56c4fc76-89d1-49d4-b9a7-4eaab918398f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.1)
-				)
-			)
-		)
-		(property "Value" "Lamp"
-			(at 0 1 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "f3086289-364f-4bc2-94be-cf7b56f8ece6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e8ef49ce-9dee-4810-b880-2c79d9b4897c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Lamp"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c7899edd-ac38-4fa0-9d6f-4b68de34165b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/f2dd52b3-b3b9-4cd5-a2ef-5bcebd6071e6")
-		(sheetname "/")
-		(sheetfile "LEDlamp.kicad_sch")
-		(attr smd exclude_from_bom)
-		(fp_text user "${REFERENCE}"
-			(at 0 2.5 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "800947d4-733b-4f08-8093-5b97a137dbec")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -3 3.5 180)
-			(size 2.54 5.75)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.15)
-			(net 4 "GND")
-			(pinfunction "-")
-			(pintype "passive")
-			(thermal_bridge_angle 45)
-			(uuid "95f07f7d-0de5-4e1e-b238-020f17aefe9f")
-		)
-		(pad "2" smd roundrect
-			(at 3 3.5 180)
-			(size 2.54 5.75)
-			(layers "B.Cu" "B.Mask" "B.Paste")
-			(roundrect_rratio 0.15)
-			(net 3 "+12V")
-			(pinfunction "+")
-			(pintype "passive")
-			(thermal_bridge_angle 45)
-			(uuid "d5ad0364-eb6b-40cb-9e58-6bb20d585174")
-		)
-		(embedded_fonts no)
-	)
 	(footprint "LED_SMD:LED_PLCC_2835_Handsoldering"
 		(layer "F.Cu")
 		(uuid "d96a9c75-43a9-415f-bcce-505961803f99")
@@ -3105,6 +3010,17 @@
 		(uuid "08e47cde-6cda-43b5-aae8-ebe00e2f4234")
 	)
 	(gr_arc
+		(start 94.25 74.75)
+		(mid 94.176777 74.926777)
+		(end 94 75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "1e3dbd11-6fff-4163-98a3-79265721e7e7")
+	)
+	(gr_arc
 		(start 91.75 51)
 		(mid 93.517767 51.732233)
 		(end 94.25 53.5)
@@ -3115,8 +3031,19 @@
 		(layer "Edge.Cuts")
 		(uuid "3ce435e0-e3a8-4c35-b0c3-29caef3b3073")
 	)
+	(gr_arc
+		(start 85.25 75)
+		(mid 85.073223 74.926777)
+		(end 85 74.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "4c61382a-4b6c-47e5-8b50-006a847d1f06")
+	)
 	(gr_line
-		(start 94.25 75)
+		(start 94.25 74.75)
 		(end 94.25 53.5)
 		(stroke
 			(width 0.05)
@@ -3126,8 +3053,8 @@
 		(uuid "4d1f9786-7266-4c45-ad04-42740bd67328")
 	)
 	(gr_line
-		(start 85 75)
-		(end 94.25 75)
+		(start 85.25 75)
+		(end 89.25 75)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -3135,9 +3062,30 @@
 		(layer "Edge.Cuts")
 		(uuid "bd150a6a-3dbe-4e7e-9c4f-85a08a07b8b7")
 	)
+	(gr_arc
+		(start 90 75)
+		(mid 89.625 75.375)
+		(end 89.25 75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "bd27ea5c-ccbb-4c4d-add2-5bb019fb0b69")
+	)
+	(gr_line
+		(start 94 75)
+		(end 90 75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "df5e6b96-bdf9-428b-ba2a-83d904154ebe")
+	)
 	(gr_line
 		(start 85 53.5)
-		(end 85 75)
+		(end 85 74.75)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -3225,13 +3173,13 @@
 		(style
 			(thickness 0.1)
 			(arrow_length 1.27)
-			(text_position_mode 0)
+			(text_position_mode 2)
 			(arrow_direction outward)
 			(extension_height 0.58642)
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "9,25"
+		(gr_text "9.25"
 			(at 89.625 81.35 0)
 			(layer "F.Fab")
 			(uuid "d40be104-625e-4e4f-b078-63e8efd266fc")
@@ -3269,10 +3217,48 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "6,5"
+		(gr_text "6.5"
 			(at 102.6 71.75 90)
 			(layer "F.Fab")
 			(uuid "eed5910b-1dce-4a80-a07f-8691cc8ef4e4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+	)
+	(dimension
+		(type orthogonal)
+		(layer "User.1")
+		(uuid "3e8d5203-211b-4771-9929-9d08c11129a3")
+		(pts
+			(xy 94.25 75) (xy 89.625 74.85)
+		)
+		(height 3.1875)
+		(orientation 0)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 0)
+			(precision 4)
+			(suppress_zeroes yes)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "4.625"
+			(at 91.9375 77.0375 0)
+			(layer "User.1")
+			(uuid "3e8d5203-211b-4771-9929-9d08c11129a3")
 			(effects
 				(font
 					(size 1 1)
@@ -3386,14 +3372,6 @@
 		(uuid "1a37e504-2a16-4cd2-95b9-baab1c2a8177")
 	)
 	(segment
-		(start 86.6 71.8625)
-		(end 92.575 71.8625)
-		(width 1)
-		(layer "B.Cu")
-		(net 3)
-		(uuid "417b5601-290b-4071-9a27-9d357e24f829")
-	)
-	(segment
 		(start 92.6 71.8875)
 		(end 92.6 66.625)
 		(width 1)
@@ -3448,14 +3426,6 @@
 		(layer "F.Cu")
 		(net 4)
 		(uuid "52ef2da4-1726-4016-b7f9-7d4bb4a6ba9b")
-	)
-	(segment
-		(start 92.6 71.8625)
-		(end 86.625 71.8625)
-		(width 1)
-		(layer "F.Cu")
-		(net 4)
-		(uuid "53454642-9d2d-4fda-b287-2a9456cd245a")
 	)
 	(segment
 		(start 88 63)

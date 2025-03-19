@@ -952,12 +952,6 @@
 		(uuid "17858e9b-7ae5-458f-a4ec-22a7f6dc41ff")
 	)
 	(junction
-		(at 105.41 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3b029ea6-b341-4d24-8cfa-3813020bd906")
-	)
-	(junction
 		(at 54.61 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -992,12 +986,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a2359c25-066c-49db-a9b6-8d6f06549ff7")
-	)
-	(junction
-		(at 105.41 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b211e99c-a617-4ebd-82ad-5c6a539979fb")
 	)
 	(junction
 		(at 54.61 44.45)
@@ -2480,76 +2468,6 @@
 			(project "LEDlamp"
 				(path "/186e1dbe-8864-41f9-b675-7b909ed375e3"
 					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Lamp")
-		(at 105.41 59.69 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "f2dd52b3-b3b9-4cd5-a2ef-5bcebd6071e6")
-		(property "Reference" "LA2"
-			(at 101.6 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Lamp"
-			(at 101.6 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Lampe:Lampenstecker"
-			(at 105.41 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 105.41 57.15 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Lamp"
-			(at 105.41 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7d6845df-93fb-4fe5-9962-6b593f096a22")
-		)
-		(pin "2"
-			(uuid "c2245a52-82c3-4b4b-9c68-db7a052b1382")
-		)
-		(instances
-			(project "LEDlamp"
-				(path "/186e1dbe-8864-41f9-b675-7b909ed375e3"
-					(reference "LA2")
 					(unit 1)
 				)
 			)
