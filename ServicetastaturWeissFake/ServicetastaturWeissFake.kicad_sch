@@ -4053,6 +4053,12 @@
 		(uuid "82ccda9c-b0fb-4800-bb5c-f88137adc942")
 	)
 	(junction
+		(at 138.43 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8b1c8905-fe0f-47b1-be94-3b34ce6381e8")
+	)
+	(junction
 		(at 234.95 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4069,12 +4075,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9475aed4-d2a3-48b2-9b22-2691bc6b9f81")
-	)
-	(junction
-		(at 142.24 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "960294e1-4ddd-48c9-88a4-6c52d3f7b55d")
 	)
 	(junction
 		(at 203.2 152.4)
@@ -4263,12 +4263,6 @@
 		(uuid "e07b602c-6df4-445a-a68a-c6a69e5d769a")
 	)
 	(junction
-		(at 138.43 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e13b40be-2a64-4591-a72a-bb811e5bffed")
-	)
-	(junction
 		(at 154.94 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4346,15 +4340,9 @@
 		(color 0 0 0 0)
 		(uuid "ff14dbce-8712-4ebc-acd7-9fb09ea749b5")
 	)
-	(wire
-		(pts
-			(xy 142.24 110.49) (xy 142.24 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03ec227b-40c6-46dd-a19b-611b50cc0295")
+	(no_connect
+		(at 139.7 81.28)
+		(uuid "691fcf64-2829-4070-a371-1fd9842756c0")
 	)
 	(wire
 		(pts
@@ -4838,6 +4826,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 110.49) (xy 142.24 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57064f83-f0f5-4672-b32c-5cddbdbdbde9")
+	)
+	(wire
+		(pts
 			(xy 218.44 73.66) (xy 234.95 73.66)
 		)
 		(stroke
@@ -4855,16 +4853,6 @@
 			(type default)
 		)
 		(uuid "5b53b0cf-30da-4df1-893a-c9141de0c97d")
-	)
-	(wire
-		(pts
-			(xy 138.43 81.28) (xy 142.24 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b797630-8183-4388-8763-26c396afb705")
 	)
 	(wire
 		(pts
@@ -4915,16 +4903,6 @@
 			(type default)
 		)
 		(uuid "6470926a-a73d-461c-9163-3b9223ae3c03")
-	)
-	(wire
-		(pts
-			(xy 162.56 110.49) (xy 142.24 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66238764-bc29-46e1-805d-400066ba99a6")
 	)
 	(wire
 		(pts
@@ -5005,6 +4983,16 @@
 			(type default)
 		)
 		(uuid "744934b1-99e3-4e19-9172-a963ce87027b")
+	)
+	(wire
+		(pts
+			(xy 162.56 110.49) (xy 142.24 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7476f41c-dc5b-45cd-89cc-839979e655ad")
 	)
 	(wire
 		(pts
@@ -5105,6 +5093,16 @@
 			(type default)
 		)
 		(uuid "92958c98-b2cd-4b4b-ba2d-9a0eac80122c")
+	)
+	(wire
+		(pts
+			(xy 138.43 81.28) (xy 139.7 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92b898d7-8390-4f45-ae02-66f5687d7856")
 	)
 	(wire
 		(pts
@@ -5255,16 +5253,6 @@
 			(type default)
 		)
 		(uuid "a8d2fee9-4ad4-42fa-b615-ced8ce75baaa")
-	)
-	(wire
-		(pts
-			(xy 142.24 81.28) (xy 162.56 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9c6fd63-e924-4b20-bbdc-6ff257dc2e3e")
 	)
 	(wire
 		(pts
@@ -5595,6 +5583,16 @@
 			(type default)
 		)
 		(uuid "e567ef00-bc7a-4149-9423-0340e6af8225")
+	)
+	(wire
+		(pts
+			(xy 142.24 81.28) (xy 162.56 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5ae4782-0940-46d5-a753-01d6d8f1393c")
 	)
 	(wire
 		(pts
@@ -11129,7 +11127,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 83.82 30.48 0)
 			(effects
 				(font
