@@ -2088,6 +2088,189 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2907,6 +3090,89 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -6700,6 +6966,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 124.46 177.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f191c5c-15b5-4143-9574-ff14151a08ea")
+		(property "Reference" "#PWR027"
+			(at 130.81 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.27 177.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f5f5481-10c5-42f0-b72c-ccea7b1eb4f6")
+		)
+		(instances
+			(project "ST25"
+				(path "/37c1adda-ac5c-405e-8496-b0b1b030189c"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Display_Character:WC1602A")
 		(at 167.64 139.7 0)
 		(unit 1)
@@ -7235,6 +7568,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 109.22 177.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70b7ba1b-21d7-4e08-978f-3aebe6b73562")
+		(property "Reference" "#PWR026"
+			(at 113.03 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 105.41 177.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 109.22 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c291e80-1cc9-44fe-adf9-fb7f37f02cd1")
+		)
+		(instances
+			(project "ST25"
+				(path "/37c1adda-ac5c-405e-8496-b0b1b030189c"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x08")
 		(at 217.17 93.98 0)
 		(unit 1)
@@ -7680,33 +8080,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x13")
-		(at 162.56 30.48 90)
+		(lib_id "Mechanical:MountingHole")
+		(at 25.4 63.5 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7f35c077-19ab-4174-9c6b-c54ba8654e07")
-		(property "Reference" "J2"
-			(at 162.56 24.13 90)
+		(uuid "7ea01445-e030-41e8-854c-a3165bbc8011")
+		(property "Reference" "H1"
+			(at 27.94 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x13"
-			(at 162.56 26.67 90)
+		(property "Value" "MountingHole"
+			(at 27.94 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical"
-			(at 162.56 30.48 0)
+		(property "Footprint" "MountingHole:MountingHole_3mm"
+			(at 25.4 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7715,7 +8117,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 162.56 30.48 0)
+			(at 25.4 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7723,58 +8125,19 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 162.56 30.48 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 25.4 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "11"
-			(uuid "f70f1f39-fbcd-4466-8352-6deb09c91618")
-		)
-		(pin "9"
-			(uuid "dfa31572-2d57-4f46-a6ca-efa6de92e0b2")
-		)
-		(pin "13"
-			(uuid "fe4889bf-feb9-4f43-9a95-469a2c84bad0")
-		)
-		(pin "7"
-			(uuid "16700ff7-b46e-4515-9924-e2d9c13cfc48")
-		)
-		(pin "2"
-			(uuid "a6122a8c-340e-44f8-a4d1-8ed057118ddc")
-		)
-		(pin "8"
-			(uuid "84f69db6-ed36-4696-b6e9-887b0a595d9a")
-		)
-		(pin "4"
-			(uuid "6870f581-165e-4480-a981-cfdb20c14978")
-		)
-		(pin "1"
-			(uuid "533409cb-3790-4173-b9e6-1ae356971084")
-		)
-		(pin "6"
-			(uuid "804396a7-9b40-4285-97fc-f916004b4b5b")
-		)
-		(pin "3"
-			(uuid "2d1a26f7-7cb0-47a6-bfc7-7ce3d01da84d")
-		)
-		(pin "5"
-			(uuid "2f1fb7b9-2293-45cc-b4d1-9c6a55582063")
-		)
-		(pin "10"
-			(uuid "60409282-d045-4d3d-a87b-4360a3e512d0")
-		)
-		(pin "12"
-			(uuid "1352bcd4-42e2-4e3c-a519-936832891fc8")
 		)
 		(instances
-			(project "ST25"
+			(project ""
 				(path "/37c1adda-ac5c-405e-8496-b0b1b030189c"
-					(reference "J2")
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -7911,107 +8274,6 @@
 			(project "ST25"
 				(path "/37c1adda-ac5c-405e-8496-b0b1b030189c"
 					(reference "SW18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x13")
-		(at 162.56 30.48 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "950d2401-90a0-4a36-8f3e-2889b6ae7f6f")
-		(property "Reference" "J3"
-			(at 162.56 24.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x13"
-			(at 162.56 26.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical"
-			(at 162.56 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 162.56 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x13, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 162.56 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "11"
-			(uuid "b9f5547d-ccbb-4d8c-9d46-d6cafaf0f9c2")
-		)
-		(pin "9"
-			(uuid "aedcc307-b747-4605-8bbc-13b2d7bc7ce5")
-		)
-		(pin "13"
-			(uuid "23ecbf50-3734-4943-9a2a-ba7aaa28b623")
-		)
-		(pin "7"
-			(uuid "02b551ae-d185-4459-be91-ffc971270d6e")
-		)
-		(pin "2"
-			(uuid "e5e1b7f2-c985-4123-956a-1814a17cde6f")
-		)
-		(pin "8"
-			(uuid "4cd33214-9823-47f8-b9f1-b77469557159")
-		)
-		(pin "4"
-			(uuid "19398620-52a5-4079-824d-154a94f611be")
-		)
-		(pin "1"
-			(uuid "50c2e0b2-89d0-436e-be16-1b0e6dc98991")
-		)
-		(pin "6"
-			(uuid "fe830107-c4ea-4dd2-9aaf-f0bc8da03d1e")
-		)
-		(pin "3"
-			(uuid "6f538f6f-fb7e-4d61-979d-ce5b95d4d43d")
-		)
-		(pin "5"
-			(uuid "73e32907-7e48-431c-8b08-afb9b4422d61")
-		)
-		(pin "10"
-			(uuid "0e9a0c02-8008-4168-aff7-d271a15d32d9")
-		)
-		(pin "12"
-			(uuid "79511a3b-9469-41e7-86e8-f8ce13a28387")
-		)
-		(instances
-			(project "ST25"
-				(path "/37c1adda-ac5c-405e-8496-b0b1b030189c"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -8222,6 +8484,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 25.4 76.2 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a5fffd7b-e523-4570-94db-8a3bf08dc37f")
+		(property "Reference" "H2"
+			(at 27.94 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 27.94 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm"
+			(at 25.4 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 25.4 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ST25"
+				(path "/37c1adda-ac5c-405e-8496-b0b1b030189c"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 246.38 114.3 0)
 		(unit 1)
@@ -8297,7 +8623,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "abd5bbf7-2707-4677-af3a-764014cd7735")
 		(property "Reference" "#PWR07"
 			(at 162.56 31.75 0)
@@ -8309,7 +8634,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 165.1 36.8299 0)
+			(at 160.782 39.624 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9348,6 +9673,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 120.65 177.8 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e718a9a7-6a97-4fc1-8303-5746fe9a83d8")
+		(property "Reference" "D3"
+			(at 122.2375 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 122.2375 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 120.65 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 120.65 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 120.65 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2e40f479-f1c4-4221-b211-d9f8ed4702fb")
+		)
+		(pin "1"
+			(uuid "f15d6bbf-e2f6-4a0c-a76c-843a9458f4c1")
+		)
+		(instances
+			(project ""
+				(path "/37c1adda-ac5c-405e-8496-b0b1b030189c"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 30.48 35.56 0)
 		(unit 1)
@@ -9408,6 +9810,74 @@
 			(project "ST25"
 				(path "/37c1adda-ac5c-405e-8496-b0b1b030189c"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 113.03 177.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eca6f163-73bd-4e8d-9e9d-20c6ead20702")
+		(property "Reference" "R3"
+			(at 113.03 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 113.03 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 113.03 179.578 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 113.03 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8fd3ab20-ceb3-4db7-bf41-4c588c4e80fe")
+		)
+		(pin "1"
+			(uuid "cc99c672-aa42-4f5f-a80d-fa0f605a731d")
+		)
+		(instances
+			(project "ST25"
+				(path "/37c1adda-ac5c-405e-8496-b0b1b030189c"
+					(reference "R3")
 					(unit 1)
 				)
 			)
