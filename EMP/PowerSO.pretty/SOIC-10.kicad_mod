@@ -50,17 +50,6 @@
 		)
 	)
 	(attr smd)
-	(fp_rect
-		(start -4.7625 -3.175)
-		(end 4.7625 3.175)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Cu")
-		(uuid "b230715e-a34c-418e-b52e-7bc829529a81")
-	)
 	(fp_line
 		(start -3.09 -7.7)
 		(end 3.09 -7.7)
@@ -170,6 +159,13 @@
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "b1e1ecc2-92d0-478d-a262-b2e57418f855")
+	)
+	(pad "TAB" smd rect
+		(at 0 0)
+		(size 9.5 6.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "37bd6e72-50b3-4724-9e33-1afe71f684a5")
 	)
 	(embedded_fonts no)
 )

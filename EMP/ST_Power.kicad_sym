@@ -426,7 +426,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "VND10B"
+	(symbol "VND10BSP"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -473,43 +473,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "VND10B_0_0"
-			(pin unspecified line
-				(at -12.7 -3.81 0)
-				(length 2.54)
-				(name "INPUT1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -12.7 -7.62 0)
-				(length 2.54)
-				(name "INPUT2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
+		(symbol "VND10BSP_0_0"
 			(pin unspecified line
 				(at -12.7 -11.43 0)
 				(length 2.54)
@@ -521,24 +485,6 @@
 					)
 				)
 				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -16.51 90)
-				(length 2.54)
-				(name "GROUND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -619,7 +565,98 @@
 				)
 			)
 		)
-		(symbol "VND10B_1_0"
+		(symbol "VND10BSP_1_0"
+			(pin unspecified line
+				(at -12.7 -3.81 0)
+				(length 2.54)
+				(name "INPUT1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -12.7 -7.62 0)
+				(length 2.54)
+				(name "INPUT2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 1.27 270)
+				(length 2.54)
+				(name "Vcc"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "TAB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -16.51 90)
+				(length 2.54)
+				(name "GROUND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 15.24 -11.43 180)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin no_connect line
 				(at 15.24 -11.43 180)
 				(length 2.54)
@@ -639,27 +676,8 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 15.24 -11.43 180)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
-		(symbol "VND10B_1_1"
+		(symbol "VND10BSP_1_1"
 			(rectangle
 				(start -10.16 -1.27)
 				(end 12.7 -13.97)
