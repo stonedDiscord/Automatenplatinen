@@ -6747,10 +6747,22 @@
 		(uuid "059a1898-e74f-429d-b2f8-5d05af52e261")
 	)
 	(junction
+		(at 30.48 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f960b0a-17bf-4aaa-973d-bd092c7d369e")
+	)
+	(junction
 		(at 139.7 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "13360048-80d5-4e90-b345-4d46302e14ba")
+	)
+	(junction
+		(at 38.1 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b4163db-0f8e-4ddc-8b1d-33c3870dfb8d")
 	)
 	(junction
 		(at 106.68 185.42)
@@ -6763,6 +6775,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "215dba24-dd5e-43c2-9f25-ac04e016e2d4")
+	)
+	(junction
+		(at 24.13 193.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "219ba3c2-0a3d-4e1b-9e1a-04f1150e76b1")
 	)
 	(junction
 		(at 125.73 105.41)
@@ -6787,6 +6805,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2de0dac6-4cb1-4ac1-b59a-b9ee41de2ffe")
+	)
+	(junction
+		(at 19.05 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "314fe996-9007-433b-8b3b-c7ad81b09a18")
 	)
 	(junction
 		(at 106.68 168.91)
@@ -7071,6 +7095,12 @@
 		(uuid "b51ed669-9144-4c4c-8486-c752421b4648")
 	)
 	(junction
+		(at 16.51 193.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6ddc7ef-bb0c-473d-a627-074b7f630c60")
+	)
+	(junction
 		(at 135.89 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7087,6 +7117,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bfc6927b-4b27-46d8-b521-3266abbaff2b")
+	)
+	(junction
+		(at 26.67 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3cbc040-92c2-443d-a531-8de22c28a5e7")
 	)
 	(junction
 		(at 137.16 175.26)
@@ -11309,6 +11345,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 20.32 193.04 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29d4c7d9-3ebc-4868-b8fc-6ef8ab6b919c")
+		(property "Reference" "D5"
+			(at 20.32 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 20.32 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-128"
+			(at 20.32 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 20.32 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 20.32 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 20.32 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 20.32 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "559d98a1-239d-4297-bfb3-d44d9cd5eea7")
+		)
+		(pin "1"
+			(uuid "33ce35b3-206f-484b-b1e4-d1e4422cfea9")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 248.92 27.94 0)
 		(unit 1)
@@ -11738,6 +11860,74 @@
 			(project ""
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 34.29 43.18 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34741c2b-86e6-4944-991f-45376d93c44f")
+		(property "Reference" "D6"
+			(at 35.8775 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 35.8775 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 34.29 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 34.29 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cf1343f4-fcc6-49e9-b7bf-68478c8fc829")
+		)
+		(pin "1"
+			(uuid "bf9c996a-9849-4339-add4-6e6283c61bec")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -16512,6 +16702,92 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "SW44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 22.86 175.26 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8c0e598-e00f-4110-8c6d-844658d1edda")
+		(property "Reference" "D4"
+			(at 22.86 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 22.86 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-128"
+			(at 22.86 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 22.86 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 22.86 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 22.86 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1c2e4c34-b8c8-4c62-8ad5-eda31c51381e")
+		)
+		(pin "1"
+			(uuid "f42af78c-a2e2-4a8a-acec-9441cb547397")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "D4")
 					(unit 1)
 				)
 			)
