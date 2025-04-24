@@ -5,7 +5,8 @@ Fertig sind:
 - LPTastatur: das ist die Tastatur für einen NSM Drucker.
 - Initialisierer: ein Init-Stecker für weiße CPUs. Hat 2 Taster.
 - ServiceTastaturWeissFake - das ist ein simpler Nachbau einer Servicetastatur für die weiße CPU. Dadurch das sie simpler ist, sind überall die Zahl 0 auf halber Helligkeit zu sehen. Verwenden lässt sie sich trotzdem.
- 
+- Zulassungskarte: Neuere mit Atmega48.
+
 Ungetestet:
 - FlashUniversal: Eine Pogo-Pin Platine für Datenbanken.
 - LEDLamp: Das sind LEDs die in die Sockel dieser 6V 2W Glühbirnchen passen und einen Kondensator mit dabei haben damit sie langsam ausgehen wie die alten Birnen.
@@ -14,16 +15,15 @@ Ungetestet:
 - ProgrammierStation: Arduino ISP Programmer und Seriell auf einem Board mit Stromversorgung.
 - ST25: Tastatur für NSM Geräte
 - SoundkartenProg: Ein Inverter für den seriellen Anschluss von kleinen Soundkarten.
-- Tasterplatine: Fast das gleiche wie die LEDLamp aber mit einem Taster dabei.
-- ZLKhalter: Anscheinend beraubt jeder der Zulassungskarten beschreibt einen Automaten um diesen Halter. Katastrophe.
-- Zulassungskarte: Neuere mit Atmega48.
+- Tasterplatine: Fast das gleiche wie die LEDLamp aber mit einem Taster dabei. Für alte Geräte mit weißer CPU.
+- ZLKhalter: Anscheinend beraubt jeder, der Zulassungskarten beschreibt, einen Automaten um diesen Halter. Katastrophe.
 
 Schrott:
 - DB1MBRedesign: Forschung wo die Pins der Datenbank hingehen.
 - DBV: Das ist ein Stecker der in den CPU-Sockel von Bally Wulff Spielmodulen kommt und dann die RTC und den SRAM beschreiben kann, ähnlich dem Datenbankverwalter
 - E60: Hier wollt ich mal schauen wie die Konvertierung der Logik-Level umgesetzt wurde. Das Ergebnis: Ein Transistor halt. Naja.
 - Programmierboard: Ein User hat das Ding auf eBay geschossen und wollte wissen was es kann.
-- Serial: die ProgrammierStation aber mit WLAN.
+- Serial: die ProgrammierStation aber mit WLAN, liegt auf Eis bis die normale ProgrammierStation fertig ist.
 - Soundkarte: Irgendeine Adapter, nicht so wichtig.
 - Spielmodul: Forschung für den DBV wo die ganzen Leiterbahnen eigentlich hingehen und wie man den RTC anspricht.
 - ZLKalt: Zulassungskarte mit AT90
