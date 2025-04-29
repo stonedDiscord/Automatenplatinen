@@ -1,6 +1,9 @@
 # Automatenplatinen
 Alle möglichen Sachen die ich als Teil des Spielautomaten Hobby so nachgebaut habe.
 
+Diskussionen rund um die Entwicklung führe ich generell auf dem Automatentreff Discord:
+https://discord.gg/FPNcy7TTkN
+
 Fertig sind:
 - LPTastatur: das ist die Tastatur für einen NSM Drucker.
 - Initialisierer: ein Init-Stecker für weiße CPUs. Hat 2 Taster.
