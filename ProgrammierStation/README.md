@@ -38,3 +38,12 @@ Die grüne LED sollte dann anfangen zu "atmen".
 Falls die rote LED aufleuchtet konnte der Arduino das INA-Modul nicht finden, in dem Fall die INA 0x44 Veriante der Software probieren.
 Falls das alles passt, die Station an lassen und mit einem Multimeter an die beiden Ausgangspins des Step-Ups.
 Hier muss der Poti mit einem kleinen Schlitz-Schraubenzieher nach links gedreht werden, evtl so 20 mal bis sich am Multimeter etwas tut.
+Die Spannung muss auf 12.3V eingestellt werden.
+Eventuell gibt es bald auch noch ein Softwareprogramm, welches das automatisch messen kann ohne Multimeter.
+Damit ist die Kalibrierung fertig.
+
+Nun können noch der Schalter rein falls man den für die Soundkarten braucht.
+Danach die Stecker für Atmel, ZLK und Soundkarte.
+Zu allerletzt die Stecker für die Datenbank.
+
+Fertig :)
