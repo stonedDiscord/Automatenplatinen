@@ -5686,6 +5686,12 @@
 		(uuid "412e74ca-028b-4957-8aa3-a0529c8ac476")
 	)
 	(junction
+		(at 20.32 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a2ec94e-4211-4466-abe6-67f6f4c6b83d")
+	)
+	(junction
 		(at 60.96 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5722,16 +5728,16 @@
 		(uuid "68805ed1-c100-401e-8808-97895b5b1cde")
 	)
 	(junction
-		(at 20.32 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6957b901-2980-4d25-84c6-8699c0fd3ff2")
-	)
-	(junction
 		(at 278.13 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "815a50f9-c503-47de-be58-47eb29c93f6c")
+	)
+	(junction
+		(at 20.32 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87e49a5f-09bb-463f-ad30-3a2a7c2a70b1")
 	)
 	(junction
 		(at 20.32 55.88)
@@ -5756,12 +5762,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a93cd91a-6728-4713-8b45-e90508cb26fd")
-	)
-	(junction
-		(at 20.32 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ab940b62-402c-44ac-9553-ad97714b9bdb")
 	)
 	(junction
 		(at 100.33 161.29)
@@ -5936,10 +5936,6 @@
 		(uuid "3b1159d3-8b4a-4710-93a8-ec3f9fb012f1")
 	)
 	(no_connect
-		(at 95.25 114.3)
-		(uuid "3c02bf1f-3ff2-4899-bb95-d32552a70191")
-	)
-	(no_connect
 		(at 227.33 71.12)
 		(uuid "3e2748ce-4bfc-42a1-bc05-bb014673f9a5")
 	)
@@ -6022,10 +6018,6 @@
 	(no_connect
 		(at 96.52 63.5)
 		(uuid "80a1e792-6b1b-4f8d-bf21-db8d571aabd7")
-	)
-	(no_connect
-		(at 95.25 111.76)
-		(uuid "8210a828-1c6f-4a18-bf68-5490584d3ac8")
 	)
 	(no_connect
 		(at 227.33 135.89)
@@ -6256,6 +6248,16 @@
 			(type default)
 		)
 		(uuid "1a19fa29-3d16-45c1-8f6f-d82fb486cf4d")
+	)
+	(wire
+		(pts
+			(xy 95.25 106.68) (xy 109.22 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a3780bb-915f-4e91-b90b-f26a63f07b4e")
 	)
 	(wire
 		(pts
@@ -6889,6 +6891,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 109.22) (xy 109.22 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0da5a2b-22da-4af2-b243-3c3bef667a67")
+	)
+	(wire
+		(pts
 			(xy 72.39 76.2) (xy 64.77 76.2)
 		)
 		(stroke
@@ -7432,7 +7444,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "100µF"
 			(at 266.7 30.8609 0)
 			(effects
 				(font
@@ -7494,21 +7506,19 @@
 		(fields_autoplaced yes)
 		(uuid "03133cb4-71e0-425c-86fe-f7d9055bccdc")
 		(property "Reference" "R2"
-			(at 163.8301 57.15 0)
+			(at 162.56 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "330"
-			(at 161.2901 57.15 0)
+		(property "Value" "330Ω"
+			(at 162.56 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
@@ -8514,6 +8524,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 109.22 114.3 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22eea167-caac-4b22-8e29-b4c59c61c261")
+		(property "Reference" "#PWR054"
+			(at 102.87 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 114.2999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9bb9992f-ce8c-4172-a672-bbdb38c5734e")
+		)
+		(instances
+			(project "ProgrammierStation"
+				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 55.88 157.48 0)
 		(mirror y)
@@ -8577,6 +8654,73 @@
 			(project "ProgrammierStation"
 				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
 					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 109.22 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23643457-4ffd-4543-8eb9-732ac5199db1")
+		(property "Reference" "#PWR053"
+			(at 113.03 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 105.41 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 109.22 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec284058-6240-4931-8632-104dd6ce9dbb")
+		)
+		(instances
+			(project "ProgrammierStation"
+				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -8736,21 +8880,19 @@
 		(fields_autoplaced yes)
 		(uuid "27cc6f7e-5329-4538-a63f-b2fefafc8d4c")
 		(property "Reference" "R8"
-			(at 163.8301 57.15 0)
+			(at 162.56 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "330"
-			(at 161.2901 57.15 0)
+		(property "Value" "330Ω"
+			(at 162.56 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -10402,7 +10544,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "1Ω"
 			(at 22.86 119.3799 0)
 			(effects
 				(font
@@ -10624,6 +10766,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 109.22 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5bb5d603-5c2b-4f37-8aa4-64b4410c133a")
+		(property "Reference" "#PWR049"
+			(at 102.87 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 101.5999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea829835-6730-4638-a1ee-0300ab71fcbf")
+		)
+		(instances
+			(project "ProgrammierStation"
+				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 95.25 104.14 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10756,6 +10965,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 95.25 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64ac61b8-b76f-4cfb-a2d2-c2c0cda36eda")
+		(property "Reference" "#PWR052"
+			(at 99.06 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 91.44 114.2999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 95.25 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f72dcea-347b-46e5-b339-97a5ed641fff")
+		)
+		(instances
+			(project "ProgrammierStation"
+				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 20.32 118.11 180)
 		(unit 1)
@@ -10774,7 +11050,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "1Ω"
 			(at 22.86 119.3799 0)
 			(effects
 				(font
@@ -11189,21 +11465,19 @@
 		(fields_autoplaced yes)
 		(uuid "6b1980a2-9a17-40dc-a27d-bed22a063b97")
 		(property "Reference" "R1"
-			(at 163.8301 68.58 0)
+			(at 162.56 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "330"
-			(at 161.2901 68.58 0)
+		(property "Value" "330Ω"
+			(at 162.56 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
@@ -11334,7 +11608,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 69.85 107.9499 0)
 			(effects
 				(font
@@ -11404,7 +11678,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "100µF"
 			(at 266.7 30.8609 0)
 			(effects
 				(font
@@ -11474,7 +11748,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "100µF"
 			(at 281.94 30.8609 0)
 			(effects
 				(font
@@ -11544,7 +11818,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "100µF"
 			(at 281.94 30.8609 0)
 			(effects
 				(font
@@ -11673,21 +11947,19 @@
 		(fields_autoplaced yes)
 		(uuid "7d4dbbab-97f4-42fe-8e75-3f15c7cff0dc")
 		(property "Reference" "R9"
-			(at 163.8301 68.58 0)
+			(at 162.56 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "330"
-			(at 161.2901 68.58 0)
+		(property "Value" "330Ω"
+			(at 162.56 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -11751,7 +12023,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "100µF"
 			(at 248.92 30.8609 0)
 			(effects
 				(font
@@ -11881,21 +12153,21 @@
 		(fields_autoplaced yes)
 		(uuid "869316b1-a8b0-4096-bec3-e86b0d63e6fa")
 		(property "Reference" "R4"
-			(at 62.23 49.5301 0)
+			(at 67.31 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "1"
-			(at 62.23 46.9901 0)
+		(property "Value" "1Ω"
+			(at 67.31 49.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
@@ -12092,7 +12364,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "100µF"
 			(at 248.92 30.8609 0)
 			(effects
 				(font
@@ -12753,7 +13025,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 69.85 107.9499 0)
 			(effects
 				(font
@@ -12815,21 +13087,21 @@
 		(fields_autoplaced yes)
 		(uuid "9532915f-2979-4d2e-b1be-794c0fe93bca")
 		(property "Reference" "R10"
-			(at 62.23 49.5301 0)
+			(at 67.31 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "1"
-			(at 62.23 46.9901 0)
+		(property "Value" "1Ω"
+			(at 67.31 49.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -12869,6 +13141,73 @@
 			(project "ProgrammierStation"
 				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 109.22 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "959a9b02-2561-4cd4-bf31-d45cfb9eaf71")
+		(property "Reference" "#PWR050"
+			(at 113.03 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 105.41 104.1399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 109.22 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20c341b8-909f-4533-b991-bd2b535f7bf7")
+		)
+		(instances
+			(project "ProgrammierStation"
+				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -13837,6 +14176,73 @@
 			(project "ProgrammierStation"
 				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
 					(reference "JP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95.25 111.76 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8b691ce-157f-4cd0-adb0-fc22ef384bd3")
+		(property "Reference" "#PWR051"
+			(at 88.9 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 91.44 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f307faf6-6cea-48f5-b187-a4290208ad52")
+		)
+		(instances
+			(project "ProgrammierStation"
+				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -15074,21 +15480,19 @@
 		(fields_autoplaced yes)
 		(uuid "c392f6fd-3cf4-4412-b48b-9cec99dd8301")
 		(property "Reference" "R7"
-			(at 163.8301 45.72 0)
+			(at 162.56 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "330"
-			(at 161.2901 45.72 0)
+		(property "Value" "330Ω"
+			(at 162.56 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
@@ -15921,6 +16325,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x06")
+		(at 114.3 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d7a8f00d-67ab-4174-9631-1b9248dced4a")
+		(property "Reference" "J10"
+			(at 116.84 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CP2102"
+			(at 116.84 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+			(at 114.3 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 114.3 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "55171a29-d4f7-4e87-afb0-9de92c8fd10a")
+		)
+		(pin "5"
+			(uuid "12ad0f51-0b63-4431-9ab6-78b99f16c740")
+		)
+		(pin "6"
+			(uuid "1cd3bb73-074f-4a36-b6bd-918a7d741065")
+		)
+		(pin "1"
+			(uuid "ccf76539-d96c-45ea-89b2-76024a78b0fd")
+		)
+		(pin "3"
+			(uuid "3bb9d25e-9e7b-4655-b79f-c1089937ec24")
+		)
+		(pin "2"
+			(uuid "53953c73-15ba-4b30-a82b-50455b9a7b9c")
+		)
+		(instances
+			(project "ProgrammierStation"
+				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74HC14")
 		(at 129.54 154.94 180)
 		(unit 1)
@@ -16035,21 +16521,19 @@
 		(fields_autoplaced yes)
 		(uuid "da80ebbc-3782-4d28-b751-e8a39a9458cd")
 		(property "Reference" "R3"
-			(at 163.8301 45.72 0)
+			(at 162.56 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "330"
-			(at 161.2901 45.72 0)
+		(property "Value" "330Ω"
+			(at 162.56 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
