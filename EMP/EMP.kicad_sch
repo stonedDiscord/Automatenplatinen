@@ -4838,6 +4838,173 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1N4148W"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148W"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-123"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?123*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148W_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148W_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:Fiducial"
 			(exclude_from_sim yes)
 			(in_bom no)
@@ -6503,6 +6670,12 @@
 		(uuid "2d42b1b3-cb3f-4be4-b60e-ee6d3624c796")
 	)
 	(junction
+		(at 304.8 -48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3988966a-c0a5-43f4-8222-db67ddd7e3dc")
+	)
+	(junction
 		(at 210.82 254)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6539,10 +6712,22 @@
 		(uuid "747357d9-5699-43eb-b184-7ea79c897503")
 	)
 	(junction
+		(at 297.18 -38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a4b7cfe-d2c0-4d01-9edd-54254ecbd7f8")
+	)
+	(junction
 		(at 232.41 -2.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92318809-155a-4af8-be35-a0ecfd095b26")
+	)
+	(junction
+		(at 297.18 -50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "960bf3ac-2bfe-44aa-b306-d69a28dc2720")
 	)
 	(junction
 		(at 101.6 60.96)
@@ -6551,10 +6736,22 @@
 		(uuid "9f6c7655-8fc0-49a9-83f8-561e1e127b98")
 	)
 	(junction
+		(at 289.56 -38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bb94c2e0-6a0e-42da-ad50-ceb11631ae8f")
+	)
+	(junction
 		(at 109.22 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1434d91-415b-4aae-a97e-3451cf035dda")
+	)
+	(junction
+		(at 297.18 -48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c6a7bcbe-2f23-4efe-b47b-a3c2a9673c25")
 	)
 	(junction
 		(at 53.34 22.86)
@@ -6736,6 +6933,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 -48.26) (xy 304.8 -45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26a7306e-1ef8-40fd-86f1-09a90adfa052")
+	)
+	(wire
+		(pts
 			(xy 265.43 168.91) (xy 252.73 168.91)
 		)
 		(stroke
@@ -6766,6 +6973,16 @@
 	)
 	(wire
 		(pts
+			(xy 281.94 -38.1) (xy 281.94 -35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d22233e-d59b-48cb-9de8-78542b130a7f")
+	)
+	(wire
+		(pts
 			(xy 232.41 -2.54) (xy 238.76 -2.54)
 		)
 		(stroke
@@ -6793,6 +7010,16 @@
 			(type default)
 		)
 		(uuid "31c431ea-a7a9-4420-9275-ab1a5741cdb2")
+	)
+	(wire
+		(pts
+			(xy 289.56 -38.1) (xy 289.56 -35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35272dd9-e4c8-4525-a11c-f8065a37e434")
 	)
 	(wire
 		(pts
@@ -7046,6 +7273,16 @@
 	)
 	(wire
 		(pts
+			(xy 297.18 -38.1) (xy 297.18 -35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60260a0f-0587-40f8-a7de-3cd2bf248676")
+	)
+	(wire
+		(pts
 			(xy 208.28 58.42) (xy 198.12 58.42)
 		)
 		(stroke
@@ -7096,6 +7333,16 @@
 	)
 	(wire
 		(pts
+			(xy 297.18 -50.8) (xy 297.18 -48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69ea0e6b-1059-4d27-85e8-b2460b9680e8")
+	)
+	(wire
+		(pts
 			(xy 170.18 38.1) (xy 172.72 38.1)
 		)
 		(stroke
@@ -7123,6 +7370,16 @@
 			(type default)
 		)
 		(uuid "6f177861-62b8-46c6-b0d6-dd966f9a2373")
+	)
+	(wire
+		(pts
+			(xy 304.8 -38.1) (xy 304.8 -35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "708ac98b-68fc-4fcb-91ab-2b8bbb214851")
 	)
 	(wire
 		(pts
@@ -7386,6 +7643,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 -50.8) (xy 304.8 -48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd711ab4-868f-4483-af5e-34764a5d9d57")
+	)
+	(wire
+		(pts
 			(xy 320.04 180.34) (xy 320.04 187.96)
 		)
 		(stroke
@@ -7523,6 +7790,16 @@
 			(type default)
 		)
 		(uuid "ed59351e-e625-41aa-9545-eb9adf95f4b7")
+	)
+	(wire
+		(pts
+			(xy 297.18 -48.26) (xy 297.18 -45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1be7881-2e4f-4e0d-aca6-cf0f595b63cc")
 	)
 	(wire
 		(pts
@@ -7819,6 +8096,74 @@
 			(project ""
 				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 300.99 -35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08656e14-0e26-44f5-a659-4aa76a72c068")
+		(property "Reference" "R34"
+			(at 300.99 -41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 300.99 -39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 300.99 -33.782 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 300.99 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 300.99 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "51083970-e437-49c4-862e-02677bfd6183")
+		)
+		(pin "2"
+			(uuid "293d4063-b08d-4708-98f8-d419e923b40b")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -9805,6 +10150,74 @@
 			(project "EMP"
 				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
 					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 300.99 -50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29bd41e8-47f5-43b2-8f9a-6905387f9bc2")
+		(property "Reference" "R28"
+			(at 300.99 -57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 300.99 -54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 300.99 -49.022 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 300.99 -50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 300.99 -50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b79c086-33df-4903-9aa6-ebcc9482e2cc")
+		)
+		(pin "2"
+			(uuid "fbca5a6d-68e4-4a28-98e0-f64f18f8e83a")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -12402,6 +12815,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 335.28 13.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61753819-bfaa-4d3e-bebe-9a37e9032c4b")
+		(property "Reference" "C23"
+			(at 339.09 12.6999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 339.09 15.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric"
+			(at 336.2452 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 335.28 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 335.28 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6866d14-41fb-450c-86f0-9755ec3b9602")
+		)
+		(pin "2"
+			(uuid "c6a3b87d-bd50-4d81-8313-5d5143b9b4fe")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 417.83 160.02 0)
 		(unit 1)
@@ -12837,6 +13320,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 285.75 -38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f008beb-4162-444f-89b0-21f80cd52799")
+		(property "Reference" "R31"
+			(at 285.75 -44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 285.75 -41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 285.75 -36.322 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 285.75 -38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 285.75 -38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6db92e7-41c6-48f8-8cc0-a9bc6a158c32")
+		)
+		(pin "2"
+			(uuid "8a9a8778-f481-43fa-b8de-4e2be3fccb3b")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 252.73 238.76 0)
 		(mirror x)
@@ -13035,6 +13586,72 @@
 			(project "EMP"
 				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 297.18 -50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73394297-5600-4000-addf-717021bfc28b")
+		(property "Reference" "#PWR042"
+			(at 297.18 -46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 297.18 -55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 297.18 -50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 -50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 297.18 -50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2c225a3-24f5-4db8-9d8c-0423bf71a42f")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -14281,6 +14898,228 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 300.99 -45.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8516b4da-c189-4040-b6db-f84ff6214c1b")
+		(property "Reference" "R30"
+			(at 300.99 -52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 300.99 -49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 300.99 -43.942 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 300.99 -45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 300.99 -45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec6a0359-b08a-42e7-a7b8-8bf2c98c5d09")
+		)
+		(pin "2"
+			(uuid "7b5f105c-cd5c-4cac-8d4d-8a81e35c6202")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 341.63 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8927d221-0a61-464a-b953-16d4ea650ced")
+		(property "Reference" "D3"
+			(at 341.63 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 341.63 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 341.63 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 341.63 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 341.63 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 341.63 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 341.63 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6f2fea31-3ac7-40c1-9f2c-f47691f6333c")
+		)
+		(pin "1"
+			(uuid "7c494ec1-d034-4fb9-84ef-3aab51959a0c")
+		)
+		(instances
+			(project ""
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 300.99 -48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f165f96-9fa0-4ba9-b97a-f5ad9bc1637a")
+		(property "Reference" "R29"
+			(at 300.99 -54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 300.99 -52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 300.99 -46.482 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 300.99 -48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 300.99 -48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2536f9a3-11a1-4d63-8d8e-20857adfe505")
+		)
+		(pin "2"
+			(uuid "cbe5da4b-67ee-4f99-b498-8a78c0e2e8d1")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 303.53 185.42 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14409,6 +15248,76 @@
 			(project "EMP"
 				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 345.44 13.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90f602bd-724a-4c37-ba7f-a3b30fc257ed")
+		(property "Reference" "C24"
+			(at 349.25 12.6999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 349.25 15.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric"
+			(at 346.4052 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 345.44 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 345.44 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1190527f-e9e3-4526-8cb1-b20c0eed274c")
+		)
+		(pin "2"
+			(uuid "25415537-ead9-412e-b261-af0f6fea2cd5")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -15532,6 +16441,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 345.44 17.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a5a397a4-d8f8-4192-ae80-c47e5a5eb3a5")
+		(property "Reference" "#PWR044"
+			(at 345.44 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 345.44 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 345.44 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 345.44 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 345.44 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9a85c91-f93c-486d-abe1-cea612e201df")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x03_MountingPin")
 		(at 76.2 220.98 0)
 		(unit 1)
@@ -16476,6 +17451,76 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 355.6 13.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3898b83-5143-474c-8564-5b766d05afc7")
+		(property "Reference" "C25"
+			(at 359.41 12.6999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 359.41 15.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric"
+			(at 356.5652 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 355.6 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 355.6 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f001a04a-1958-42fe-9e77-9e5a6460d9ef")
+		)
+		(pin "2"
+			(uuid "1d18450c-58d7-4496-be83-f535aec8fbd3")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 337.82 62.23 0)
 		(mirror y)
 		(unit 1)
@@ -16828,6 +17873,72 @@
 			(project "EMP"
 				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
 					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 345.44 10.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bee7646c-dda5-4259-a00c-42b06519df7d")
+		(property "Reference" "#PWR045"
+			(at 345.44 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 345.44 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 345.44 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 345.44 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 345.44 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7639c48b-0fe6-4909-a002-36ba2c481297")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -17247,6 +18358,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 300.99 -38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb25d33b-3b80-49ae-afb6-532d3b2f51a1")
+		(property "Reference" "R33"
+			(at 300.99 -44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 300.99 -41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 300.99 -36.322 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 300.99 -38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 300.99 -38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8612e302-b07d-4838-a3e6-f30698a6c306")
+		)
+		(pin "2"
+			(uuid "fa9375aa-34c8-47d9-8bee-1149358fcc1a")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 426.72 26.67 0)
 		(unit 1)
@@ -17311,6 +18490,72 @@
 			(project "EMP"
 				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
 					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 289.56 -38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2b1ffe8-ca8b-426c-99db-050d212237e5")
+		(property "Reference" "#PWR041"
+			(at 289.56 -34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 289.56 -43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 289.56 -38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 289.56 -38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 289.56 -38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3225592-ad08-4cc7-a607-8f252698eeed")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -17717,6 +18962,72 @@
 			(project "EMP"
 				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 297.18 -38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc1e58f6-7d9e-4beb-b17a-f5af47766c24")
+		(property "Reference" "#PWR043"
+			(at 297.18 -34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 297.18 -43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 297.18 -38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 297.18 -38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 297.18 -38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54e2fa15-8f40-49c3-9f36-29bffcdc6ae0")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -18884,6 +20195,74 @@
 			(project "EMP"
 				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 285.75 -35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb234193-9525-4ab5-9a56-1a71d40c11c5")
+		(property "Reference" "R32"
+			(at 285.75 -41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 285.75 -39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 285.75 -33.782 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 285.75 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 285.75 -35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fee4998a-d0af-45cf-8681-e75303e31eaa")
+		)
+		(pin "2"
+			(uuid "188ef584-846a-4aae-8af2-8c25e5b823b1")
+		)
+		(instances
+			(project "EMP"
+				(path "/55d70029-319f-43ef-81ab-e590e09da95d"
+					(reference "R32")
 					(unit 1)
 				)
 			)
