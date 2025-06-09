@@ -257,7 +257,7 @@ class EEPROMFlasher:
         except IOError as e:
             print(f"{RED_TEXT}Fehler beim Öffnen des EEPROMs: {e}{RESET}")
 
-    def flash_eeprom(self, serial_port, machine_key, processor, machine_serial):
+    def flash_eeprom(self, serial_port, machine_key, processor=None, machine_serial=None):
         if len(machine_serial) != 9 or not machine_serial.isdigit():
             print(f"{RED_TEXT}Fehler: Bitte genau 9 Ziffern eingeben.{RESET}")
             return False
@@ -298,17 +298,25 @@ class EEPROMFlasher:
 
         programmer_argument = "usbasp-clone" if serial_port == "usb" else "arduino_as_isp"
 
+        return self.run_avrdude(avrdude_path, avrdude_conf_path, processor, programmer_argument, serial_port, eeprom_file_path, 
+firmware_file_path)
+
+    def run_avrdude(self, avrdude_path, avrdude_conf_path, processor, programmer_argument, serial_port, eeprom_file_path=None, 
+firmware_file_path=None):
         avrdude_command = [
             avrdude_path,
             "-C", avrdude_conf_path,
             "-v",
             "-p", processor,
             "-c", programmer_argument,
-            "-P", serial_port,
-            "-b", "19200",
-            "-U", f"eeprom:w:{eeprom_file_path}:r",
-            "-U", f"flash:w:{firmware_file_path}:r"
+            "-P", serial_port
         ]
+
+        if eeprom_file_path:
+            avrdude_command.extend(["-U", f"eeprom:w:{eeprom_file_path}:r"])
+        
+        if firmware_file_path:
+            avrdude_command.extend(["-U", f"flash:w:{firmware_file_path}:r"])
 
         try:
             process = subprocess.Popen(avrdude_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
@@ -327,6 +335,44 @@ class EEPROMFlasher:
         except Exception as e:
             print(f"{RED_TEXT}Fehler: {e}{RESET}")
             return False
+
+    def query_cpu_type(self, avrdude_path, avrdude_conf_path, programmer_argument, serial_port):
+        avrdude_command = [
+            avrdude_path,
+            "-C", avrdude_conf_path,
+            "-v",
+            "-c", programmer_argument,
+            "-P", serial_port,
+            "-n",  # No operation
+            "-p", "m328p"  # Query the device signature
+        ]
+
+        try:
+            process = subprocess.Popen(avrdude_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            output = process.communicate()[1]
+            
+            if process.returncode == 1:
+                lines = output.splitlines()
+                for line in lines:
+                    if "Device signature" in line:
+                        signature = line.split("=")[1].split("(")[0]
+                        signature = signature.strip().split(" ")
+                        if len(signature) == 3:
+                            processor_signature = "".join(signature)
+                            # Map the device signature to a known processor type
+                            signature_map = {
+                                "1E9205": "m48",
+                                "1E920A": "m48p",
+                                "1E9001": "1200",
+                            }
+                            return signature_map.get(processor_signature)
+            else:
+                print(f"{RED_TEXT}Fehler beim Abfragen der CPU-Signatur.{RESET}")
+        
+        except Exception as e:
+            print(f"{RED_TEXT}Fehler: {e}{RESET}")
+
+        return None
 
 def get_serial_port_input(available_ports):
     while True:
@@ -351,22 +397,6 @@ def get_machine_input(all_machines):
                 print(f"{YELLOW_TEXT}Ungültige Nummer.{RESET}")
         except ValueError:
             print(f"{YELLOW_TEXT}Bitte eine Zahl eingeben.{RESET}")
-
-def get_processor_input():
-    print("Prozessoren:")
-    print(" 1. ATmega48")
-    print(" 2. ATmega48P")
-    while True:
-        processor_choice = input("Bitte die passende Nummer eingeben: ")
-        processor_mapping = {
-            "1": "m48",
-            "2": "m48p"
-        }
-        processor = processor_mapping.get(processor_choice)
-        if processor:
-            return processor
-        else:
-            print(f"{YELLOW_TEXT}Falscher Prozessor.{RESET}")
 
 def get_machine_serial_input():
     while True:
@@ -403,11 +433,25 @@ def main():
     if not machine_key:
         return
 
-    processor = get_processor_input()
+    avrdude_path = "avrdude"
+    if sys.platform.startswith("win"):
+        avrdude_path = os.path.join(flasher.base_dir, "avrdude.exe")
+    avrdude_conf_path = os.path.join(flasher.base_dir, "avrdude.conf")
+
+    programmer_argument = "usbasp-clone" if serial_port_number == "usb" else "arduino_as_isp"
+
+    # Query the CPU type
+    processor_type = flasher.query_cpu_type(avrdude_path, avrdude_conf_path, programmer_argument, serial_port_number)
+    
+    if not processor_type:
+        print(f"{RED_TEXT}Fehler: Prozessor-Typ konnte nicht ermittelt werden.{RESET}")
+        return
+
+    print(f"Ermittelter Prozessor-Typ: {processor_type}")
 
     machine_serial = get_machine_serial_input()
 
-    while not flasher.flash_eeprom(serial_port_number, machine_key, processor, machine_serial):
+    while not flasher.flash_eeprom(serial_port_number, machine_key, processor=processor_type, machine_serial=machine_serial):
         retry = input("Fehlgeschlagen. Nochmal versuchen? (y/n): ").strip().lower()
         if not (retry == "y" or retry == "z" or retry == "j"):
             break
