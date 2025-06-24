@@ -1,9 +1,17 @@
-import serial
-# pip install pyserial
-import serial.tools.list_ports
-import subprocess
 import os
 import sys
+import tkinter as tk
+from tkinter import ttk, messagebox
+import subprocess
+
+try:
+    import serial
+    import serial.tools.list_ports
+except ImportError:
+    print("PySerial nicht gefunden. Versuche Installation...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "pyserial"])
+    import serial
+    import serial.tools.list_ports
 
 # ANSI color codes
 RESET = "\033[0m"
@@ -230,231 +238,177 @@ V3_MACHINES = {
     "VisionWand M205": bytearray([6, 50, 32, 20])
 }
 
+class AvrDudeRunner:
+    def __init__(self, base_dir):
+        self.base_dir = base_dir
+        self.avrdude_path = "avrdude"
+        self.avrdude_conf = None
+        if sys.platform.startswith("win"):
+            self.avrdude_path = os.path.join(base_dir, "avrdude.exe")
+            self.avrdude_conf = os.path.join(base_dir, "avrdude.conf")
+
+    def build_command(self, processor, programmer, port, eeprom=None, firmware=None, query=False):
+        cmd = [self.avrdude_path]
+        if self.avrdude_conf:
+            cmd += ["-C", self.avrdude_conf]
+        cmd += ["-v", "-p", processor, "-c", programmer, "-P", port]
+        if query:
+            cmd += ["-n"]
+        else:
+            if eeprom:
+                cmd += ["-U", f"eeprom:w:{eeprom}:r"]
+            if firmware:
+                cmd += ["-U", f"flash:w:{firmware}:r"]
+        return cmd
+
+    def run(self, *args, **kwargs):
+        command = self.build_command(*args, **kwargs)
+        try:
+            process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            stdout, stderr = process.communicate()
+            return process.returncode, stdout + stderr
+        except Exception as e:
+            return 1, str(e)
+
 class EEPROMFlasher:
     def __init__(self):
         self.base_dir = os.getcwd()
+        self.avrdude = AvrDudeRunner(self.base_dir)
 
-    def get_available_serial_ports(self):
-        if sys.platform.startswith("win") or sys.platform.startswith("linux") or sys.platform.startswith("darwin"):
-            return [(port.device, port.description) for port in serial.tools.list_ports.comports() if port.description != "n/a"]
-        else:
-            raise EnvironmentError("Das Betriebssystem kenne ich nicht.")
+    def get_serial_ports(self):
+        return [(port.device, port.description) for port in serial.tools.list_ports.comports() if port.description != "n/a"]
 
-    def is_serial_port_available(self, serial_port):
-        try:
-            with serial.Serial(serial_port) as ser:
-                ser.close()
-            return True
-        except (serial.SerialException, OSError):
-            print(f"{RED_TEXT}Fehler: Serial Port {serial_port} nicht verfügbar.{RESET}")
-            return False
-
-    def change_eeprom_characters(self, file_path, start, new_chars):
-        try:
-            with open(file_path, "r+b") as file:
-                file.seek(start)
-                file.write(new_chars)
-        except IOError as e:
-            print(f"{RED_TEXT}Fehler beim Öffnen des EEPROMs: {e}{RESET}")
-
-    def flash_eeprom(self, serial_port, machine_key, processor=None, machine_serial=None):
-        if len(machine_serial) != 9 or not machine_serial.isdigit():
-            print(f"{RED_TEXT}Fehler: Bitte genau 9 Ziffern eingeben.{RESET}")
-            return False
-
-        if not machine_key:
-            print(f"{RED_TEXT}Fehler: Ungültiger Automat.{RESET}")
-            return False
-
-        if serial_port != "usb" and not self.is_serial_port_available(serial_port):
-            print(f"{RED_TEXT}Fehler: Irgendwas stimmt mit dem Serial Port nicht.{RESET}")
-            return False
-
-        firmware_file_path = os.path.join(self.base_dir, "firmware_v2.bin" if machine_key in V2_MACHINES else "firmware_v3.bin")
-        eeprom_file_path = os.path.join(self.base_dir, "eeprom.bin")
-
-        if not os.path.exists(firmware_file_path):
-            print(f"{RED_TEXT}Fehler: Datei {os.path.basename(firmware_file_path)} fehlt.{RESET}")
-            return False
-
-        if not os.path.exists(eeprom_file_path):
-            print(f"{RED_TEXT}Fehler: Datei {os.path.basename(eeprom_file_path)} fehlt.{RESET}")
-            return False
-
-        hex_string = "0" + machine_serial
-        hex_bytes = bytearray.fromhex(hex_string)
-        machine_bytes = V2_MACHINES[machine_key] if machine_key in V2_MACHINES else V3_MACHINES[machine_key]
-        new_chars = hex_bytes + machine_bytes
-
-        self.change_eeprom_characters(eeprom_file_path, 64, new_chars)
-        self.change_eeprom_characters(eeprom_file_path, 40, bytearray(machine_serial, "ascii"))
-
-        print("Lege los...")
-
-        avrdude_path = "avrdude"
-        if sys.platform.startswith("win"):
-            avrdude_path = os.path.join(self.base_dir, "avrdude.exe")
-        avrdude_conf_path = os.path.join(self.base_dir, "avrdude.conf")
-
-        programmer_argument = "usbasp-clone" if serial_port == "usb" else "arduino_as_isp"
-
-        return self.run_avrdude(avrdude_path, avrdude_conf_path, processor, programmer_argument, serial_port, eeprom_file_path, 
-firmware_file_path)
-
-    def run_avrdude(self, avrdude_path, avrdude_conf_path, processor, programmer_argument, serial_port, eeprom_file_path=None, 
-firmware_file_path=None):
-        avrdude_command = [
-            avrdude_path,
-            "-C", avrdude_conf_path,
-            "-v",
-            "-p", processor,
-            "-c", programmer_argument,
-            "-P", serial_port
-        ]
-
-        if eeprom_file_path:
-            avrdude_command.extend(["-U", f"eeprom:w:{eeprom_file_path}:r"])
-        
-        if firmware_file_path:
-            avrdude_command.extend(["-U", f"flash:w:{firmware_file_path}:r"])
-
-        try:
-            process = subprocess.Popen(avrdude_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-            for line in process.stdout:
-                print(line, end="")
-            for line in process.stderr:
-                print(line, end="")
-
-            process.wait()
-            if process.returncode == 0:
-                print(f"{GREEN_TEXT}Erfolgreich.{RESET}")
-                return True
-            else:
-                print(f"{RED_TEXT}Fehler.{RESET}")
-                return False
-        except Exception as e:
-            print(f"{RED_TEXT}Fehler: {e}{RESET}")
-            return False
-
-    def query_cpu_type(self, avrdude_path, avrdude_conf_path, programmer_argument, serial_port):
-        avrdude_command = [
-            avrdude_path,
-            "-C", avrdude_conf_path,
-            "-v",
-            "-c", programmer_argument,
-            "-P", serial_port,
-            "-n",  # No operation
-            "-p", "m328p"  # Query the device signature
-        ]
-
-        try:
-            process = subprocess.Popen(avrdude_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-            output = process.communicate()[1]
-            
-            if process.returncode == 1:
-                lines = output.splitlines()
-                for line in lines:
-                    if "Device signature" in line:
-                        signature = line.split("=")[1].split("(")[0]
-                        signature = signature.strip().split(" ")
-                        if len(signature) == 3:
-                            processor_signature = "".join(signature)
-                            # Map the device signature to a known processor type
-                            signature_map = {
-                                "1E9205": "m48",
-                                "1E920A": "m48p",
-                                "1E9001": "1200",
-                            }
-                            return signature_map.get(processor_signature)
-            else:
-                print(f"{RED_TEXT}Fehler beim Abfragen der CPU-Signatur.{RESET}")
-        
-        except Exception as e:
-            print(f"{RED_TEXT}Fehler: {e}{RESET}")
-
+    def query_cpu_type(self, programmer, port):
+        code, output = self.avrdude.run("m328p", programmer, port, query=True)
+        if code == 1:
+            for line in output.splitlines():
+                print(line)
+                if "Device signature" in line:
+                    sig = line.split("=")[1].split("(")[0].strip().replace(" ", "")
+                    return {
+                        "1E9205": "m48",
+                        "1E920A": "m48p",
+                        "1E9001": "1200",
+                    }.get(sig)
         return None
 
-def get_serial_port_input(available_ports):
-    while True:
-        try:
-            serial_port_number = int(input("Bitte einen Anschluss auswählen: "))
-            if 1 <= serial_port_number <= len(available_ports):
-                return available_ports[serial_port_number - 1][0]
-            elif serial_port_number == 0:
-                return "usb"
-            else:
-                print(f"{YELLOW_TEXT}Den gibt es nicht.{RESET}")
-        except ValueError:
-            print(f"{YELLOW_TEXT}Bitte eine Zahl eingeben.{RESET}")
+    def flash(self, processor, programmer, port, machine_key, machine_serial):
+        if not machine_serial.isdigit() or len(machine_serial) != 9:
+            return False, "Zulassungsnummer muss genau 9 Ziffern haben."
 
-def get_machine_input(all_machines):
-    while True:
-        try:
-            machine_key_number = int(input("Nummer des Automaten: "))
-            if 1 <= machine_key_number <= len(all_machines):
-                return all_machines[machine_key_number - 1]
-            else:
-                print(f"{YELLOW_TEXT}Ungültige Nummer.{RESET}")
-        except ValueError:
-            print(f"{YELLOW_TEXT}Bitte eine Zahl eingeben.{RESET}")
-
-def get_machine_serial_input():
-    while True:
-        machine_serial = input("Zulassungsnummer (9 Ziffern): ")
-        if len(machine_serial) == 9 and machine_serial.isdigit():
-            return machine_serial
+        if machine_key in V2_MACHINES:
+            firmware = os.path.join(self.base_dir, "firmware_v2.bin")
+            machine_bytes = V2_MACHINES[machine_key]
+        elif machine_key in V3_MACHINES:
+            firmware = os.path.join(self.base_dir, "firmware_v3.bin")
+            machine_bytes = V3_MACHINES[machine_key]
         else:
-            print(f"{YELLOW_TEXT}Ungültig. Bitte GENAU 9 Ziffern.{RESET}")
+            return False, "Ungültiger Automat."
 
-def main():
-    flasher = EEPROMFlasher()
+        eeprom_path = os.path.join(self.base_dir, "eeprom.bin")
+        if not os.path.exists(firmware) or not os.path.exists(eeprom_path):
+            return False, "Firmware oder EEPROM-Datei fehlt."
 
-    available_ports = flasher.get_available_serial_ports()
-    print("Verfügbare Anschlüsse:")
-    print(" 0. USBASP")
-    for index, port in enumerate(available_ports, start=1):
-        if isinstance(port, tuple):
-            device, description = port
-            print(f" {index}. {device} ({description})")
+        # Patch EEPROM
+        try:
+            with open(eeprom_path, "r+b") as f:
+                hex_bytes = bytearray.fromhex("0" + machine_serial)
+                f.seek(64)
+                f.write(hex_bytes + machine_bytes)
+                f.seek(40)
+                f.write(bytearray(machine_serial, "ascii"))
+        except Exception as e:
+            return False, f"EEPROM Fehler: {e}"
+
+        # Run avrdude
+        code, output = self.avrdude.run(processor, programmer, port, eeprom=eeprom_path, firmware=firmware)
+        return code == 0, output
+
+class EEPROMFlasherGUI:
+    def __init__(self, root):
+        self.flasher = EEPROMFlasher()
+        self.root = root
+        self.root.title("EEPROM Flasher")
+
+        # UI elements
+        self.serial_var = tk.StringVar()
+        self.machine_var = tk.StringVar()
+        self.cpu_var = tk.StringVar()
+        self.serial_number = tk.StringVar()
+
+        self.build_ui()
+        self.update_ports()
+
+    def build_ui(self):
+        frame = ttk.Frame(self.root, padding=10)
+        frame.grid()
+
+        ttk.Label(frame, text="Serial Port:").grid(row=0, column=0, sticky="w")
+        self.port_dropdown = ttk.Combobox(frame, textvariable=self.serial_var, width=30)
+        self.port_dropdown.grid(row=0, column=1)
+        ttk.Button(frame, text="Erkennen", command=self.update_ports).grid(row=0, column=2)
+
+        ttk.Label(frame, text="Automat:").grid(row=1, column=0, sticky="w")
+        machines = list(V2_MACHINES.keys()) + list(V3_MACHINES.keys())
+        self.machine_dropdown = ttk.Combobox(frame, values=machines, textvariable=self.machine_var, width=30)
+        self.machine_dropdown.grid(row=1, column=1)
+
+        ttk.Label(frame, text="ZlNr:").grid(row=2, column=0, sticky="w")
+        ttk.Entry(frame, textvariable=self.serial_number, width=30).grid(row=2, column=1)
+
+        ttk.Label(frame, text="Prozessor:").grid(row=3, column=0, sticky="w")
+        self.cpu_dropdown = ttk.Combobox(frame, textvariable=self.cpu_var, values=["m48", "m48p", "1200"], width=30)
+        self.cpu_dropdown.grid(row=3, column=1)
+        ttk.Button(frame, text="CPU erkennen", command=self.detect_cpu).grid(row=3, column=2)
+
+        ttk.Button(frame, text="Flash!", command=self.flash).grid(row=4, column=1, pady=10)
+
+    def update_ports(self):
+        ports = self.flasher.get_serial_ports()
+        port_list = ["usb"] + [f"{d} ({desc})" for d, desc in ports]
+        self.port_map = {"usb": "usb"}
+        for d, desc in ports:
+            self.port_map[f"{d} ({desc})"] = d
+        self.port_dropdown["values"] = port_list
+        if ports:
+            self.serial_var.set(port_list[0])
+
+    def detect_cpu(self):
+        port_label = self.serial_var.get()
+        port = self.port_map.get(port_label)
+        if not port:
+            messagebox.showerror("Fehler", "Kein gültiger Port gewählt.")
+            return
+
+        programmer = "usbasp-clone" if port == "usb" else "arduino_as_isp"
+        detected = self.flasher.query_cpu_type(programmer, port)
+        if detected:
+            self.cpu_var.set(detected)
+            self.cpu_dropdown.set(detected)
+            messagebox.showinfo("Erfolg", f"CPU-Typ erkannt: {detected}")
         else:
-            print(f" {index}. {port}")
+            messagebox.showerror("Fehler", "CPU konnte nicht erkannt werden.")
 
-    serial_port_number = get_serial_port_input(available_ports)
-    print(serial_port_number)
-    if not serial_port_number:
-        return
 
-    all_machines = list(V2_MACHINES.keys()) + list(V3_MACHINES.keys())
-    print("Automaten:")
-    for index, key in enumerate(all_machines, start=1):
-        print(f" {index}. {key}")
+    def flash(self):
+        port_label = self.serial_var.get()
+        port = self.port_map.get(port_label)
+        machine = self.machine_var.get()
+        cpu = self.cpu_var.get()
+        serial = self.serial_number.get()
 
-    machine_key = get_machine_input(all_machines)
-    if not machine_key:
-        return
+        if not all([port, machine, cpu, serial]):
+            messagebox.showerror("Fehler", "Bitte alle Felder ausfüllen.")
+            return
 
-    avrdude_path = "avrdude"
-    if sys.platform.startswith("win"):
-        avrdude_path = os.path.join(flasher.base_dir, "avrdude.exe")
-    avrdude_conf_path = os.path.join(flasher.base_dir, "avrdude.conf")
-
-    programmer_argument = "usbasp-clone" if serial_port_number == "usb" else "arduino_as_isp"
-
-    # Query the CPU type
-    processor_type = flasher.query_cpu_type(avrdude_path, avrdude_conf_path, programmer_argument, serial_port_number)
-    
-    if not processor_type:
-        print(f"{RED_TEXT}Fehler: Prozessor-Typ konnte nicht ermittelt werden.{RESET}")
-        return
-
-    print(f"Ermittelter Prozessor-Typ: {processor_type}")
-
-    machine_serial = get_machine_serial_input()
-
-    while not flasher.flash_eeprom(serial_port_number, machine_key, processor=processor_type, machine_serial=machine_serial):
-        retry = input("Fehlgeschlagen. Nochmal versuchen? (y/n): ").strip().lower()
-        if not (retry == "y" or retry == "z" or retry == "j"):
-            break
+        programmer = "usbasp-clone" if port == "usb" else "arduino_as_isp"
+        success, result = self.flasher.flash(cpu, programmer, port, machine, serial)
+        if success:
+            messagebox.showinfo("Erfolg", "Flash erfolgreich.")
+        else:
+            messagebox.showerror("Fehler", result)
 
 if __name__ == "__main__":
-    main()
+    root = tk.Tk()
+    app = EEPROMFlasherGUI(root)
+    root.mainloop()
