@@ -8,7 +8,10 @@ Fertig sind:
 - LPTastatur: das ist die Tastatur für einen NSM Drucker.
 - Initialisierer: ein Init-Stecker für weiße CPUs. Hat 2 Taster.
 - ServiceTastaturWeissFake - das ist ein simpler Nachbau einer Servicetastatur für die weiße CPU. Dadurch das sie simpler ist, sind überall die Zahl 0 auf halber Helligkeit zu sehen. Verwenden lässt sie sich trotzdem.
+- ZLKhalter: Anscheinend beraubt jeder, der Zulassungskarten beschreibt, einen Automaten um diesen Halter. Katastrophe.
 - Zulassungskarte: Neuere mit Atmega48.
+
+Die Gerber werde ich bei den Releases hochladen.
 
 Ungetestet:
 - FlashUniversal: Eine Pogo-Pin Platine für Datenbanken.
@@ -19,7 +22,6 @@ Ungetestet:
 - ST25: Tastatur für NSM Geräte
 - SoundkartenProg: Ein Inverter für den seriellen Anschluss von kleinen Soundkarten.
 - Tasterplatine: Fast das gleiche wie die LEDLamp aber mit einem Taster dabei. Für alte Geräte mit weißer CPU.
-- ZLKhalter: Anscheinend beraubt jeder, der Zulassungskarten beschreibt, einen Automaten um diesen Halter. Katastrophe.
 
 Schrott:
 - DB1MBRedesign: Forschung wo die Pins der Datenbank hingehen.
