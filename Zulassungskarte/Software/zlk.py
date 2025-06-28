@@ -292,9 +292,10 @@ class EEPROMFlasher:
         print("Lege los...")
 
         avrdude_path = "avrdude"
+        avrdude_conf_path = "/etc/avrdude.conf"
         if sys.platform.startswith("win"):
             avrdude_path = os.path.join(self.base_dir, "avrdude.exe")
-        avrdude_conf_path = os.path.join(self.base_dir, "avrdude.conf")
+            avrdude_conf_path = os.path.join(self.base_dir, "avrdude.conf")
 
         programmer_argument = "usbasp-clone" if serial_port == "usb" else "arduino_as_isp"
 
@@ -378,14 +379,36 @@ def get_serial_port_input(available_ports):
     while True:
         try:
             serial_port_number = int(input("Bitte einen Anschluss auswählen: "))
-            if 1 <= serial_port_number <= len(available_ports):
-                return available_ports[serial_port_number - 1][0]
-            elif serial_port_number == 0:
+            if not user_input:
                 return "usb"
+            elif 1 <= serial_port_number <= len(available_ports):
+                return available_ports[serial_port_number - 1][0]
             else:
-                print(f"{YELLOW_TEXT}Den gibt es nicht.{RESET}")
+                return "usb"
         except ValueError:
-            print(f"{YELLOW_TEXT}Bitte eine Zahl eingeben.{RESET}")
+            return "usb"
+
+def get_processor_input():
+    print("Prozessoren:")
+    print(" 1. ATmega48")
+    print(" 2. ATmega48P")
+    while True:
+        user_input = input("Bitte die passende Nummer eingeben:")
+        if not user_input:
+            return "m48p"
+        try:
+            processor_choice = int(user_input)
+            processor_mapping = {
+                1: "m48",
+                2: "m48p"
+            }
+            processor = processor_mapping.get(processor_choice)
+            if processor:
+                return processor
+            else:
+                return "m48p"
+        except ValueError:
+            return "m48p"
 
 def get_machine_input(all_machines):
     while True:
@@ -434,14 +457,15 @@ def main():
         return
 
     avrdude_path = "avrdude"
+    avrdude_conf_path = "/etc/avrdude.conf"
     if sys.platform.startswith("win"):
         avrdude_path = os.path.join(flasher.base_dir, "avrdude.exe")
-    avrdude_conf_path = os.path.join(flasher.base_dir, "avrdude.conf")
+        avrdude_conf_path = os.path.join(flasher.base_dir, "avrdude.conf")
 
     programmer_argument = "usbasp-clone" if serial_port_number == "usb" else "arduino_as_isp"
 
     # Query the CPU type
-    processor_type = flasher.query_cpu_type(avrdude_path, avrdude_conf_path, programmer_argument, serial_port_number)
+    processor_type = get_processor_input()
     
     if not processor_type:
         print(f"{RED_TEXT}Fehler: Prozessor-Typ konnte nicht ermittelt werden.{RESET}")
