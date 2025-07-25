@@ -5390,6 +5390,12 @@
 		(uuid "02eb2552-d260-47b6-b496-4e39b20035c3")
 	)
 	(junction
+		(at 157.48 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d6342f9-8462-49cb-bac0-fc520937ec9a")
+	)
+	(junction
 		(at 254 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5406,6 +5412,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "595020ba-0b05-461a-9878-bc5e1909c985")
+	)
+	(junction
+		(at 66.04 195.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "933b1b31-f54c-4a94-801f-3be83f707288")
 	)
 	(junction
 		(at 308.61 46.99)
@@ -5477,16 +5489,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 203.2) (xy 48.26 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "199bd335-2108-495b-ab64-a068d00c678d")
-	)
-	(wire
-		(pts
 			(xy 55.88 265.43) (xy 173.99 265.43)
 		)
 		(stroke
@@ -5517,7 +5519,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 193.04) (xy 27.94 203.2)
+			(xy 157.48 160.02) (xy 157.48 165.1)
 		)
 		(stroke
 			(width 0)
@@ -5534,16 +5536,6 @@
 			(type default)
 		)
 		(uuid "28dda9be-e09c-42f9-b53f-5a53538e59ff")
-	)
-	(wire
-		(pts
-			(xy 48.26 203.2) (xy 48.26 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40db16c8-3e20-4d95-b5e4-d60c2eccc38b")
 	)
 	(wire
 		(pts
@@ -5597,6 +5589,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 195.58) (xy 66.04 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63e38a12-66bd-4b60-8e2d-f7787a990ca4")
+	)
+	(wire
+		(pts
 			(xy 330.2 53.34) (xy 308.61 53.34)
 		)
 		(stroke
@@ -5614,6 +5616,16 @@
 			(type default)
 		)
 		(uuid "7ed5c0ea-ecab-47a5-b101-15da9c32a2b1")
+	)
+	(wire
+		(pts
+			(xy 157.48 165.1) (xy 157.48 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86dfa286-ddd7-4c63-a02d-a5fc2d2b46a1")
 	)
 	(wire
 		(pts
@@ -5667,6 +5679,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 160.02) (xy 58.42 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9043f7a7-3c59-4dac-b98b-9a8a3a6f52eb")
+	)
+	(wire
+		(pts
 			(xy 220.98 160.02) (xy 220.98 177.8)
 		)
 		(stroke
@@ -5674,16 +5696,6 @@
 			(type default)
 		)
 		(uuid "9277113d-7dee-48c0-929b-1345668bdb10")
-	)
-	(wire
-		(pts
-			(xy 48.26 160.02) (xy 38.1 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b8d35f0-0b51-497b-b20f-85829d41cd36")
 	)
 	(wire
 		(pts
@@ -5717,13 +5729,33 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 193.04) (xy 93.98 203.2)
+			(xy 66.04 190.5) (xy 66.04 195.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b5a18e84-212f-4679-b607-aafd5a4163ff")
+	)
+	(wire
+		(pts
+			(xy 66.04 195.58) (xy 66.04 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbfcafca-69ff-452c-a168-f2ff45817519")
+	)
+	(wire
+		(pts
+			(xy 58.42 160.02) (xy 58.42 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c292773a-fc12-4aac-939e-51707b2c2724")
 	)
 	(wire
 		(pts
@@ -5774,6 +5806,16 @@
 			(type default)
 		)
 		(uuid "e21a5e16-6b31-4089-9d40-25dd93022bea")
+	)
+	(wire
+		(pts
+			(xy 157.48 165.1) (xy 180.34 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e26fad9b-24ca-4a87-b749-a21e6b320974")
 	)
 	(wire
 		(pts
@@ -6153,7 +6195,7 @@
 	)
 	(global_label "PRG_A18"
 		(shape input)
-		(at 180.34 165.1 180)
+		(at 147.32 170.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6163,7 +6205,7 @@
 		)
 		(uuid "0f8c568a-a5a8-4c0e-8e19-70eb7989ba1c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 170.2791 165.1 0)
+			(at 137.2591 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7330,28 +7372,6 @@
 		(uuid "6b6c0795-3da0-4a99-8d0f-176481c9e0d2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 170.0977 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SND_A18"
-		(shape input)
-		(at 68.58 160.02 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6bcb40d2-a410-4787-aaea-1541e8b0c827")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.5191 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8747,6 +8767,28 @@
 			)
 		)
 	)
+	(global_label "PRG_A18"
+		(shape input)
+		(at 38.1 160.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "badcda76-0fab-422a-803b-077d8f570f14")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.3704 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PRG_A7"
 		(shape input)
 		(at 180.34 137.16 180)
@@ -9123,22 +9165,22 @@
 	)
 	(global_label "SND_A18"
 		(shape input)
-		(at 83.82 193.04 180)
+		(at 76.2 190.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "e1c42ec4-03b5-4987-8fbd-a44ec35510dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.5496 193.04 0)
+			(at 87.4704 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -9791,8 +9833,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Bridged")
-		(at 88.9 193.04 0)
-		(mirror y)
+		(at 71.12 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9800,7 +9841,7 @@
 		(dnp no)
 		(uuid "164a0f81-2121-43d9-83da-e6450056a76e")
 		(property "Reference" "JP1"
-			(at 88.9 187.96 0)
+			(at 71.12 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9808,7 +9849,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Bridged"
-			(at 88.9 190.5 0)
+			(at 71.12 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9816,7 +9857,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
-			(at 88.9 193.04 0)
+			(at 71.12 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9825,7 +9866,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 88.9 193.04 0)
+			(at 71.12 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9834,7 +9875,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, closed/bridged"
-			(at 88.9 193.04 0)
+			(at 71.12 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10322,7 +10363,8 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 83.82 203.2 90)
+		(at 76.2 200.66 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10331,7 +10373,7 @@
 		(fields_autoplaced yes)
 		(uuid "317962ad-e8e1-4887-bdb2-d3583959a1e6")
 		(property "Reference" "#PWR026"
-			(at 87.63 203.2 0)
+			(at 72.39 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10340,7 +10382,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 80.01 203.1999 90)
+			(at 80.01 200.6599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10349,7 +10391,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 203.2 0)
+			(at 76.2 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10358,7 +10400,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 203.2 0)
+			(at 76.2 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10367,7 +10409,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 83.82 203.2 0)
+			(at 76.2 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10958,7 +11000,8 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Bridged")
-		(at 33.02 203.2 0)
+		(at 152.4 170.18 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10967,7 +11010,7 @@
 		(fields_autoplaced yes)
 		(uuid "50b25c01-990b-4e1e-ad28-933b3d2ce96b")
 		(property "Reference" "JP4"
-			(at 33.02 198.12 0)
+			(at 152.4 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10975,7 +11018,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Bridged"
-			(at 33.02 200.66 0)
+			(at 152.4 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10983,7 +11026,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
-			(at 33.02 203.2 0)
+			(at 152.4 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10992,7 +11035,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 203.2 0)
+			(at 152.4 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11001,7 +11044,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, closed/bridged"
-			(at 33.02 203.2 0)
+			(at 152.4 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12263,7 +12306,8 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 38.1 193.04 270)
+		(at 147.32 160.02 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12272,7 +12316,7 @@
 		(fields_autoplaced yes)
 		(uuid "a0f36229-3619-413c-9f4c-4bb7dccc4ac2")
 		(property "Reference" "#PWR027"
-			(at 34.29 193.04 0)
+			(at 151.13 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12281,7 +12325,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 41.91 193.0399 90)
+			(at 143.51 160.0199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12290,7 +12334,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 193.04 0)
+			(at 147.32 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12299,7 +12343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 193.04 0)
+			(at 147.32 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12308,7 +12352,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 38.1 193.04 0)
+			(at 147.32 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14133,8 +14177,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 88.9 203.2 0)
-		(mirror y)
+		(at 71.12 200.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14142,7 +14185,7 @@
 		(dnp no)
 		(uuid "eed4cb95-f40a-48b6-9c90-742bd7658fb0")
 		(property "Reference" "JP2"
-			(at 88.9 196.85 0)
+			(at 71.12 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14150,7 +14193,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 88.9 199.39 0)
+			(at 71.12 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14158,7 +14201,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
-			(at 88.9 203.2 0)
+			(at 71.12 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14167,7 +14210,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 88.9 203.2 0)
+			(at 71.12 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14176,7 +14219,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 88.9 203.2 0)
+			(at 71.12 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14464,7 +14507,8 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 33.02 193.04 0)
+		(at 152.4 160.02 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14473,7 +14517,7 @@
 		(fields_autoplaced yes)
 		(uuid "f6236206-44af-42f4-ab47-bd518f2f209a")
 		(property "Reference" "JP3"
-			(at 33.02 186.69 0)
+			(at 152.4 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14481,7 +14525,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 33.02 189.23 0)
+			(at 152.4 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14489,7 +14533,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
-			(at 33.02 193.04 0)
+			(at 152.4 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14498,7 +14542,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 193.04 0)
+			(at 152.4 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14507,7 +14551,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 33.02 193.04 0)
+			(at 152.4 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
