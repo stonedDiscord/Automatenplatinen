@@ -5969,156 +5969,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Switch:SW_Push_LED"
 			(pin_names
 				(offset 1.016)
@@ -6741,12 +6591,6 @@
 		(uuid "0217598b-9e66-4179-8bbb-846fdf9a4733")
 	)
 	(junction
-		(at 71.12 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "059a1898-e74f-429d-b2f8-5d05af52e261")
-	)
-	(junction
 		(at 30.48 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6765,18 +6609,6 @@
 		(uuid "1b4163db-0f8e-4ddc-8b1d-33c3870dfb8d")
 	)
 	(junction
-		(at 106.68 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1e3d905f-2a9c-475d-baf0-5ee554ddd93d")
-	)
-	(junction
-		(at 88.9 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "215dba24-dd5e-43c2-9f25-ac04e016e2d4")
-	)
-	(junction
 		(at 24.13 193.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6789,18 +6621,6 @@
 		(uuid "25518d40-d15d-4def-a25b-3548aeddf7ae")
 	)
 	(junction
-		(at 116.84 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "28dff350-27ad-402d-af5e-43e4ac86a1a4")
-	)
-	(junction
-		(at 170.18 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2cdd2b09-3dc6-402d-9bae-07e72f6ae6c1")
-	)
-	(junction
 		(at 66.04 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6811,24 +6631,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "314fe996-9007-433b-8b3b-c7ad81b09a18")
-	)
-	(junction
-		(at 106.68 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "39c90633-3a34-44a0-8db3-69a0d3e7c588")
-	)
-	(junction
-		(at 152.4 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "39d2a775-5e6c-4621-8376-2c2cc12ef1be")
-	)
-	(junction
-		(at 88.9 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3abbe542-29d9-4a53-9e5b-0dfbb31f7f67")
 	)
 	(junction
 		(at 48.26 193.04)
@@ -6849,28 +6651,10 @@
 		(uuid "41dc933f-0293-4010-96a0-d8d21c29c231")
 	)
 	(junction
-		(at 35.56 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "42b893d8-8682-4d4d-af9f-5a7dae86b9fd")
-	)
-	(junction
 		(at 120.65 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "47feffca-83a9-49c4-9432-19737b2b7529")
-	)
-	(junction
-		(at 99.06 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4d4fa414-7ce2-4b19-8684-d2d5b8f7a0f9")
-	)
-	(junction
-		(at 134.62 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4e51e4c6-b7a2-4647-baf3-c909151f9b38")
 	)
 	(junction
 		(at 50.8 97.79)
@@ -6903,34 +6687,10 @@
 		(uuid "5c6240fd-1366-4916-bb0e-9340de624691")
 	)
 	(junction
-		(at 99.06 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5cd7df5d-8906-42d9-a537-faf0a711cd91")
-	)
-	(junction
-		(at 116.84 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "63c16faf-810b-4790-ba93-1f8d09897173")
-	)
-	(junction
-		(at 160.02 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "63e81ce5-5f8f-45fe-b6b8-8a1ccb8d4db2")
-	)
-	(junction
 		(at 154.94 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "65f9728e-c127-4a3d-b223-2d249a26dceb")
-	)
-	(junction
-		(at 53.34 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "66a06ad1-af36-43a7-990a-6b9c88cf9748")
 	)
 	(junction
 		(at 172.72 67.31)
@@ -6981,12 +6741,6 @@
 		(uuid "7bdb266c-fd32-4b6d-a22f-eaad392ad082")
 	)
 	(junction
-		(at 152.4 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "84b2d1ed-4e76-4642-9bfd-eca014d87984")
-	)
-	(junction
 		(at 137.16 193.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6997,18 +6751,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c85c055-a385-46ed-8816-7c17ea388a3b")
-	)
-	(junction
-		(at 124.46 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "90417c54-b9b7-4f0e-b9bf-da5a1031d6dc")
-	)
-	(junction
-		(at 45.72 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "91e965fe-eea5-4f8f-b3d2-9b8f8e682a73")
 	)
 	(junction
 		(at 157.48 168.91)
@@ -7035,28 +6777,10 @@
 		(uuid "a3f54b2b-08cf-41ab-bb4f-0e592410362b")
 	)
 	(junction
-		(at 142.24 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a6e6f563-7fe1-4601-9c02-65a818b636a6")
-	)
-	(junction
 		(at 128.27 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a9999776-7036-4402-9bfc-74c25b845cc7")
-	)
-	(junction
-		(at 45.72 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "acbe9789-94c2-4599-9474-ee6bfb92d74c")
-	)
-	(junction
-		(at 53.34 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "adcb2f81-2e5c-43ed-a39f-1ee7c67208a7")
 	)
 	(junction
 		(at 86.36 168.91)
@@ -7071,12 +6795,6 @@
 		(uuid "ae622f9a-807a-4458-8d29-ddf4075caa6a")
 	)
 	(junction
-		(at 63.5 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b01cbccd-0177-46b3-8a10-c26be1d31140")
-	)
-	(junction
 		(at 83.82 193.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7087,12 +6805,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b4b3fcd0-9964-4c53-b613-58fe249f5f5c")
-	)
-	(junction
-		(at 124.46 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b51ed669-9144-4c4c-8486-c752421b4648")
 	)
 	(junction
 		(at 16.51 193.04)
@@ -7111,12 +6823,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "baff7775-a972-4ced-ad72-ca59a7de60db")
-	)
-	(junction
-		(at 81.28 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bfc6927b-4b27-46d8-b521-3266abbaff2b")
 	)
 	(junction
 		(at 26.67 175.26)
@@ -7143,12 +6849,6 @@
 		(uuid "d77bd988-4e97-43b7-abca-63eae2dffa72")
 	)
 	(junction
-		(at 35.56 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d98eadf2-e086-45b0-8475-c5f138625b8b")
-	)
-	(junction
 		(at 48.26 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7171,48 +6871,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2093be5-275b-4ce2-acf6-ea3e6da30d92")
-	)
-	(junction
-		(at 134.62 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e2bd42e5-f259-4b4d-8901-2057e677da2b")
-	)
-	(junction
-		(at 170.18 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ea499add-d3b6-4ad1-b1f2-4ed2f3167267")
-	)
-	(junction
-		(at 160.02 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed5167b6-7caa-4d18-863e-fec011df443e")
-	)
-	(junction
-		(at 63.5 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ee212f30-8cc1-48b9-b83b-a2b77589dd81")
-	)
-	(junction
-		(at 81.28 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f500f7d8-81e7-4e85-afe4-8f6307b94786")
-	)
-	(junction
-		(at 71.12 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f6edf5bc-cb7f-47eb-933a-625ba4c10441")
-	)
-	(junction
-		(at 142.24 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f916635d-550c-4b7d-b48b-181d8c20631f")
 	)
 	(junction
 		(at 137.16 45.72)
@@ -8862,6 +8520,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 168.91) (xy 50.8 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf62870b-8bdb-425e-b170-b3b473e0435b")
+	)
+	(wire
+		(pts
 			(xy 29.21 82.55) (xy 16.51 82.55)
 		)
 		(stroke
@@ -8879,16 +8547,6 @@
 			(type default)
 		)
 		(uuid "d11fc988-b37c-4836-9932-f30d65e04796")
-	)
-	(wire
-		(pts
-			(xy 50.8 185.42) (xy 50.8 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d22007df-023f-443f-835d-af5d17abdf8f")
 	)
 	(wire
 		(pts
@@ -10468,8 +10126,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 93.98 185.42 0)
+		(lib_id "Switch:SW_Push_LED")
+		(at 93.98 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10477,14 +10135,6 @@
 		(dnp no)
 		(uuid "0764abd9-ce5c-4c41-9615-3b95c41c8c5c")
 		(property "Reference" "SW13"
-			(at 93.98 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "↓Serie"
 			(at 93.98 180.34 0)
 			(effects
 				(font
@@ -10492,7 +10142,15 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Value" "↓Serie"
+			(at 93.98 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 93.98 180.34 0)
 			(effects
 				(font
@@ -10510,8 +10168,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 93.98 185.42 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 93.98 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10524,6 +10182,12 @@
 		)
 		(pin "2"
 			(uuid "485cc928-6d73-4807-8ae9-c5ae2701161e")
+		)
+		(pin "4"
+			(uuid "b12646a9-87af-4131-8b47-45ab32ef64e5")
+		)
+		(pin "3"
+			(uuid "7a902eb9-800a-4b12-8312-6992f6b8484c")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
@@ -11007,74 +10671,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 76.2 185.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "20e14f9a-6929-41a8-827e-294504ef22bb")
-		(property "Reference" "SW30"
-			(at 76.2 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "↑Serie"
-			(at 76.2 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 76.2 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 76.2 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "53651895-446b-41c0-a0b0-1cef3fbabf0e")
-		)
-		(pin "2"
-			(uuid "617661e3-e3f2-4640-9e19-ed63114b39ed")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 16.51 57.15 90)
 		(unit 1)
@@ -11210,8 +10806,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 129.54 185.42 0)
+		(lib_id "Switch:SW_Push_LED")
+		(at 129.54 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11219,7 +10815,7 @@
 		(dnp no)
 		(uuid "27693ff2-be03-4b15-a387-bf722e32e38e")
 		(property "Reference" "SW11"
-			(at 129.54 178.054 0)
+			(at 129.54 180.594 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11227,14 +10823,14 @@
 			)
 		)
 		(property "Value" "↓0,10"
-			(at 129.54 180.34 0)
+			(at 129.54 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 129.54 180.34 0)
 			(effects
 				(font
@@ -11252,8 +10848,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 129.54 185.42 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 129.54 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11266,6 +10862,12 @@
 		)
 		(pin "2"
 			(uuid "1a5b2f78-8705-437c-92f4-50df7723f274")
+		)
+		(pin "3"
+			(uuid "4422abc0-79a0-41a6-bb44-5d8a9a0923be")
+		)
+		(pin "4"
+			(uuid "e563c455-ecbe-4904-aac9-01cc9ef6ae7a")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
@@ -11601,73 +11203,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 129.54 185.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2ffcbd30-8d99-4e27-b8e0-673b2d189c6f")
-		(property "Reference" "SW27"
-			(at 129.54 178.054 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Ende"
-			(at 129.54 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 129.54 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 129.54 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0459ad57-386c-46dd-8538-5316178bc38a")
-		)
-		(pin "2"
-			(uuid "25c902de-b63c-46fc-b230-9080abdc64d9")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 226.06 90.17 0)
 		(mirror x)
@@ -11735,8 +11270,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 111.76 168.91 0)
+		(lib_id "Switch:SW_Push_LED")
+		(at 111.76 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11744,14 +11279,6 @@
 		(dnp no)
 		(uuid "31a81fd2-9b40-4b5e-8bde-b8b39ee3ed2c")
 		(property "Reference" "SW4"
-			(at 111.76 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "HW-Test"
 			(at 111.76 163.83 0)
 			(effects
 				(font
@@ -11759,7 +11286,15 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Value" "HW-Test"
+			(at 111.76 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 111.76 163.83 0)
 			(effects
 				(font
@@ -11777,8 +11312,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 111.76 168.91 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 111.76 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11791,6 +11326,12 @@
 		)
 		(pin "2"
 			(uuid "a2420e4e-4fe0-4b69-ac60-08fbc0a79a59")
+		)
+		(pin "3"
+			(uuid "c80c7f41-d38c-429e-a189-47d4fcddfbab")
+		)
+		(pin "4"
+			(uuid "1616cab7-5b9f-4f4d-8262-43660228d4ce")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
@@ -11928,80 +11469,6 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 129.54 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "34ed8825-1a1d-4769-aefd-4b783ecc4bf0")
-		(property "Reference" "SW38"
-			(at 129.54 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 129.54 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 129.54 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 129.54 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "75c58f5c-f05e-4946-9a98-f89823cb501f")
-		)
-		(pin "2"
-			(uuid "f42c226c-33bd-4269-b5a4-1c5cd7741c5e")
-		)
-		(pin "1"
-			(uuid "328928b6-8dc8-4bcd-9c2a-347a382bb083")
-		)
-		(pin "3"
-			(uuid "47f4d79a-ff5f-460f-bdad-df1ddaa3b2c8")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW38")
 					(unit 1)
 				)
 			)
@@ -12214,8 +11681,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 165.1 185.42 0)
+		(lib_id "Switch:SW_Push_LED")
+		(at 165.1 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12223,14 +11690,6 @@
 		(dnp no)
 		(uuid "3946ab2c-de70-4c62-b5b5-684ad80c2aed")
 		(property "Reference" "SW9"
-			(at 165.1 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Initialisieren"
 			(at 165.1 180.34 0)
 			(effects
 				(font
@@ -12238,7 +11697,15 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Value" "Initialisieren"
+			(at 165.1 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 165.1 180.34 0)
 			(effects
 				(font
@@ -12256,8 +11723,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 165.1 185.42 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 165.1 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12270,6 +11737,12 @@
 		)
 		(pin "2"
 			(uuid "6c423ad3-8071-40ab-947d-cf2844c5d09c")
+		)
+		(pin "4"
+			(uuid "ad6ba846-59cc-4757-984d-cbcab2324601")
+		)
+		(pin "3"
+			(uuid "7b7e39d7-d92a-4f0e-8604-40c47f9f8df6")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
@@ -12718,8 +12191,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 147.32 168.91 0)
+		(lib_id "Switch:SW_Push_LED")
+		(at 147.32 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12727,14 +12200,6 @@
 		(dnp no)
 		(uuid "417861de-62cc-4adf-a032-ab30479c3fd5")
 		(property "Reference" "SW2"
-			(at 147.32 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Foul"
 			(at 147.32 163.83 0)
 			(effects
 				(font
@@ -12742,7 +12207,15 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Value" "Foul"
+			(at 147.32 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 147.32 163.83 0)
 			(effects
 				(font
@@ -12760,8 +12233,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 147.32 168.91 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 147.32 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12774,6 +12247,12 @@
 		)
 		(pin "2"
 			(uuid "7dce8a8a-28ef-447c-85f2-9d7679b5402a")
+		)
+		(pin "3"
+			(uuid "6d2f7552-8007-4dfc-b9e2-4c4eab35678a")
+		)
+		(pin "4"
+			(uuid "2c08cf7a-9b39-4e16-a2ee-fb30e56aea1a")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
@@ -12847,81 +12326,6 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 58.42 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "42e95887-d270-4053-afbf-07dc148ac4d5")
-		(property "Reference" "SW34"
-			(at 58.42 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 58.42 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 58.42 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 58.42 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "2c51293c-3bcc-4338-9595-6a0d18bb004a")
-		)
-		(pin "2"
-			(uuid "49c1e09c-a18c-4d2d-8f79-83b5323eb815")
-		)
-		(pin "1"
-			(uuid "a3cb4ca8-5d83-41d0-ba61-866ee744d0e1")
-		)
-		(pin "3"
-			(uuid "fc741eb6-2f57-41aa-8f2f-770414953069")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW34")
 					(unit 1)
 				)
 			)
@@ -13081,8 +12485,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 93.98 168.91 0)
+		(lib_id "Switch:SW_Push_LED")
+		(at 93.98 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13106,7 +12510,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 93.98 163.83 0)
 			(effects
 				(font
@@ -13124,8 +12528,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 93.98 168.91 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 93.98 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13139,6 +12543,12 @@
 		(pin "2"
 			(uuid "759b7b43-7198-4d3f-a26d-e5d6c0f6319e")
 		)
+		(pin "3"
+			(uuid "596fe0de-2fa2-4fa1-b6f4-946ae09c4760")
+		)
+		(pin "4"
+			(uuid "fde95cbc-9e48-451b-b7df-3e2519d7fb69")
+		)
 		(instances
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
@@ -13150,81 +12560,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_LED")
-		(at 111.76 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "47f4ce88-9e50-425a-a397-84d1f12f55a0")
-		(property "Reference" "SW37"
-			(at 111.76 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 111.76 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 111.76 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 111.76 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "9bf03a1e-226c-4842-96d1-42c78935cc93")
-		)
-		(pin "2"
-			(uuid "931268e1-b2a3-429a-b3ad-1692fd6b8e11")
-		)
-		(pin "1"
-			(uuid "76b0d538-4897-4774-8d4c-dadb6ab259dd")
-		)
-		(pin "3"
-			(uuid "2ead3999-1873-4aea-8a29-5f505ef0dee1")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 76.2 168.91 0)
+		(at 76.2 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13248,7 +12584,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 76.2 163.83 0)
 			(effects
 				(font
@@ -13266,8 +12602,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 76.2 168.91 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 76.2 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13280,6 +12616,12 @@
 		)
 		(pin "2"
 			(uuid "5e3910e0-7d62-4ae8-8429-4f9854fdd437")
+		)
+		(pin "4"
+			(uuid "704998f5-4740-4757-be79-0a82361e8b55")
+		)
+		(pin "3"
+			(uuid "fd74ac32-bebe-4d8f-9165-f9e52df087c7")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
@@ -13359,147 +12701,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 147.32 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4e988986-7339-4a50-8db2-532f4ffef0e6")
-		(property "Reference" "SW39"
-			(at 147.32 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 147.32 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 147.32 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 147.32 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "15b53781-37c9-4a3e-a098-acc3734d7791")
-		)
-		(pin "2"
-			(uuid "413bb8f0-754d-4df4-9324-138b8d042117")
-		)
-		(pin "1"
-			(uuid "328f6996-710d-496e-a149-bb7607d5774b")
-		)
-		(pin "3"
-			(uuid "8144e68c-1a98-43c3-b275-67a9d4ad65aa")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 165.1 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "504238f4-b15a-44b8-b84e-71b566217b15")
-		(property "Reference" "SW17"
-			(at 165.1 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "↙0,10"
-			(at 165.1 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 165.1 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 165.1 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 165.1 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3351d726-bac7-4e90-b46f-37f2085ad8b6")
-		)
-		(pin "2"
-			(uuid "d76852fa-b0ad-44e6-ad3a-84b7c0ae8bf6")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 38.1 43.18 90)
 		(unit 1)
@@ -13561,80 +12762,6 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 40.64 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "58ed9995-d914-4926-b7d8-35b3adc964d0")
-		(property "Reference" "SW41"
-			(at 40.64 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 40.64 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 40.64 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 40.64 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "ff4238c9-6236-43b7-967a-5d7aa97f6ae2")
-		)
-		(pin "2"
-			(uuid "5f1ea244-8292-474f-bd75-f6482a186f37")
-		)
-		(pin "1"
-			(uuid "e29b230b-b127-4eba-817d-9e881d3fc4ec")
-		)
-		(pin "3"
-			(uuid "0bb0d0de-9782-4610-8257-1865d2755167")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW41")
 					(unit 1)
 				)
 			)
@@ -13763,75 +12890,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 129.54 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "596bb614-a691-4758-80ec-d48467484e6f")
-		(property "Reference" "SW19"
-			(at 129.54 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Auszahlquote"
-			(at 129.54 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 129.54 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 129.54 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3d0fa2ae-c820-4b19-958f-6ced600ff1f1")
-		)
-		(pin "2"
-			(uuid "78541424-f44f-4ab0-ba77-9ce2a810937b")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 129.54 168.91 0)
+		(lib_id "Switch:SW_Push_LED")
+		(at 129.54 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13839,14 +12899,6 @@
 		(dnp no)
 		(uuid "5988feba-0365-4412-b69a-0e35af3282f9")
 		(property "Reference" "SW3"
-			(at 129.54 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "↙2,-"
 			(at 129.54 163.83 0)
 			(effects
 				(font
@@ -13854,7 +12906,15 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Value" "↙2,-"
+			(at 129.54 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 129.54 163.83 0)
 			(effects
 				(font
@@ -13872,8 +12932,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 129.54 168.91 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 129.54 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13886,6 +12946,12 @@
 		)
 		(pin "2"
 			(uuid "f9083871-49a2-46f8-8b63-7d458b5b78d7")
+		)
+		(pin "3"
+			(uuid "ec37b83c-4a75-4471-804c-8af266e2a57c")
+		)
+		(pin "4"
+			(uuid "a1a9145d-55ca-4d25-b133-eb43a79c2f65")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
@@ -14302,73 +13368,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 165.1 185.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6cb1f737-ddc6-4e3b-a57f-dccb02a63ad9")
-		(property "Reference" "SW25"
-			(at 165.1 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Initialisieren"
-			(at 165.1 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 165.1 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 165.1 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 165.1 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5082d462-fd4e-4e3c-8eab-5e18623a3f98")
-		)
-		(pin "2"
-			(uuid "77830918-2b2b-476c-8d11-86e704a1b967")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Jumper:Jumper_3_Bridged12")
 		(at 170.18 20.32 90)
 		(unit 1)
@@ -14441,8 +13440,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 58.42 168.91 0)
+		(lib_id "Switch:SW_Push_LED")
+		(at 58.42 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14450,14 +13449,6 @@
 		(dnp no)
 		(uuid "6eedc0f7-0e5d-4fb5-a644-68d129094184")
 		(property "Reference" "SW7"
-			(at 58.42 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Dauerlauf"
 			(at 58.42 163.83 0)
 			(effects
 				(font
@@ -14465,7 +13456,15 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Value" "Dauerlauf"
+			(at 58.42 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 58.42 163.83 0)
 			(effects
 				(font
@@ -14483,8 +13482,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 58.42 168.91 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 58.42 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14497,6 +13496,12 @@
 		)
 		(pin "2"
 			(uuid "d7a7b265-5c01-4f77-98a6-92ac9aac8db1")
+		)
+		(pin "3"
+			(uuid "5b23687e-5bce-44df-ba78-69a344523891")
+		)
+		(pin "4"
+			(uuid "f226533b-b69b-47db-8845-dfdcd3e1046c")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
@@ -14744,80 +13749,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 129.54 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "75269fe9-c017-4958-b54a-a791af60a079")
-		(property "Reference" "SW46"
-			(at 129.54 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 129.54 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 129.54 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 129.54 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "fece988f-26bf-4fb9-b771-4f6971ac1f08")
-		)
-		(pin "2"
-			(uuid "6eb7f518-4157-4ad8-a56b-8c9d81d4aec9")
-		)
-		(pin "1"
-			(uuid "82686a23-9b63-4379-8108-803e9aa0cc58")
-		)
-		(pin "3"
-			(uuid "4c868cb8-b7c4-451a-b7a1-b088225631d2")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW46")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 71.12 187.96 0)
 		(unit 1)
@@ -14878,73 +13809,6 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 93.98 185.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "78c4ab0b-0bfe-4ec2-a704-55f83cfec368")
-		(property "Reference" "SW29"
-			(at 93.98 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "↓Serie"
-			(at 93.98 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 93.98 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 93.98 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bf029e0d-ae3f-4fae-b358-f98394bd5814")
-		)
-		(pin "2"
-			(uuid "952ec335-7e1b-4a67-ac70-9f796725fd9a")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW29")
 					(unit 1)
 				)
 			)
@@ -15158,82 +14022,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_LED")
-		(at 76.2 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7bfbd434-00ec-4421-a21c-79df69ada9f0")
-		(property "Reference" "SW35"
-			(at 76.2 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 76.2 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 76.2 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 76.2 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "8d306664-c07e-4272-9a7b-56c954a03f8f")
-		)
-		(pin "2"
-			(uuid "c99724c4-eb7c-4321-8cad-45182e7f2e34")
-		)
-		(pin "1"
-			(uuid "8f520b50-2ee0-4991-ae0b-33d6b6085db0")
-		)
-		(pin "3"
-			(uuid "845359f4-01b5-4c06-b33d-b02a9fb11942")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 111.76 185.42 0)
+		(at 111.76 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15257,7 +14046,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 111.76 180.34 0)
 			(effects
 				(font
@@ -15275,8 +14064,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 111.76 185.42 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 111.76 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15290,151 +14079,16 @@
 		(pin "2"
 			(uuid "ed67de7f-602e-43e2-9ed9-02228dcbed0c")
 		)
+		(pin "4"
+			(uuid "6100a400-e548-4e3c-a28c-3912eac7667c")
+		)
+		(pin "3"
+			(uuid "d4e23a3f-082e-4a59-b3d3-df7223a008b2")
+		)
 		(instances
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "SW12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 111.76 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "81fe969b-8cab-42e2-b9d4-07c8675a49f1")
-		(property "Reference" "SW20"
-			(at 111.76 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "↙5,-"
-			(at 111.76 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 111.76 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 111.76 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "85f8c8b7-8ba7-407e-9d8e-c922000d1271")
-		)
-		(pin "2"
-			(uuid "dd97a93b-445c-41e0-b7b9-91b366686e52")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 76.2 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "83d780f0-4f68-419c-9046-48dcb06aded5")
-		(property "Reference" "SW43"
-			(at 76.2 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 76.2 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 76.2 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 76.2 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "a85b713d-1a49-44e2-998e-faab56e90801")
-		)
-		(pin "2"
-			(uuid "a24eb6a3-c125-4171-9913-a2c6b075eb88")
-		)
-		(pin "1"
-			(uuid "e2b52625-d427-428f-92d4-8a41593256a2")
-		)
-		(pin "3"
-			(uuid "e5230809-b636-4e3c-ba65-9a93ab7127e3")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW43")
 					(unit 1)
 				)
 			)
@@ -15684,80 +14338,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 93.98 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "89902de5-24e0-42f4-b847-f254f43e4be0")
-		(property "Reference" "SW36"
-			(at 93.98 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 93.98 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "b145037f-802c-4284-9b1c-06fb3eb42512")
-		)
-		(pin "2"
-			(uuid "da48d9fb-c20a-49dc-875c-e9948f0dc679")
-		)
-		(pin "1"
-			(uuid "70c22e45-e96e-4d25-9800-664076baf225")
-		)
-		(pin "3"
-			(uuid "85fe935b-f51c-4e95-a30e-36933c8f63c2")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 269.24 60.96 0)
 		(mirror y)
@@ -15886,73 +14466,6 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "#PWR043")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 147.32 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8e3952fb-876d-43ac-aef7-6654e11edf34")
-		(property "Reference" "SW18"
-			(at 147.32 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "↙1,-"
-			(at 147.32 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 147.32 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 147.32 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f4ad68bf-e9a8-40f3-8047-cec9e403baca")
-		)
-		(pin "2"
-			(uuid "7d91a6fe-935f-468a-9d32-133035e1eb01")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW18")
 					(unit 1)
 				)
 			)
@@ -16225,142 +14738,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 76.2 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9854f7f0-30ad-46f9-9c83-9243e64061f9")
-		(property "Reference" "SW22"
-			(at 76.2 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Sp.Zähl"
-			(at 76.2 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 76.2 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 76.2 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bdedeccd-e867-4a65-bfbe-1274569c5b6e")
-		)
-		(pin "2"
-			(uuid "34a85b84-bc5a-4dd0-bf3e-f31ebc2d1a47")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 147.32 185.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ec08831-b395-46a6-b019-23ca9a86ec6a")
-		(property "Reference" "SW26"
-			(at 147.32 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Münzung"
-			(at 147.32 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 147.32 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 147.32 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5002a8a9-16bb-49ca-98d9-3fd294ef0f2f")
-		)
-		(pin "2"
-			(uuid "5915fe1c-ff04-4486-a337-93904ab18771")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 147.32 20.32 0)
 		(unit 1)
@@ -16493,80 +14870,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 147.32 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a3c03f34-86a6-4ab8-9168-f46face43a92")
-		(property "Reference" "SW47"
-			(at 147.32 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 147.32 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 147.32 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 147.32 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "8a4db0d0-4f51-4b87-9a82-9b26edc89274")
-		)
-		(pin "2"
-			(uuid "15b0e782-3435-423a-8cf3-663eafd48b87")
-		)
-		(pin "1"
-			(uuid "c774a92a-d8ac-48fe-949b-716e97489486")
-		)
-		(pin "3"
-			(uuid "9d200fb9-d07a-4958-84f2-f25656629c0c")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW47")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 226.06 128.27 0)
 		(mirror x)
@@ -16628,80 +14931,6 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 93.98 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a8369230-a366-49df-b7d0-ca91b172cd98")
-		(property "Reference" "SW44"
-			(at 93.98 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 93.98 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 93.98 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 93.98 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "1e0b83c4-18a5-401b-abde-863c22825f39")
-		)
-		(pin "2"
-			(uuid "cf0f4105-6f09-4a26-ac21-0b72d71eda4e")
-		)
-		(pin "1"
-			(uuid "d8818493-bedc-4e86-97a1-f34651303c69")
-		)
-		(pin "3"
-			(uuid "b8e2e4f3-88ea-416b-991a-3f0afa1120d0")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW44")
 					(unit 1)
 				)
 			)
@@ -16898,80 +15127,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 165.1 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aa9d47e8-4e24-478f-b9f0-70b25b221bd9")
-		(property "Reference" "SW48"
-			(at 165.1 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 165.1 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 165.1 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 165.1 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 165.1 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "2c787493-9d3b-4447-b596-93fe266fb357")
-		)
-		(pin "2"
-			(uuid "39708590-ff08-4e2f-8fe5-ed43459f163e")
-		)
-		(pin "1"
-			(uuid "41275481-c643-4a8f-8286-bc147420b721")
-		)
-		(pin "3"
-			(uuid "61d5398f-c93b-4dc8-8feb-48c9b9780d44")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW48")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 269.24 35.56 0)
 		(unit 1)
@@ -17104,73 +15259,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 58.42 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b156788e-858c-4bc4-9251-bdc43f33c08b")
-		(property "Reference" "SW23"
-			(at 58.42 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Lampen"
-			(at 58.42 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 58.42 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 58.42 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2f3270a2-ac87-4889-b53a-d05cb7a689b7")
-		)
-		(pin "2"
-			(uuid "93d1d3fc-28d1-49fc-9db2-741712b0fb51")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 259.08 27.94 0)
 		(unit 1)
@@ -17231,148 +15319,6 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 165.1 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b4393984-11df-45b6-aed4-4d646b43aa2f")
-		(property "Reference" "SW40"
-			(at 165.1 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 165.1 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 165.1 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 165.1 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 165.1 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "35b08879-83ad-4d81-bd88-403b7f14b5bd")
-		)
-		(pin "2"
-			(uuid "a424f3ae-d880-4a2e-a58a-cee59a89820f")
-		)
-		(pin "1"
-			(uuid "624a6477-7c55-46a6-8175-fcb62526c51a")
-		)
-		(pin "3"
-			(uuid "b41f4571-0cc9-4d9b-8d88-1b08eefee49c")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW40")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 111.76 185.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b46bca03-a50e-40e6-bb35-74159fd3ce5f")
-		(property "Reference" "SW28"
-			(at 111.76 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "↑0,10"
-			(at 111.76 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 111.76 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 111.76 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "46816943-3c87-42f4-b25f-2ec1215af502")
-		)
-		(pin "2"
-			(uuid "7076e7f9-12f1-4785-983e-971d237b875f")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW28")
 					(unit 1)
 				)
 			)
@@ -18055,82 +16001,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_LED")
-		(at 40.64 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd29e129-a9a9-4815-b856-769a0fc64505")
-		(property "Reference" "SW33"
-			(at 40.64 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 40.64 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 40.64 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 40.64 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "603a3343-f2f5-4701-8dc1-50e29751275b")
-		)
-		(pin "2"
-			(uuid "50fb5456-ec00-47b8-883c-cebf72a242a8")
-		)
-		(pin "1"
-			(uuid "305d5856-1c3d-43ac-9783-48f255c63c2e")
-		)
-		(pin "3"
-			(uuid "524315cc-529b-407e-872f-1cdffde1a2eb")
-		)
-		(instances
-			(project ""
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 147.32 185.42 0)
+		(at 147.32 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18154,7 +16025,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 147.32 180.34 0)
 			(effects
 				(font
@@ -18172,8 +16043,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 147.32 185.42 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 147.32 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18186,6 +16057,12 @@
 		)
 		(pin "2"
 			(uuid "1c1041aa-cfe3-4579-863a-56e5b7812f15")
+		)
+		(pin "4"
+			(uuid "1d25aeb4-438f-469f-8fc4-0ad895e33b54")
+		)
+		(pin "3"
+			(uuid "6d7f5582-fefc-468b-90d2-e8388847634a")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
@@ -18265,8 +16142,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 40.64 168.91 0)
+		(lib_id "Switch:SW_Push_LED")
+		(at 40.64 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18274,14 +16151,6 @@
 		(dnp no)
 		(uuid "d289877f-1cf6-463b-8a2d-1e31843d4489")
 		(property "Reference" "SW8"
-			(at 40.64 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Reset"
 			(at 40.64 163.83 0)
 			(effects
 				(font
@@ -18289,7 +16158,15 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Value" "Reset"
+			(at 40.64 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 40.64 163.83 0)
 			(effects
 				(font
@@ -18307,8 +16184,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 40.64 168.91 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 40.64 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18322,6 +16199,12 @@
 		(pin "2"
 			(uuid "e7f1430b-0695-4bb1-87a8-498fc9adef69")
 		)
+		(pin "4"
+			(uuid "47c1b1d0-b1b5-4c28-9e4e-dfff6783072e")
+		)
+		(pin "3"
+			(uuid "66ae3deb-2663-4f0c-8334-0feb672363f5")
+		)
 		(instances
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
@@ -18332,75 +16215,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 58.42 185.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d37ef1c7-f083-4f87-8466-6d3186a424ac")
-		(property "Reference" "SW31"
-			(at 58.42 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "↓1,-"
-			(at 58.42 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 58.42 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 58.42 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3bbf8f8c-2c05-4263-8180-ed3f3f6887d1")
-		)
-		(pin "2"
-			(uuid "7f1cc63f-153f-4123-97cb-b56d299dbba9")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 76.2 185.42 0)
+		(lib_id "Switch:SW_Push_LED")
+		(at 76.2 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18424,7 +16240,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 76.2 180.34 0)
 			(effects
 				(font
@@ -18442,8 +16258,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 76.2 185.42 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 76.2 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18457,77 +16273,16 @@
 		(pin "2"
 			(uuid "a96e30a1-d688-4ad7-844c-7b75e02bbdb7")
 		)
+		(pin "3"
+			(uuid "ecdb2f8b-32dc-41a0-9e8c-8a9dd48f7713")
+		)
+		(pin "4"
+			(uuid "442be945-87d3-41bf-b90b-92c719ac8002")
+		)
 		(instances
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "SW14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 40.64 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d56e0dca-2598-4e1f-bcbb-1087594a0b11")
-		(property "Reference" "SW24"
-			(at 40.64 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Reset"
-			(at 40.64 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 40.64 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 40.64 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7803f389-1d7a-4883-88e1-b7c6a8d644c9")
-		)
-		(pin "2"
-			(uuid "ab47aa9f-ebaf-470c-b153-153703d1b1e1")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW24")
 					(unit 1)
 				)
 			)
@@ -18850,80 +16605,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 58.42 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc6c6427-4371-4a3c-a295-ec0f1a05dd07")
-		(property "Reference" "SW42"
-			(at 58.42 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 58.42 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 58.42 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 58.42 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "b999cd41-cf20-4183-8d52-b8c3c2595ad6")
-		)
-		(pin "2"
-			(uuid "acd33354-a50f-44e4-86b7-628324e9107a")
-		)
-		(pin "1"
-			(uuid "ab9d9a62-4762-4bae-908b-1943edfa7560")
-		)
-		(pin "3"
-			(uuid "13f18bfb-0af1-4454-8738-5cfffdb197c4")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74xx:74LS08")
 		(at 105.41 139.7 0)
 		(mirror x)
@@ -19028,8 +16709,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 58.42 185.42 0)
+		(lib_id "Switch:SW_Push_LED")
+		(at 58.42 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19037,14 +16718,6 @@
 		(dnp no)
 		(uuid "e5805443-e870-4865-8fe5-c0110fb0f799")
 		(property "Reference" "SW15"
-			(at 58.42 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Zeit"
 			(at 58.42 180.34 0)
 			(effects
 				(font
@@ -19052,7 +16725,15 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Value" "Zeit"
+			(at 58.42 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 58.42 180.34 0)
 			(effects
 				(font
@@ -19070,8 +16751,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 58.42 185.42 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 58.42 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19084,6 +16765,12 @@
 		)
 		(pin "2"
 			(uuid "615250bb-51cd-4666-9b9d-9059468a0dab")
+		)
+		(pin "4"
+			(uuid "cfacde06-576f-49b9-a762-187188b737f4")
+		)
+		(pin "3"
+			(uuid "299a3579-800b-4f31-9280-757bef290f8b")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
@@ -19371,8 +17058,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 40.64 185.42 0)
+		(lib_id "Switch:SW_Push_LED")
+		(at 40.64 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19396,7 +17083,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 40.64 180.34 0)
 			(effects
 				(font
@@ -19414,8 +17101,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 40.64 185.42 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 40.64 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19428,6 +17115,12 @@
 		)
 		(pin "2"
 			(uuid "cfa66dec-ec84-44ca-b188-604f4bed28ec")
+		)
+		(pin "3"
+			(uuid "520a39a5-81f1-49fe-a7cb-2ee23fea9ecf")
+		)
+		(pin "4"
+			(uuid "0ac5a47c-3ebf-4b93-99c7-3835f3bbac78")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
@@ -19509,8 +17202,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 165.1 168.91 0)
+		(lib_id "Switch:SW_Push_LED")
+		(at 165.1 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19518,14 +17211,6 @@
 		(dnp no)
 		(uuid "f49d58ef-8cee-4505-b4f2-21fe1463cbe0")
 		(property "Reference" "SW1"
-			(at 165.1 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gewinn"
 			(at 165.1 163.83 0)
 			(effects
 				(font
@@ -19533,7 +17218,15 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_SPST_Omron_B3F-40xx"
+		(property "Value" "Gewinn"
+			(at 165.1 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ChinaButton:SW_SPST_Combination_12mm"
 			(at 165.1 163.83 0)
 			(effects
 				(font
@@ -19551,8 +17244,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 165.1 168.91 0)
+		(property "Description" "Push button switch with LED, generic"
+			(at 165.1 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19565,6 +17258,12 @@
 		)
 		(pin "2"
 			(uuid "fa1f7709-b6c5-477c-85f5-ccd46b71d9c6")
+		)
+		(pin "3"
+			(uuid "4e7cc209-43a7-4c8f-8096-75e5113c62ed")
+		)
+		(pin "4"
+			(uuid "cdfc501e-2522-4c47-8221-144bf82c9ad1")
 		)
 		(instances
 			(project ""
@@ -19636,74 +17335,6 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 93.98 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f8da224a-8267-40fb-ae1e-89fce2faaf65")
-		(property "Reference" "SW21"
-			(at 93.98 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Münzsp."
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 93.98 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7a46300f-8f64-4e50-a665-2641fbc6a29e")
-		)
-		(pin "2"
-			(uuid "3e84ec6f-ad2c-47cf-b812-4e810827d895")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW21")
 					(unit 1)
 				)
 			)
@@ -19838,148 +17469,6 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_LED")
-		(at 111.76 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc03c65d-67a1-49ef-8627-50cafc036839")
-		(property "Reference" "SW45"
-			(at 111.76 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_LED"
-			(at 111.76 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ChinaButton:TS12"
-			(at 111.76 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch with LED, generic"
-			(at 111.76 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "115788e8-4f0c-46b8-be00-14a2f836d54d")
-		)
-		(pin "2"
-			(uuid "5092a0e1-275f-4c50-bedb-1d74dc9fca85")
-		)
-		(pin "1"
-			(uuid "acfdb183-3acc-416b-a039-833dcd1febfc")
-		)
-		(pin "3"
-			(uuid "b0c55f64-c7ee-43fa-8a3f-6367f4973c33")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 40.64 185.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "feba2f35-e749-4435-96d9-b0b85a5a1cec")
-		(property "Reference" "SW32"
-			(at 40.64 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "↑1,-"
-			(at 40.64 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 40.64 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 40.64 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b1de47d2-9287-4123-b021-e1543f92448e")
-		)
-		(pin "2"
-			(uuid "ed6dca32-12cf-48c2-9a5f-00ac3af202d1")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "SW32")
 					(unit 1)
 				)
 			)
