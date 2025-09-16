@@ -4928,6 +4928,242 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Pack04_Split"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RN"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Pack04_Split"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "4 resistor network, parallel topology, split"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R network parallel topology isolated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DIP* SOIC* R*Array*Concave* R*Array*Convex* MSOP*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Pack04_Split_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Pack04_Split_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "R1.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R1.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Pack04_Split_2_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "R2.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R2.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Pack04_Split_3_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "R3.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R3.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "R_Pack04_Split_4_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "R4.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "R4.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Display_Character:CC56-12CGKWA"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6476,6 +6712,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:GND1"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND1"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND1_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:PWR_FLAG"
 			(power)
 			(pin_numbers
@@ -6649,12 +6986,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41dc933f-0293-4010-96a0-d8d21c29c231")
-	)
-	(junction
-		(at 120.65 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "47feffca-83a9-49c4-9432-19737b2b7529")
 	)
 	(junction
 		(at 50.8 97.79)
@@ -6871,6 +7202,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2093be5-275b-4ce2-acf6-ea3e6da30d92")
+	)
+	(junction
+		(at 120.65 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbedf30e-6e52-4fa2-b631-ad847d0aea26")
 	)
 	(junction
 		(at 137.16 45.72)
@@ -9691,72 +10028,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 142.24 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "005dac62-bd95-4a06-a18d-4fbb8534b5ac")
-		(property "Reference" "#PWR039"
-			(at 142.24 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 142.24 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "30d4f4d0-4240-4e3d-9b91-2f7f32637c72")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "4xxx:HEF4093B")
 		(at 129.54 43.18 0)
 		(mirror y)
@@ -10364,142 +10635,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 116.84 139.7 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1ae2cae4-7ec1-4325-81e4-5659b3a9fc6f")
-		(property "Reference" "R17"
-			(at 116.84 133.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470 Ω"
-			(at 116.84 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 116.84 141.478 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 116.84 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7e9a1519-12f5-4adf-81e3-264790a318a3")
-		)
-		(pin "1"
-			(uuid "d9accd34-a7f8-4255-ac73-83f6e38fb817")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 113.03 105.41 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1b69cf23-4d09-408c-8d91-bf7bf4516f88")
-		(property "Reference" "R15"
-			(at 113.03 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470 Ω"
-			(at 113.03 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 113.03 107.188 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 113.03 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1769c2a2-a43f-4974-9458-c2b5de027cd6")
-		)
-		(pin "1"
-			(uuid "4c633045-d2cc-4bb7-96b4-eb3b976092b5")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 22.86 43.18 90)
 		(unit 1)
@@ -10738,74 +10873,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 113.03 100.33 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "216d4122-96f6-4d1f-a64d-82fd276be9b0")
-		(property "Reference" "R13"
-			(at 113.03 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470 Ω"
-			(at 113.03 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 113.03 102.108 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 113.03 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1a01bfc8-d92e-4f01-8446-a42d725e7fb2")
-		)
-		(pin "1"
-			(uuid "4d4780a1-d584-4eea-a138-199a73dedb01")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push_LED")
 		(at 129.54 187.96 0)
 		(unit 1)
@@ -10941,6 +11008,72 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND1")
+		(at 35.56 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29cdf976-5339-4c43-9392-991c337829fb")
+		(property "Reference" "#PWR033"
+			(at 35.56 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND1"
+			(at 35.56 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 35.56 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03002b3c-0251-4535-a1f1-a6b403d17967")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -11198,6 +11331,72 @@
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "U7")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND1")
+		(at 71.12 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2df736fc-b526-4b47-9cb0-fffcd5c50055")
+		(property "Reference" "#PWR035"
+			(at 71.12 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND1"
+			(at 71.12 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 71.12 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4f5668ff-a023-4460-a91d-1c009d01c0f3")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "#PWR035")
+					(unit 1)
 				)
 			)
 		)
@@ -11613,33 +11812,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 113.03 107.95 90)
+		(lib_id "power:GND1")
+		(at 88.9 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "37d5dc21-4502-4095-b210-3dac4308dcb4")
-		(property "Reference" "R16"
-			(at 113.03 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470 Ω"
-			(at 113.03 104.14 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 113.03 109.728 90)
+		(uuid "390a7aa1-a8a3-45ab-b2d1-7476258c4b19")
+		(property "Reference" "#PWR028"
+			(at 88.9 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11647,8 +11830,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 113.03 107.95 0)
+		(property "Value" "GND1"
+			(at 88.9 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11656,8 +11847,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 113.03 107.95 0)
+		(property "Datasheet" ""
+			(at 88.9 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11665,16 +11856,22 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "0fe03dbd-339e-4ff4-9744-be8d956a4d02")
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 88.9 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "9d11aafb-a574-4704-adb6-9f9c1e62371c")
+			(uuid "cbf0dd3d-acbb-4d60-842e-79a3bc93d5c7")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "R16")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -11881,138 +12078,6 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 142.24 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3a55ca91-62ee-4f39-8dc9-f1cec5bb3047")
-		(property "Reference" "#PWR038"
-			(at 142.24 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 142.24 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d2894e2c-12d5-423b-93bd-e33d928098c0")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 124.46 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b53c63d-0cdb-4806-abe2-117cf9698e4e")
-		(property "Reference" "#PWR036"
-			(at 124.46 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 124.46 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.46 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "04e59400-31a6-4212-a8ca-dc2e04809ac3")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -12258,74 +12323,6 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 113.03 92.71 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "420a961c-dbf5-4140-9ee3-e45af1ee9d7c")
-		(property "Reference" "R10"
-			(at 113.03 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470 Ω"
-			(at 113.03 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 113.03 94.488 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 113.03 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "51220408-31c4-4a2a-aa66-490f0cf0c5b1")
-		)
-		(pin "1"
-			(uuid "f8acfa89-4aa4-4189-b341-4b51b82b999c")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -12633,33 +12630,166 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 113.03 97.79 90)
+		(lib_id "power:GND1")
+		(at 142.24 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4e038e64-8839-4813-8d8d-0d54224a2435")
-		(property "Reference" "R12"
-			(at 113.03 91.44 90)
+		(uuid "4fbccef1-edd4-4a5a-b232-affd9f7aa38e")
+		(property "Reference" "#PWR039"
+			(at 142.24 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND1"
+			(at 142.24 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "470 Ω"
-			(at 113.03 93.98 90)
+		(property "Footprint" ""
+			(at 142.24 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 142.24 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6adc8926-10d9-4cfc-b95f-3e28d66af8e8")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND1")
+		(at 160.02 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "543692ee-a0b3-492c-b7a3-6504d0ddfd4a")
+		(property "Reference" "#PWR032"
+			(at 160.02 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND1"
+			(at 160.02 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 113.03 99.568 90)
+		(property "Footprint" ""
+			(at 160.02 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 160.02 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "324735a5-a90a-45c0-bf49-b35f05752d35")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Pack04_Split")
+		(at 113.03 105.41 270)
+		(mirror x)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "576fe048-b27b-4a56-8fa9-29812d0090a6")
+		(property "Reference" "RN2"
+			(at 113.03 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Pack04_Split"
+			(at 113.03 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 113.03 107.442 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12668,7 +12798,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 97.79 0)
+			(at 113.03 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12676,26 +12806,44 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 113.03 97.79 0)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 113.03 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "6"
+			(uuid "ede2f9fd-dcd0-4a8c-9dcb-3aa01166d455")
+		)
+		(pin "4"
+			(uuid "af882260-d257-4fd2-b94f-3ceccad2b240")
+		)
+		(pin "3"
+			(uuid "2443bc62-1346-41ec-a0fe-365dbefd4a3b")
+		)
+		(pin "7"
+			(uuid "71327b51-d763-48a3-a385-458467c4f7ee")
 		)
 		(pin "2"
-			(uuid "ef6069f6-7f62-4372-b222-d42360a73743")
+			(uuid "6d340c36-3f93-4b55-8831-209c351baf0c")
+		)
+		(pin "5"
+			(uuid "6fe1692f-1a86-448c-9c86-48bef3c50b8a")
 		)
 		(pin "1"
-			(uuid "531bac53-02ff-469e-b833-f66a63c8c3f4")
+			(uuid "0c39d484-b2dc-4f99-b6cf-edf53bb2d8f2")
+		)
+		(pin "8"
+			(uuid "bb67356e-2e47-4685-a6d7-5f58ca85ca25")
 		)
 		(instances
-			(project "ServicetastaturWeissFake"
+			(project ""
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "R12")
-					(unit 1)
+					(reference "RN2")
+					(unit 2)
 				)
 			)
 		)
@@ -13030,16 +13178,17 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 53.34 171.45 0)
+		(at 187.96 172.72 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "612eae2b-b8e3-4f83-b79e-55d35936e432")
-		(property "Reference" "#PWR028"
-			(at 53.34 177.8 0)
+		(uuid "5c583632-0b14-46c3-9d34-a671e24ea6ba")
+		(property "Reference" "#PWR046"
+			(at 181.61 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13048,15 +13197,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 176.53 0)
+			(at 184.15 172.7199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 171.45 0)
+			(at 187.96 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13065,7 +13215,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 171.45 0)
+			(at 187.96 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13074,7 +13224,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 171.45 0)
+			(at 187.96 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13083,19 +13233,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "a0a1f9d0-e1e8-4f71-b499-57deda7a45d3")
+			(uuid "47e8929a-1a88-4d1d-9b84-74f64c32ec4b")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR028")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "power:GND1")
 		(at 106.68 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13103,8 +13253,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "63dc68f2-33b8-4505-ae21-6cbfb6899fa2")
-		(property "Reference" "#PWR034"
+		(uuid "60d47ef1-c1b9-4cc0-b6a2-8df42c0be12b")
+		(property "Reference" "#PWR037"
 			(at 106.68 177.8 0)
 			(effects
 				(font
@@ -13113,7 +13263,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "GND1"
 			(at 106.68 176.53 0)
 			(effects
 				(font
@@ -13139,7 +13289,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
 			(at 106.68 171.45 0)
 			(effects
 				(font
@@ -13149,12 +13299,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "14e5e7e7-06a1-48fe-a157-efcd60872293")
+			(uuid "c3dd1bc8-5754-4b42-807f-dca8c378327d")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR034")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -13226,6 +13376,93 @@
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "C2")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Pack04_Split")
+		(at 113.03 107.95 270)
+		(mirror x)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6865d4ca-76ff-4b98-9459-6bf567dc8c20")
+		(property "Reference" "RN2"
+			(at 113.03 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Pack04_Split"
+			(at 113.03 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 113.03 109.982 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 113.03 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "ede2f9fd-dcd0-4a8c-9dcb-3aa01166d455")
+		)
+		(pin "4"
+			(uuid "af882260-d257-4fd2-b94f-3ceccad2b240")
+		)
+		(pin "3"
+			(uuid "2443bc62-1346-41ec-a0fe-365dbefd4a3b")
+		)
+		(pin "7"
+			(uuid "71327b51-d763-48a3-a385-458467c4f7ee")
+		)
+		(pin "2"
+			(uuid "6d340c36-3f93-4b55-8831-209c351baf0c")
+		)
+		(pin "5"
+			(uuid "6fe1692f-1a86-448c-9c86-48bef3c50b8a")
+		)
+		(pin "1"
+			(uuid "0c39d484-b2dc-4f99-b6cf-edf53bb2d8f2")
+		)
+		(pin "8"
+			(uuid "bb67356e-2e47-4685-a6d7-5f58ca85ca25")
+		)
+		(instances
+			(project ""
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "RN2")
+					(unit 3)
 				)
 			)
 		)
@@ -13749,17 +13986,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 71.12 187.96 0)
+		(lib_id "power:GND1")
+		(at 53.34 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "77da8eea-f859-4716-b8d0-7fabdc4cd5a6")
-		(property "Reference" "#PWR031"
-			(at 71.12 194.31 0)
+		(uuid "7766b71c-e252-4840-a419-3d1131fc20a2")
+		(property "Reference" "#PWR020"
+			(at 53.34 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13767,8 +14004,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 71.12 193.04 0)
+		(property "Value" "GND1"
+			(at 53.34 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13776,7 +14013,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 187.96 0)
+			(at 53.34 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13785,7 +14022,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 187.96 0)
+			(at 53.34 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13793,8 +14030,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 187.96 0)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 53.34 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13803,12 +14040,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "170a0996-c89d-403d-8d6b-aac28a797856")
+			(uuid "841bdbf2-2bf9-44b9-bf25-6fa4f7ac7801")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR031")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -14021,6 +14258,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 191.77 172.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e87ac59-bb73-4db1-89d0-c5f040d5ee15")
+		(property "Reference" "R1"
+			(at 191.77 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470 Ω"
+			(at 191.77 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 191.77 174.498 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 191.77 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3cf1da73-e0ce-4e6d-8abc-b865ad560440")
+		)
+		(pin "1"
+			(uuid "293219be-491f-40a9-b8d7-6e13b8f28517")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push_LED")
 		(at 111.76 187.96 0)
 		(unit 1)
@@ -14089,6 +14394,138 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "SW12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND1")
+		(at 53.34 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81283596-9e20-42c1-895c-112472719823")
+		(property "Reference" "#PWR034"
+			(at 53.34 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND1"
+			(at 53.34 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 53.34 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "abfd3afb-4ca1-4069-a671-dcc117f7c8d2")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND1")
+		(at 160.02 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84af3422-67c8-43f4-adb0-76d849704012")
+		(property "Reference" "#PWR040"
+			(at 160.02 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND1"
+			(at 160.02 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 160.02 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2218da1d-69ea-4398-9f73-54f4efebc55b")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -14272,72 +14709,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 71.12 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "89053e38-0c88-48ee-bdb1-0e938f304bca")
-		(property "Reference" "#PWR030"
-			(at 71.12 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 71.12 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9142343b-16d8-4790-91f3-a4d12b29f2d3")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 269.24 60.96 0)
 		(mirror y)
@@ -14399,6 +14770,72 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND1")
+		(at 35.56 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b2667a9-20bb-455e-ae4e-972628c75fd6")
+		(property "Reference" "#PWR08"
+			(at 35.56 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND1"
+			(at 35.56 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 35.56 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "054a3c10-9a8d-45c4-abea-93c205bf2fe7")
+		)
+		(instances
+			(project ""
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -14472,17 +14909,32 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 53.34 187.96 0)
-		(unit 1)
+		(lib_id "Device:R_Pack04_Split")
+		(at 113.03 100.33 270)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8fb541c7-2cc2-43ba-969a-15e2353fdf64")
-		(property "Reference" "#PWR029"
-			(at 53.34 194.31 0)
+		(uuid "91e530cf-383c-42d4-9d3d-8ffa22496ed9")
+		(property "Reference" "RN1"
+			(at 113.03 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Pack04_Split"
+			(at 113.03 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 113.03 98.298 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14490,16 +14942,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 53.34 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 187.96 0)
+		(property "Datasheet" "~"
+			(at 113.03 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14507,8 +14951,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 53.34 187.96 0)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 113.03 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14516,23 +14960,35 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "7"
+			(uuid "4010f90f-2127-4f11-8248-04a3bc891748")
+		)
+		(pin "6"
+			(uuid "48ad16e5-4e84-4abc-8a3b-b43c5ce0d5c2")
+		)
+		(pin "3"
+			(uuid "c004b61f-ed5f-4064-b5e5-d4a8f4df1cfd")
+		)
+		(pin "2"
+			(uuid "c1df1438-2aba-48b9-9eb5-ef19cdd40ac0")
+		)
+		(pin "8"
+			(uuid "f0a49234-9276-4a3d-864d-58c076024df5")
+		)
+		(pin "4"
+			(uuid "5d54b9cd-075a-4640-ba51-3279fe3bee0c")
+		)
+		(pin "5"
+			(uuid "e97fbc5e-070d-437a-a990-bfdcee322696")
 		)
 		(pin "1"
-			(uuid "a8bd6555-8d6b-46c4-995a-50755f01635d")
+			(uuid "ddb4ab72-ff1d-4403-b555-802c9abf2775")
 		)
 		(instances
-			(project "ServicetastaturWeissFake"
+			(project ""
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR029")
-					(unit 1)
+					(reference "RN1")
+					(unit 3)
 				)
 			)
 		)
@@ -14607,72 +15063,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "963401c9-1e4c-400e-82d7-22c839efee3a")
-		(property "Reference" "#PWR032"
-			(at 88.9 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 88.9 176.5361 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "321e98a7-3ee3-433b-98a9-9df7a766c0d3")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 238.76 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14733,6 +15123,92 @@
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "#PWR012")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Pack04_Split")
+		(at 113.03 102.87 270)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d668e8a-c0b4-42f8-b048-eca06129a807")
+		(property "Reference" "RN1"
+			(at 113.03 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Pack04_Split"
+			(at 113.03 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 113.03 100.838 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 113.03 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "4010f90f-2127-4f11-8248-04a3bc891748")
+		)
+		(pin "6"
+			(uuid "48ad16e5-4e84-4abc-8a3b-b43c5ce0d5c2")
+		)
+		(pin "3"
+			(uuid "c004b61f-ed5f-4064-b5e5-d4a8f4df1cfd")
+		)
+		(pin "2"
+			(uuid "c1df1438-2aba-48b9-9eb5-ef19cdd40ac0")
+		)
+		(pin "8"
+			(uuid "f0a49234-9276-4a3d-864d-58c076024df5")
+		)
+		(pin "4"
+			(uuid "5d54b9cd-075a-4640-ba51-3279fe3bee0c")
+		)
+		(pin "5"
+			(uuid "e97fbc5e-070d-437a-a990-bfdcee322696")
+		)
+		(pin "1"
+			(uuid "ddb4ab72-ff1d-4403-b555-802c9abf2775")
+		)
+		(instances
+			(project ""
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "RN1")
+					(unit 4)
 				)
 			)
 		)
@@ -15127,6 +15603,159 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND1")
+		(at 124.46 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa50ebbf-c726-4d1e-b616-a1ac68ce8e97")
+		(property "Reference" "#PWR030"
+			(at 124.46 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND1"
+			(at 124.46 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 124.46 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7232abb4-d233-455b-98d8-958c308677e3")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Pack04_Split")
+		(at 116.84 139.7 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab1bef51-d1e7-43f4-9844-a697a9ff5fe9")
+		(property "Reference" "RN2"
+			(at 116.84 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Pack04_Split"
+			(at 116.84 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 116.84 141.732 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 116.84 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "ede2f9fd-dcd0-4a8c-9dcb-3aa01166d455")
+		)
+		(pin "4"
+			(uuid "af882260-d257-4fd2-b94f-3ceccad2b240")
+		)
+		(pin "3"
+			(uuid "2443bc62-1346-41ec-a0fe-365dbefd4a3b")
+		)
+		(pin "7"
+			(uuid "71327b51-d763-48a3-a385-458467c4f7ee")
+		)
+		(pin "2"
+			(uuid "6d340c36-3f93-4b55-8831-209c351baf0c")
+		)
+		(pin "5"
+			(uuid "6fe1692f-1a86-448c-9c86-48bef3c50b8a")
+		)
+		(pin "1"
+			(uuid "0c39d484-b2dc-4f99-b6cf-edf53bb2d8f2")
+		)
+		(pin "8"
+			(uuid "bb67356e-2e47-4685-a6d7-5f58ca85ca25")
+		)
+		(instances
+			(project ""
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "RN2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 269.24 35.56 0)
 		(unit 1)
@@ -15193,17 +15822,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 160.02 187.96 0)
+		(lib_id "power:GND1")
+		(at 88.9 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b0b38721-d8ea-4d63-a633-d7a3a2a09e5d")
-		(property "Reference" "#PWR041"
-			(at 160.02 194.31 0)
+		(uuid "b02d8ed9-d6b8-4690-80cf-01397433d3b2")
+		(property "Reference" "#PWR036"
+			(at 88.9 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15211,8 +15840,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 160.02 193.04 0)
+		(property "Value" "GND1"
+			(at 88.9 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15220,7 +15849,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 187.96 0)
+			(at 88.9 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15229,7 +15858,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 187.96 0)
+			(at 88.9 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15237,8 +15866,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 187.96 0)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 88.9 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15247,12 +15876,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "fff04949-b294-422f-bb77-1e2486664a17")
+			(uuid "151c1cec-0e2e-4d4d-8a44-7536f5cfa8cb")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR041")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -15424,72 +16053,6 @@
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "U3")
 					(unit 4)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 88.9 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ba9856dd-65ae-43f7-adac-e16bf36ca65a")
-		(property "Reference" "#PWR033"
-			(at 88.9 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 88.9 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ab04218e-4339-4769-9880-8e22121deffe")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR033")
-					(unit 1)
 				)
 			)
 		)
@@ -15730,6 +16293,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Pack04_Split")
+		(at 113.03 97.79 270)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf28f590-4d0b-4d7f-a09c-cbb8a5a4ad53")
+		(property "Reference" "RN1"
+			(at 113.03 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Pack04_Split"
+			(at 113.03 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 113.03 95.758 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 113.03 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "4010f90f-2127-4f11-8248-04a3bc891748")
+		)
+		(pin "6"
+			(uuid "48ad16e5-4e84-4abc-8a3b-b43c5ce0d5c2")
+		)
+		(pin "3"
+			(uuid "c004b61f-ed5f-4064-b5e5-d4a8f4df1cfd")
+		)
+		(pin "2"
+			(uuid "c1df1438-2aba-48b9-9eb5-ef19cdd40ac0")
+		)
+		(pin "8"
+			(uuid "f0a49234-9276-4a3d-864d-58c076024df5")
+		)
+		(pin "4"
+			(uuid "5d54b9cd-075a-4640-ba51-3279fe3bee0c")
+		)
+		(pin "5"
+			(uuid "e97fbc5e-070d-437a-a990-bfdcee322696")
+		)
+		(pin "1"
+			(uuid "ddb4ab72-ff1d-4403-b555-802c9abf2775")
+		)
+		(instances
+			(project ""
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "RN1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 83.82 110.49 90)
 		(unit 1)
@@ -15797,17 +16446,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 160.02 171.45 0)
+		(lib_id "power:GND1")
+		(at 195.58 172.72 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c6df2eb2-36b3-454c-85a1-544b306ee0c4")
-		(property "Reference" "#PWR040"
-			(at 160.02 177.8 0)
+		(uuid "c4462283-f9eb-411b-805f-bda187f6d9d3")
+		(property "Reference" "#PWR041"
+			(at 201.93 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15815,16 +16464,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 160.02 176.53 0)
+		(property "Value" "GND1"
+			(at 199.39 172.7199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 171.45 0)
+			(at 195.58 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15833,7 +16483,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 171.45 0)
+			(at 195.58 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15841,8 +16491,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 171.45 0)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 195.58 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15851,12 +16501,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6e93086a-6560-41f1-beb1-5259792d9bb1")
+			(uuid "cdc2f5f8-a6cf-4eb8-915c-2ea5dae06743")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR040")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -15930,6 +16580,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND1")
+		(at 106.68 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ccf1c996-9040-450d-8359-2d000f0beb85")
+		(property "Reference" "#PWR029"
+			(at 106.68 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND1"
+			(at 106.68 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 106.68 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7809e2e-70ae-4361-a2d6-8be14a08d9a0")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 238.76 31.75 0)
 		(unit 1)
@@ -15994,6 +16710,92 @@
 			(project ""
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Pack04_Split")
+		(at 113.03 95.25 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cdbeb265-23a0-479a-bdb1-6aaee68233f2")
+		(property "Reference" "RN1"
+			(at 113.03 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Pack04_Split"
+			(at 113.03 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 113.03 93.218 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 113.03 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "4010f90f-2127-4f11-8248-04a3bc891748")
+		)
+		(pin "6"
+			(uuid "48ad16e5-4e84-4abc-8a3b-b43c5ce0d5c2")
+		)
+		(pin "3"
+			(uuid "c004b61f-ed5f-4064-b5e5-d4a8f4df1cfd")
+		)
+		(pin "2"
+			(uuid "c1df1438-2aba-48b9-9eb5-ef19cdd40ac0")
+		)
+		(pin "8"
+			(uuid "f0a49234-9276-4a3d-864d-58c076024df5")
+		)
+		(pin "4"
+			(uuid "5d54b9cd-075a-4640-ba51-3279fe3bee0c")
+		)
+		(pin "5"
+			(uuid "e97fbc5e-070d-437a-a990-bfdcee322696")
+		)
+		(pin "1"
+			(uuid "ddb4ab72-ff1d-4403-b555-802c9abf2775")
+		)
+		(instances
+			(project ""
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "RN1")
 					(unit 1)
 				)
 			)
@@ -16289,6 +17091,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND1")
+		(at 142.24 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d672585b-6943-47ba-80ce-23153de11b3a")
+		(property "Reference" "#PWR031"
+			(at 142.24 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND1"
+			(at 142.24 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 142.24 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5bcb011-fca9-41cf-870c-7900ebdbcb05")
+		)
+		(instances
+			(project "ServicetastaturWeissFake"
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS48")
 		(at 96.52 100.33 0)
 		(unit 1)
@@ -16467,6 +17335,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Pack04_Split")
+		(at 113.03 92.71 270)
+		(mirror x)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d999494c-515b-473b-bd4d-575293637540")
+		(property "Reference" "RN2"
+			(at 113.03 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Pack04_Split"
+			(at 113.03 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 113.03 94.742 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 113.03 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "ede2f9fd-dcd0-4a8c-9dcb-3aa01166d455")
+		)
+		(pin "4"
+			(uuid "af882260-d257-4fd2-b94f-3ceccad2b240")
+		)
+		(pin "3"
+			(uuid "2443bc62-1346-41ec-a0fe-365dbefd4a3b")
+		)
+		(pin "7"
+			(uuid "71327b51-d763-48a3-a385-458467c4f7ee")
+		)
+		(pin "2"
+			(uuid "6d340c36-3f93-4b55-8831-209c351baf0c")
+		)
+		(pin "5"
+			(uuid "6fe1692f-1a86-448c-9c86-48bef3c50b8a")
+		)
+		(pin "1"
+			(uuid "0c39d484-b2dc-4f99-b6cf-edf53bb2d8f2")
+		)
+		(pin "8"
+			(uuid "bb67356e-2e47-4685-a6d7-5f58ca85ca25")
+		)
+		(instances
+			(project ""
+				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
+					(reference "RN2")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 259.08 31.75 0)
 		(unit 1)
@@ -16531,74 +17486,6 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 113.03 102.87 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc2db4b1-8008-4a62-923e-8050b4d4a5d5")
-		(property "Reference" "R14"
-			(at 113.03 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470 Ω"
-			(at 113.03 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 113.03 104.648 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 113.03 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c60d0205-e15f-4755-9e28-e856bb25cac7")
-		)
-		(pin "1"
-			(uuid "27ed63ef-9aca-49b4-92ea-019b74de99be")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -16992,17 +17879,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 35.56 187.96 0)
+		(lib_id "power:GND1")
+		(at 71.12 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f2b26856-3012-4209-a784-a06514bc6f34")
+		(uuid "f09be039-245b-4bf1-9645-40d7167626cc")
 		(property "Reference" "#PWR027"
-			(at 35.56 194.31 0)
+			(at 71.12 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17010,8 +17897,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 35.56 193.04 0)
+		(property "Value" "GND1"
+			(at 71.12 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17019,7 +17906,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 187.96 0)
+			(at 71.12 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17028,7 +17915,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 187.96 0)
+			(at 71.12 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17036,8 +17923,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 187.96 0)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 71.12 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17046,7 +17933,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "63414949-cdec-468c-b56c-13f475a8de97")
+			(uuid "f3667bf9-7337-4d0a-99b3-e941de57c981")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
@@ -17275,17 +18162,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 106.68 187.96 0)
+		(lib_id "power:GND1")
+		(at 124.46 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f6f4ffe7-38a9-4275-8c4f-05e3ca04b3f6")
-		(property "Reference" "#PWR035"
-			(at 106.68 194.31 0)
+		(uuid "f9092f28-b94b-407c-8311-1e49f0d4d8d3")
+		(property "Reference" "#PWR038"
+			(at 124.46 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17293,8 +18180,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 106.68 193.04 0)
+		(property "Value" "GND1"
+			(at 124.46 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17302,7 +18189,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 187.96 0)
+			(at 124.46 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17311,7 +18198,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 187.96 0)
+			(at 124.46 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17319,142 +18206,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 106.68 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a1c83577-3231-45de-8e60-d7f2ad2fc44a")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 113.03 95.25 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fa59abf5-9e56-4b5c-9d33-a73bf001a6ea")
-		(property "Reference" "R11"
-			(at 113.03 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "470 Ω"
-			(at 113.03 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 113.03 97.028 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 113.03 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "10229b87-9713-4984-9e95-2c9c324f03ee")
-		)
-		(pin "1"
-			(uuid "5c83e8d4-baee-49e1-9f44-f585c29bcfa6")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 35.56 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fa749801-ebc0-427b-8631-17b1f6288850")
-		(property "Reference" "#PWR020"
-			(at 35.56 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 35.56 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 171.45 0)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 124.46 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17463,12 +18216,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "096c36c1-9474-485e-9147-0cfdbebe9d41")
+			(uuid "e482fcd0-7e2c-469f-956b-a0dc6af377f0")
 		)
 		(instances
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR020")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -17535,72 +18288,6 @@
 			(project "ServicetastaturWeissFake"
 				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
 					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 124.46 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ffd99ff9-1ffc-4e95-ba8a-1293b4d5f300")
-		(property "Reference" "#PWR037"
-			(at 124.46 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 124.46 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.46 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2a7dcbe0-5df0-4f1a-9e67-75fee14352b1")
-		)
-		(instances
-			(project "ServicetastaturWeissFake"
-				(path "/c7f9b05e-617f-48d9-bed2-6de097771a4c"
-					(reference "#PWR037")
 					(unit 1)
 				)
 			)
