@@ -91,9 +91,9 @@ class SerialLoaderApp(tk.Tk):
         # Log
         frm_log = ttk.LabelFrame(self, text='Log')
         frm_log.pack(fill='both', expand=True, padx=6, pady=6)
-        self.txt_log = tk.Text(frm_log, height=16, wrap='none', font=('Consolas',10))
+        self.txt_log = tk.Text(frm_log, height=16, wrap='none')
         self.txt_log.pack(fill='both', expand=True)
-        self.txt_log.insert('end','Port auswählen\nVerbinden\nLoader Öffnen...\nLoader Upload\nFunktion Datum Los\nFunktion Upload Los\nFertig :)\n')
+        self.txt_log.insert('end','Port auswählen\nVerbinden\nLoader Öffnen...\nLoader Upload\nFunktion Upload Factory Los\nFunktion Datum Los\nFunktion Upload Los\nFertig :)\n')
 
         # Bottom panel: progress and abort
         frm_bottom = ttk.Frame(self)
