@@ -189,9 +189,21 @@ class SerialLoaderApp(tk.Tk):
             return
         if data[0] == 0xFF:
             return
+        responses = {
+            0x31: "Unbekannter Befehl",
+            0x32: "Warte auf weitere Daten.",
+            0x33: "Datei OK, wird gestartet.",
+            0x34: "Initialisierung der Daten abgeschlossen."
+        }
         for i in range(len(data)-1):
             if data[i] == 0x1B:
-                self.status_var.set(f"{data[i]:02X} {data[i+1]:02X}")
+                code = data[i+1]
+                if code in responses:
+                    msg = responses[code]
+                    self.log(msg)
+                    self.status_var.set(msg)
+                else:
+                    self.status_var.set(f"{data[i]:02X} {data[i+1]:02X}")
         # also log raw incoming as hex
         self.log('RX: ' + ' '.join(f"{b:02X}" for b in data))
 
