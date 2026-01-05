@@ -35,7 +35,6 @@ class SerialLoaderApp(tk.Tk):
         self.byte_2 = self.convert_hex_string_to_byte_array(DEFAULT_HEX)
         self.fileData: bytes = b''
         self.processedFileData: bytes = b''
-        self.int_0 = 64
         self.int_1 = 0
         self.int_2 = 0
         self.schnelleDB = False
@@ -343,14 +342,14 @@ class SerialLoaderApp(tk.Tk):
             if 256 <= size <= 4*1024*1024:
                 if not self.bool_2:
                     self.fileData = open(path,'rb').read()
-                    self.int_1 = len(self.fileData) % self.int_0
+                    self.int_1 = len(self.fileData) % 64
                     self.status_var.set('Loader ' + os.path.basename(path))
                     self.btn_upload['state'] = 'normal'
                     self.log(f"Datei '{os.path.basename(path)}', Länge (0x{len(self.fileData):X}) {len(self.fileData)} Bytes geladen...!")
                     return True
                 else:
                     self.processedFileData = open(path,'rb').read()
-                    self.int_2 = len(self.processedFileData) % self.int_0
+                    self.int_2 = len(self.processedFileData) % 64
                     header1 = self.swap_reverse(self.processedFileData, 4)
                     header2 = self.swap_reverse(self.processedFileData, 8)
                     if (header1 ^ header2) == 0xFFFFFFFF and (header1 - 4096) == (size - 1):
@@ -415,9 +414,9 @@ class SerialLoaderApp(tk.Tk):
                         self.log('Upload abgebrochen...!')
                         return
                     with self.serial_lock:
-                        self.serial_port.write(data[num:num+self.int_0])
+                        self.serial_port.write(data[num:num+64])
                     self.progress['value'] = num
-                    num += self.int_0
+                    num += 64
                 # final remainder
                 with self.serial_lock:
                     self.serial_port.write(data[num:num+self.int_2])
@@ -430,9 +429,9 @@ class SerialLoaderApp(tk.Tk):
                         self.log('Upload abgebrochen...!')
                         return
                     with self.serial_lock:
-                        self.serial_port.write(data[num:num+self.int_0])
+                        self.serial_port.write(data[num:num+64])
                     self.progress['value'] = num
-                    num += self.int_0
+                    num += 64
                 with self.serial_lock:
                     self.serial_port.write(data[num:num+self.int_1])
                 self.progress['value'] = num + self.int_1
