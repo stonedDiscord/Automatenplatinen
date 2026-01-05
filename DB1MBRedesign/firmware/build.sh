@@ -1,0 +1,1 @@
+vasm_m68k_mot -mcpu32 -Fbin main.s -o init.bin
