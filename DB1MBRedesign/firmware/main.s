@@ -37,6 +37,5 @@ wait_for_rx_full:
 onerror:
 	; send error code back
 	move.b	D0,($1,A1)
-	; die
-	db $4a
-	db $fa
+	; hand back control
+	bgnd
