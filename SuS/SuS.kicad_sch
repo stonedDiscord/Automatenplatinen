@@ -11214,6 +11214,12 @@
 		(uuid "c11bb8fd-3dde-4fa0-a074-5ae2d94d0a66")
 	)
 	(junction
+		(at 223.52 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c648f266-db7e-464f-a247-d618d1e6d14b")
+	)
+	(junction
 		(at 172.72 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11482,6 +11488,16 @@
 			(type default)
 		)
 		(uuid "52cff8e7-efd2-4f95-961e-e78230b8e860")
+	)
+	(wire
+		(pts
+			(xy 223.52 71.12) (xy 228.6 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5354eb41-50b2-4671-ba85-537ed7596b33")
 	)
 	(wire
 		(pts
@@ -11775,6 +11791,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 71.12) (xy 223.52 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9e9e995-15a0-4a08-b776-78dd0bc36c3d")
+	)
+	(wire
+		(pts
 			(xy 271.78 -86.36) (xy 271.78 -43.18)
 		)
 		(stroke
@@ -11802,16 +11828,6 @@
 			(type default)
 		)
 		(uuid "cedb2d47-40aa-49ba-b3d6-43cf6935302e")
-	)
-	(wire
-		(pts
-			(xy 20.32 -12.7) (xy 25.4 -12.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5778e5c-8320-4531-8f3c-2f5b641e0e0e")
 	)
 	(wire
 		(pts
@@ -13963,6 +13979,28 @@
 			)
 		)
 	)
+	(global_label "A14"
+		(shape input)
+		(at 215.9 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4ddbbb20-7da4-44e1-88cf-ff5158b8ca36")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 209.4072 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "DTACK"
 		(shape input)
 		(at 40.64 58.42 180)
@@ -14641,28 +14679,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "A14"
-		(shape input)
-		(at 228.6 71.12 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6bc53633-944d-494d-b2da-0a25eecb7172")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 223.3167 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -15659,7 +15675,7 @@
 	)
 	(global_label "A14"
 		(shape input)
-		(at 187.96 71.12 180)
+		(at 185.42 71.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15669,7 +15685,7 @@
 		)
 		(uuid "9109e0e0-f13f-431f-953c-0134aeb967d5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 182.6767 71.12 0)
+			(at 180.1367 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17967,6 +17983,28 @@
 			)
 		)
 	)
+	(global_label "A15"
+		(shape input)
+		(at 180.34 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e69dc1f3-8015-4fef-be44-4b198c115a49")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 173.8472 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "A20"
 		(shape output)
 		(at 71.12 88.9 0)
@@ -19070,7 +19108,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 490.22 68.58 0)
+		(at 177.8 193.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19079,7 +19117,7 @@
 		(fields_autoplaced yes)
 		(uuid "066ce955-034c-4db4-b1da-f86746e701ce")
 		(property "Reference" "S1"
-			(at 490.22 62.23 0)
+			(at 177.8 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19087,7 +19125,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 490.22 64.77 0)
+			(at 177.8 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19095,7 +19133,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 490.22 68.58 0)
+			(at 177.8 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19104,7 +19142,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 490.22 68.58 0)
+			(at 177.8 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19113,7 +19151,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 490.22 68.58 0)
+			(at 177.8 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19546,7 +19584,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 336.55 35.56 90)
+		(at 219.71 73.66 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19555,7 +19593,7 @@
 		(fields_autoplaced yes)
 		(uuid "0f385282-823b-432d-8cce-e863d674bbe3")
 		(property "Reference" "R7"
-			(at 336.55 29.21 90)
+			(at 219.71 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19563,7 +19601,7 @@
 			)
 		)
 		(property "Value" "1"
-			(at 336.55 31.75 90)
+			(at 219.71 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19571,7 +19609,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 336.55 37.338 90)
+			(at 219.71 75.438 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19580,7 +19618,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 336.55 35.56 0)
+			(at 219.71 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19589,7 +19627,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 336.55 35.56 0)
+			(at 219.71 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22987,6 +23025,73 @@
 			(project "SuS"
 				(path "/842e655d-6d5c-434c-9eb4-fefb155e89e7"
 					(reference "#PWR088")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 17.78 -12.7 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "524bed51-787a-4a35-b9ff-7ac167318525")
+		(property "Reference" "#PWR0103"
+			(at 21.59 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 13.97 -12.7001 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 17.78 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 17.78 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 17.78 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a7c8df2-08a5-4e7f-b905-840443253767")
+		)
+		(instances
+			(project "SuS"
+				(path "/842e655d-6d5c-434c-9eb4-fefb155e89e7"
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -27132,7 +27237,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 321.31 35.56 90)
+		(at 219.71 71.12 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27141,7 +27246,7 @@
 		(fields_autoplaced yes)
 		(uuid "8a04fe25-5f44-4e87-b19e-a27eef99f7f7")
 		(property "Reference" "R1"
-			(at 321.31 29.21 90)
+			(at 219.71 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27149,7 +27254,7 @@
 			)
 		)
 		(property "Value" "1"
-			(at 321.31 31.75 90)
+			(at 219.71 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27157,7 +27262,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 321.31 37.338 90)
+			(at 219.71 69.342 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27166,7 +27271,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 321.31 35.56 0)
+			(at 219.71 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27175,7 +27280,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 321.31 35.56 0)
+			(at 219.71 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29383,7 +29488,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 331.47 180.34 90)
+		(at 321.31 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -29392,7 +29497,7 @@
 		(fields_autoplaced yes)
 		(uuid "9ecffa49-860f-4e0b-8936-618c1a4b14d8")
 		(property "Reference" "R16"
-			(at 331.47 173.99 90)
+			(at 321.31 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29400,7 +29505,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 331.47 176.53 90)
+			(at 321.31 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29408,7 +29513,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 331.47 182.118 90)
+			(at 321.31 113.538 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29417,7 +29522,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 331.47 180.34 0)
+			(at 321.31 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29426,7 +29531,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 331.47 180.34 0)
+			(at 321.31 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33873,6 +33978,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 335.28 160.02 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2c4f2f1-0a05-4945-a44d-bd22a96ce146")
+		(property "Reference" "#PWR0104"
+			(at 331.47 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 339.09 160.0199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 335.28 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5575de6-9a9f-49e9-9ff1-8fc47b2120fb")
+		)
+		(instances
+			(project "SuS"
+				(path "/842e655d-6d5c-434c-9eb4-fefb155e89e7"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 30.48 -68.58 0)
 		(unit 1)
@@ -33940,7 +34112,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 335.28 180.34 270)
+		(at 325.12 111.76 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -33949,7 +34121,7 @@
 		(fields_autoplaced yes)
 		(uuid "e488f13e-4006-4681-820b-a4af40e7e25a")
 		(property "Reference" "#PWR083"
-			(at 331.47 180.34 0)
+			(at 321.31 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33958,7 +34130,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 339.09 180.3399 90)
+			(at 328.93 111.7599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33967,7 +34139,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 335.28 180.34 0)
+			(at 325.12 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33976,7 +34148,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 335.28 180.34 0)
+			(at 325.12 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33985,7 +34157,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 335.28 180.34 0)
+			(at 325.12 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34211,7 +34383,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "edaa520a-adbd-4278-997a-a663630c26ef")
 		(property "Reference" "R21"
@@ -35066,7 +35238,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 16.51 -12.7 270)
+		(at 21.59 -12.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -35075,7 +35247,7 @@
 		(fields_autoplaced yes)
 		(uuid "fa0d7a40-ad6f-42bc-8f4d-d9d36ac723ab")
 		(property "Reference" "R12"
-			(at 16.51 -17.78 90)
+			(at 21.59 -17.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35083,7 +35255,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 16.51 -15.24 90)
+			(at 21.59 -15.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35091,7 +35263,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 16.51 -14.478 90)
+			(at 21.59 -14.478 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35100,7 +35272,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 16.51 -12.7 0)
+			(at 21.59 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35109,7 +35281,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 16.51 -12.7 0)
+			(at 21.59 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
