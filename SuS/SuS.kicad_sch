@@ -11540,6 +11540,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 208.28) (xy 218.44 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14d0451c-e16b-4528-8ffe-21e9a2efdea1")
+	)
+	(wire
+		(pts
 			(xy 309.88 111.76) (xy 309.88 121.92)
 		)
 		(stroke
@@ -11577,6 +11587,16 @@
 			(type default)
 		)
 		(uuid "208ff882-3a31-4e0e-8946-69da44751932")
+	)
+	(wire
+		(pts
+			(xy 149.86 208.28) (xy 218.44 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "227982d3-c4bb-4948-a35e-7c8e93b04fcc")
 	)
 	(wire
 		(pts
@@ -11880,6 +11900,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 182.88) (xy 149.86 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dd667b5-ef55-4dc0-9153-ef56e8ed87af")
+	)
+	(wire
+		(pts
 			(xy 510.54 0) (xy 513.08 0)
 		)
 		(stroke
@@ -11947,6 +11977,16 @@
 			(type default)
 		)
 		(uuid "8b17e1dd-657a-4dee-9dfc-6c4bce97af60")
+	)
+	(wire
+		(pts
+			(xy 463.55 2.54) (xy 467.36 2.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cdf5dad-2e17-4508-8967-9ad5daa62327")
 	)
 	(wire
 		(pts
@@ -12240,6 +12280,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 182.88) (xy 149.86 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca8eaa68-dc42-4364-9e74-fb98ce860ceb")
+	)
+	(wire
+		(pts
 			(xy 96.52 -17.78) (xy 111.76 -17.78)
 		)
 		(stroke
@@ -12507,6 +12557,16 @@
 			(type default)
 		)
 		(uuid "fa524ac4-dec5-4a04-9ae0-6ac83ea5e0f4")
+	)
+	(wire
+		(pts
+			(xy 218.44 138.43) (xy 210.82 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faedd05c-e562-4df5-aaab-81a3116c2a68")
 	)
 	(wire
 		(pts
@@ -26351,6 +26411,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 403.86 185.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c086240-729b-4bf0-bda1-891df8b04467")
+		(property "Reference" "H4"
+			(at 406.4 184.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 406.4 186.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+			(at 403.86 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 403.86 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 403.86 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "SuS"
+				(path "/842e655d-6d5c-434c-9eb4-fefb155e89e7"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 220.98 116.84 0)
 		(unit 1)
@@ -28919,6 +29043,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 403.86 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d060713-1141-4940-908b-417e33bdde08")
+		(property "Reference" "H3"
+			(at 406.4 168.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 406.4 171.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+			(at 403.86 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 403.86 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 403.86 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/842e655d-6d5c-434c-9eb4-fefb155e89e7"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS32")
 		(at 363.22 -101.6 0)
 		(unit 2)
@@ -30488,7 +30676,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 344.17 204.47 90)
+		(at 459.74 2.54 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -30497,7 +30685,7 @@
 		(fields_autoplaced yes)
 		(uuid "9b1ec142-a826-4088-8b9d-909911217dd5")
 		(property "Reference" "R22"
-			(at 344.17 198.12 90)
+			(at 459.74 8.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30505,7 +30693,7 @@
 			)
 		)
 		(property "Value" "22k"
-			(at 344.17 200.66 90)
+			(at 459.74 6.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30513,7 +30701,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 344.17 206.248 90)
+			(at 459.74 0.762 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30522,7 +30710,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 344.17 204.47 0)
+			(at 459.74 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30531,7 +30719,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 344.17 204.47 0)
+			(at 459.74 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32001,7 +32189,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 347.98 204.47 90)
+		(at 455.93 2.54 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -32010,7 +32198,7 @@
 		(fields_autoplaced yes)
 		(uuid "ad42dccf-51e2-4711-bc2a-d0a2e8e0e28c")
 		(property "Reference" "#PWR08"
-			(at 354.33 204.47 0)
+			(at 449.58 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32019,7 +32207,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 351.79 204.4699 90)
+			(at 452.12 2.5401 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32028,7 +32216,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 347.98 204.47 0)
+			(at 455.93 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32037,7 +32225,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 347.98 204.47 0)
+			(at 455.93 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32046,7 +32234,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 347.98 204.47 0)
+			(at 455.93 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
