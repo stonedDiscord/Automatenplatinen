@@ -21005,7 +21005,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 48.26 44.4499 0)
 			(effects
 				(font
@@ -21213,7 +21213,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 196.85 26.6699 0)
 			(effects
 				(font
@@ -21482,7 +21482,7 @@
 				)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "1R0"
 			(at 303.53 88.9 90)
 			(effects
 				(font
@@ -21723,7 +21723,7 @@
 				)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "1R0"
 			(at 99.06 16.51 90)
 			(effects
 				(font
@@ -21926,7 +21926,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 360.68 175.2599 0)
 			(effects
 				(font
@@ -22625,7 +22625,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MAX691CPE"
+		(property "Value" "MAX696"
 			(at 346.3133 180.34 0)
 			(effects
 				(font
@@ -22721,13 +22721,11 @@
 	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 133.35 25.4 0)
-		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "238c076b-f048-4c5a-87a0-2510a559e0dd")
 		(property "Reference" "C6"
 			(at 129.54 23.2409 0)
@@ -22735,20 +22733,20 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10u"
 			(at 129.54 25.7809 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P2.50mm"
-			(at 132.3848 29.21 0)
+			(at 134.3152 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23112,7 +23110,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MC68EC000FN"
+		(property "Value" "68EC000FN"
 			(at 112.6333 27.94 0)
 			(effects
 				(font
@@ -23380,7 +23378,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10u"
 			(at 34.29 248.0309 0)
 			(effects
 				(font
@@ -23583,7 +23581,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 245.11 27.9399 0)
 			(effects
 				(font
@@ -23986,7 +23984,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 295.91 27.9399 0)
 			(effects
 				(font
@@ -24305,32 +24303,34 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 295.91 209.55 180)
+		(at 295.91 209.55 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "3b7648fa-be8b-4cde-aa74-2ebc5c590434")
 		(property "Reference" "R9"
-			(at 289.56 209.55 90)
+			(at 293.37 208.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "10k"
-			(at 292.1 209.55 90)
+		(property "Value" "10K"
+			(at 293.37 210.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 297.688 209.55 90)
+			(at 294.132 209.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24389,7 +24389,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 400.05 196.8501 0)
 			(effects
 				(font
@@ -24459,7 +24459,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "RTC62421"
+		(property "Value" "MSM62X42"
 			(at 367.9033 146.05 0)
 			(effects
 				(font
@@ -24844,7 +24844,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "V62C5181024LL-70P"
+		(property "Value" "628128LP"
 			(at 314.5633 27.94 0)
 			(effects
 				(font
@@ -25186,32 +25186,34 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 295.91 201.93 180)
+		(at 295.91 201.93 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4cc42988-0569-4b8f-a11d-a56b912c7355")
 		(property "Reference" "R10"
-			(at 289.56 201.93 90)
+			(at 293.37 200.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "22k"
-			(at 292.1 201.93 90)
+		(property "Value" "22K"
+			(at 293.37 203.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 297.688 201.93 90)
+			(at 294.132 201.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26123,7 +26125,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10K"
 			(at 36.83 123.19 90)
 			(effects
 				(font
@@ -26192,7 +26194,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 135.89 153.6699 0)
 			(effects
 				(font
@@ -26497,7 +26499,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100R"
 			(at 321.31 190.5 90)
 			(effects
 				(font
@@ -27415,7 +27417,7 @@
 				)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "1R0"
 			(at 389.89 85.09 90)
 			(effects
 				(font
@@ -27484,7 +27486,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 74.93 248.9199 0)
 			(effects
 				(font
@@ -28378,7 +28380,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100R"
 			(at 317.5 231.14 90)
 			(effects
 				(font
@@ -29465,7 +29467,7 @@
 				)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "1R0"
 			(at 152.4 119.38 90)
 			(effects
 				(font
@@ -29535,7 +29537,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 45.72 129.5401 0)
 			(effects
 				(font
@@ -29843,7 +29845,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 392.43 110.4899 0)
 			(effects
 				(font
@@ -29913,7 +29915,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10u"
 			(at 135.89 248.0309 0)
 			(effects
 				(font
@@ -30049,7 +30051,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "1R0"
 			(at 290.83 105.4099 0)
 			(effects
 				(font
@@ -30589,7 +30591,7 @@
 				)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "1R0"
 			(at 147.32 72.39 90)
 			(effects
 				(font
@@ -30724,7 +30726,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "V62C5181024LL-70P"
+		(property "Value" "628128LP"
 			(at 263.7633 27.94 0)
 			(effects
 				(font
@@ -31747,7 +31749,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 220.98 154.9399 0)
 			(effects
 				(font
@@ -31913,15 +31915,15 @@
 		(fields_autoplaced yes)
 		(uuid "9b1ec142-a826-4088-8b9d-909911217dd5")
 		(property "Reference" "R22"
-			(at 36.83 116.84 90)
+			(at 36.83 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "22k"
-			(at 36.83 114.3 90)
+		(property "Value" "22K"
+			(at 36.83 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32106,12 +32108,12 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 147.32 80.01 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "9b96269b-9797-474a-9a1e-3b05e9ce6db4")
 		(property "Reference" "R20"
 			(at 147.32 86.36 90)
@@ -32121,7 +32123,7 @@
 				)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "1R0"
 			(at 147.32 83.82 90)
 			(effects
 				(font
@@ -32130,7 +32132,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 147.32 78.232 90)
+			(at 147.32 81.788 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32190,7 +32192,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10u"
 			(at 257.81 154.0509 0)
 			(effects
 				(font
@@ -32426,15 +32428,15 @@
 		(fields_autoplaced yes)
 		(uuid "9dff6394-7403-4c9b-9df4-264a51544761")
 		(property "Reference" "R8"
-			(at 346.71 151.13 90)
+			(at 346.71 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1"
-			(at 346.71 148.59 90)
+		(property "Value" "1R0"
+			(at 346.71 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32501,7 +32503,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10K"
 			(at 80.01 125.73 90)
 			(effects
 				(font
@@ -33056,7 +33058,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100pF"
+		(property "Value" "VC100pF"
 			(at 304.8 196.8499 0)
 			(effects
 				(font
@@ -33126,7 +33128,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100R"
 			(at 317.5 241.3 90)
 			(effects
 				(font
@@ -33432,7 +33434,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 33.02 165.0999 0)
 			(effects
 				(font
@@ -33806,7 +33808,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 95.25 248.9199 0)
 			(effects
 				(font
@@ -35056,7 +35058,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 143.51 26.6699 0)
 			(effects
 				(font
@@ -35590,7 +35592,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 54.61 248.9199 0)
 			(effects
 				(font
@@ -36013,33 +36015,31 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 346.71 153.67 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d265e167-d07f-4e3e-8f45-e58b0f5732a1")
 		(property "Reference" "R17"
-			(at 347.9801 156.21 0)
+			(at 346.71 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "100k"
-			(at 345.4401 156.21 0)
+		(property "Value" "100K"
+			(at 346.71 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 346.71 155.448 90)
+			(at 346.71 151.892 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36215,12 +36215,12 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 152.4 127 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d4ab7fbf-0dd2-4039-97cc-32e99f3808d5")
 		(property "Reference" "R19"
 			(at 152.4 133.35 90)
@@ -36230,7 +36230,7 @@
 				)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "1R0"
 			(at 152.4 130.81 90)
 			(effects
 				(font
@@ -36239,7 +36239,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 152.4 125.222 90)
+			(at 152.4 128.778 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37215,7 +37215,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10K"
 			(at 80.01 138.43 90)
 			(effects
 				(font
@@ -37350,7 +37350,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 115.57 248.9199 0)
 			(effects
 				(font
@@ -38139,12 +38139,12 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 303.53 95.25 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "edaa520a-adbd-4278-997a-a663630c26ef")
 		(property "Reference" "R21"
 			(at 303.53 101.6 90)
@@ -38154,7 +38154,7 @@
 				)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "1R0"
 			(at 303.53 99.06 90)
 			(effects
 				(font
@@ -38163,7 +38163,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 303.53 93.472 90)
+			(at 303.53 97.028 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38223,7 +38223,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100R"
 			(at 140.97 102.8699 0)
 			(effects
 				(font
@@ -38813,7 +38813,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 156.21 26.6699 0)
 			(effects
 				(font
@@ -39141,15 +39141,15 @@
 		(fields_autoplaced yes)
 		(uuid "fa0d7a40-ad6f-42bc-8f4d-d9d36ac723ab")
 		(property "Reference" "R12"
-			(at 68.58 30.48 90)
+			(at 68.58 29.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "100"
-			(at 68.58 33.02 90)
+		(property "Value" "100R"
+			(at 68.58 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
