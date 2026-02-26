@@ -23,7 +23,7 @@ import serial
 import serial.tools.list_ports
 import queue
 
-DEFAULT_HEX = "7c6b696c6cfdc4551b53594e4353594e4357414954474f0a"
+KILL_COMMAND = "7c6b696c6cfdc4551b53594e4353594e4357414954474f0a"
 
 class SerialLoaderApp(tk.Tk):
     def __init__(self):
@@ -32,7 +32,7 @@ class SerialLoaderApp(tk.Tk):
         self.protocol("WM_DELETE_WINDOW", self.on_close)
 
         # State variables
-        self.byte_2 = self.convert_hex_string_to_byte_array(DEFAULT_HEX)
+        self.byte_2 = self.convert_hex_string_to_byte_array(KILL_COMMAND)
         self.fileData: bytes = b''
         self.processedFileData: bytes = b''
         self.int_1 = 0
