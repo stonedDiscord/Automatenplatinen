@@ -29,13 +29,13 @@ wait_for_rx_full:
 	move.b	($1,A0),D0
 	; bits 0-4 are parity,framing,noise,overrun errors
 	andi.b	#$f,D0
-	bne.w	onerror
+	bne.w	onfinish
 	; move data from SCDR into 0x400 and then advance to the next addr
 	move.b	($1,A1),(A2)+
 	tst.w	D3
 	dbeq	D3,wait_for_rx_full
-onerror:
-	; send error code back
+onfinish:
+	; reset serial
 	move.b	D0,($1,A1)
 	; hand back control
 	bgnd
