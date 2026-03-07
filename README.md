@@ -22,6 +22,8 @@ Ungetestet:
 - ST25: Tastatur für NSM Geräte
 - SoundkartenProg: Ein Inverter für den seriellen Anschluss von kleinen Soundkarten.
 - Tasterplatine: Fast das gleiche wie die LEDLamp aber mit einem Taster dabei. Für alte Geräte mit weißer CPU.
+- Soundkarte: Ein Inverter für TTL-Signale um kleine Soundkarten auszulesen/beschreiben
+- ZLKalt: Zulassungskarte mit AT90
 
 Schrott:
 - DB1MBRedesign: Forschung wo die Pins der Datenbank hingehen.
@@ -29,6 +31,4 @@ Schrott:
 - E60: Hier wollt ich mal schauen wie die Konvertierung der Logik-Level umgesetzt wurde. Das Ergebnis: Ein Transistor halt. Naja.
 - Programmierboard: Ein User hat das Ding auf eBay geschossen und wollte wissen was es kann.
 - Serial: die ProgrammierStation aber mit WLAN, liegt auf Eis bis die normale ProgrammierStation fertig ist.
-- Soundkarte: Irgendeine Adapter, nicht so wichtig.
 - Spielmodul: Forschung für den DBV wo die ganzen Leiterbahnen eigentlich hingehen und wie man den RTC anspricht.
-- ZLKalt: Zulassungskarte mit AT90
