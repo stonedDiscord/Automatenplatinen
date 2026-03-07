@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "842e655d-6d5c-434c-9eb4-fefb155e89e7")
 	(paper "A3")
+	(title_block
+		(title "SuS-Modul")
+		(company "stonedDiscord")
+		(comment 1 "https://github.com/stonedDiscord/Automatenplatinen/tree/main/SuS")
+	)
 	(lib_symbols
 		(symbol "74xx:74HC138"
 			(exclude_from_sim no)
@@ -11750,10 +11755,6 @@
 		(uuid "1617f4aa-a3fb-41ff-9cca-2673989f0c73")
 	)
 	(no_connect
-		(at 261.62 270.51)
-		(uuid "217ab064-4a45-4dd6-96ab-2ea1f5bdf91f")
-	)
-	(no_connect
 		(at 363.22 190.5)
 		(uuid "26ad130f-9551-4143-839a-ae4e9be3bf8f")
 	)
@@ -11802,16 +11803,8 @@
 		(uuid "a49a6ac7-d0ac-4a2f-b76b-2b5a557c086f")
 	)
 	(no_connect
-		(at 261.62 265.43)
-		(uuid "b40479ff-d991-4501-9559-4c53d8c2700e")
-	)
-	(no_connect
 		(at 363.22 205.74)
 		(uuid "bdc17aaf-ef2f-4377-90ca-deabd3ed0342")
-	)
-	(no_connect
-		(at 241.3 267.97)
-		(uuid "c3f638aa-693e-4a3e-aa0e-7469d07d756c")
 	)
 	(no_connect
 		(at 60.96 88.9)
@@ -11820,10 +11813,6 @@
 	(no_connect
 		(at 241.3 265.43)
 		(uuid "d24d72cd-b022-4b80-8ca5-99b229408825")
-	)
-	(no_connect
-		(at 261.62 262.89)
-		(uuid "d3cb068c-dfaa-48ca-b4dd-58e031bdd9e4")
 	)
 	(no_connect
 		(at 184.15 265.43)
@@ -13213,7 +13202,7 @@
 		)
 		(uuid "fc080c70-acc6-4892-913b-b24d342277fb")
 	)
-	(global_label "RW"
+	(global_label "R{slash}~{W}"
 		(shape input)
 		(at 203.2 262.89 0)
 		(fields_autoplaced yes)
@@ -14357,8 +14346,8 @@
 			)
 		)
 	)
-	(global_label "p1_a5"
-		(shape input)
+	(global_label "CLOCKOUT"
+		(shape output)
 		(at 102.87 20.32 0)
 		(fields_autoplaced yes)
 		(effects
@@ -14369,7 +14358,7 @@
 		)
 		(uuid "2d5339f2-43d8-4c55-9b3a-910eee4564d8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.5398 20.32 0)
+			(at 115.6524 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16755,7 +16744,7 @@
 			)
 		)
 	)
-	(global_label "RW"
+	(global_label "R{slash}~{W}"
 		(shape output)
 		(at 95.25 45.72 180)
 		(fields_autoplaced yes)
@@ -17437,6 +17426,28 @@
 			)
 		)
 	)
+	(global_label "TUERK"
+		(shape output)
+		(at 261.62 265.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9d31a093-9e53-419e-9e7c-42e0944c61ea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.5923 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Y3"
 		(shape input)
 		(at 255.27 106.68 180)
@@ -17855,7 +17866,7 @@
 			)
 		)
 	)
-	(global_label "p1_c5"
+	(global_label "cBERR"
 		(shape input)
 		(at 33.02 127 180)
 		(fields_autoplaced yes)
@@ -18225,6 +18236,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BOOTMODE"
+		(shape output)
+		(at 261.62 262.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bd02d1dd-80a2-4742-81e3-f79f74be0b80")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 274.7047 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -19263,6 +19296,28 @@
 			)
 		)
 	)
+	(global_label "DB_RX"
+		(shape output)
+		(at 261.62 270.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dbe5e6b6-0522-4a98-8431-236f0df17c24")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.5923 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "p2_a2"
 		(shape output)
 		(at 267.97 238.76 0)
@@ -19967,6 +20022,28 @@
 			)
 		)
 	)
+	(global_label "DB_TX"
+		(shape input)
+		(at 241.3 267.97 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f47ff292-ab6b-45c0-b157-83e316fcb264")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 249.9699 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D7"
 		(shape bidirectional)
 		(at 125.73 114.3 0)
@@ -20187,7 +20264,7 @@
 			)
 		)
 	)
-	(global_label "p1_c5"
+	(global_label "cBERR"
 		(shape input)
 		(at 165.1 265.43 0)
 		(fields_autoplaced yes)
@@ -20253,7 +20330,7 @@
 			)
 		)
 	)
-	(global_label "p1_a5"
+	(global_label "CLOCKOUT"
 		(shape input)
 		(at 203.2 265.43 0)
 		(fields_autoplaced yes)
@@ -20473,7 +20550,7 @@
 			)
 		)
 	)
-	(global_label "RW"
+	(global_label "R{slash}~{W}"
 		(shape input)
 		(at 355.6 29.21 180)
 		(fields_autoplaced yes)
