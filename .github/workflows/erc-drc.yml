@@ -19,8 +19,8 @@ jobs:
           for dir in */; do
             dir=${dir%/}
             if [ -d "$dir" ]; then
-              sch_file=$(ls "$dir"/*.kicad_sch 2>/dev/null | head -n 1)
-              pcb_file=$(ls "$dir"/*.kicad_pcb 2>/dev/null | head -n 1)
+              sch_file=$(ls *.kicad_sch 2>/dev/null | head -n 1)
+              pcb_file=$(ls *.kicad_pcb 2>/dev/null | head -n 1)
           
               if [ -n "$sch_file" ] && [ -n "$pcb_file" ]; then
                 projects_json=$(jq -c \
@@ -51,14 +51,15 @@ jobs:
         id: erc
         uses: sparkengineering/kicad-action@v4
         with:
-          kicad_sch: ${{ matrix.project.sch }}
+          kicad_sch: ${{ matrix.project.name }}/${{ matrix.project.sch }}
           sch_erc: true
 
       - name: Run KiCad DRC
         id: drc
+        if: ${{ failure() }}
         uses: sparkengineering/kicad-action@v4
         with:
-          kicad_pcb: ${{ matrix.project.pcb }}
+          kicad_pcb: ${{ matrix.project.name }}/${{ matrix.project.pcb }}
           pcb_drc: true
 
       - name: Upload report
