@@ -19,10 +19,11 @@ jobs:
           for dir in */; do
             dir=${dir%/}
             if [ -d "$dir" ]; then
-              sch_file=$(ls *.kicad_sch 2>/dev/null | head -n 1)
-              pcb_file=$(ls *.kicad_pcb 2>/dev/null | head -n 1)
-          
+              sch_file=$(ls "$dir"/*.kicad_sch 2>/dev/null | head -n 1)
+              pcb_file=$(ls "$dir"/*.kicad_pcb 2>/dev/null | head -n 1)
               if [ -n "$sch_file" ] && [ -n "$pcb_file" ]; then
+                sch_file=${sch_file#$dir/}
+                pcb_file=${pcb_file#$dir/}
                 projects_json=$(jq -c \
                   --arg name "$dir" \
                   --arg sch "$sch_file" \
@@ -32,7 +33,6 @@ jobs:
               fi
             fi
           done
-          echo "Matrix JSON: $projects_json"
           echo "projects=$projects_json" >> "$GITHUB_OUTPUT"
   kicad_job:
     runs-on: ubuntu-latest
