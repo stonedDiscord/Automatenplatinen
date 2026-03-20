@@ -65,5 +65,9 @@ jobs:
       - name: Upload report
         if: ${{ failure() }}
         run: |
-          cat ${{ github.workspace }}/${{ matrix.project.name }}/*.rpt >> $GITHUB_STEP_SUMMARY
+          echo "<details><summary>ERC</summary>```" >> $GITHUB_STEP_SUMMARY
+          cat ${{ github.workspace }}/${{ matrix.project.name }}/erc.rpt >> $GITHUB_STEP_SUMMARY
+          echo "```</details><details><summary>DRC</summary>```"  >> $GITHUB_STEP_SUMMARY
+          cat ${{ github.workspace }}/${{ matrix.project.name }}/drc.rpt >> $GITHUB_STEP_SUMMARY
+          echo "```</details>"  >> $GITHUB_STEP_SUMMARY
 
