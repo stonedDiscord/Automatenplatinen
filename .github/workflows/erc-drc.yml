@@ -15,7 +15,19 @@ jobs:
       - name: List Projects
         id: projects
         run: |
-          echo 'projects=["Druckeranschluss", "Initialisierer"]' >> "$GITHUB_OUTPUT"
+          projects=()
+          for dir in */; do
+            dir=${dir%/}
+            if [ -d "$dir" ]; then
+              sch_files=("$dir"/*.kicad_sch)
+              pcb_files=("$dir"/*.kicad_pcb)
+              if [ -e "${sch_files[0]}" ] && [ -e "${pcb_files[0]}" ]; then
+                projects+=("$dir")
+              fi
+            fi
+          done
+          json_output=$(printf '%s\n' "${projects[@]}" | jq -R . | jq -s .)
+          echo "projects=$json_output" >> "$GITHUB_OUTPUT"
   kicad_job:
     runs-on: ubuntu-latest
     needs: define-matrix
@@ -48,7 +60,8 @@ jobs:
         uses: actions/upload-artifact@v6
         if: ${{ failure() && steps.erc.conclusion == 'failure' }}
         with:
-          name: erc.rpt
+          name: ${{ matrix.project }}-erc.rpt
+          archive: false
           path: ${{ github.workspace }}/${{ matrix.project }}/erc.rpt
 
       # Upload DRC report only if DRC failed
@@ -56,5 +69,6 @@ jobs:
         uses: actions/upload-artifact@v6
         if: ${{ failure() && steps.drc.conclusion == 'failure' }}
         with:
-          name: drc.rpt
+          name: ${{ matrix.project }}-drc.rpt
+          archive: false
           path: ${{ github.workspace }}/${{ matrix.project }}/drc.rpt
