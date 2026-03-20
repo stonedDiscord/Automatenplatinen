@@ -56,7 +56,7 @@ jobs:
 
       - name: Run KiCad DRC
         id: drc
-        if: ${{ failure() }}
+        if: always()
         uses: sparkengineering/kicad-action@v4
         with:
           kicad_pcb: ${{ matrix.project.name }}/${{ matrix.project.pcb }}
