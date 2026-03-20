@@ -3,8 +3,23 @@ name: Run ERC and DRC checks
 on: [push]
 
 jobs:
+  define-matrix:
+    runs-on: ubuntu-latest
+
+    outputs:
+      projects: ${{ steps.projects.outputs.projects }}
+
+    steps:
+      - name: List Projects
+        id: projects
+        run: |
+          echo 'projects=["Druckeranschluss", "Identstick"]' >> "$GITHUB_OUTPUT"
   kicad_job:
     runs-on: ubuntu-latest
+    needs: define-matrix
+    strategy:
+      matrix:
+        project: ${{ fromJSON(needs.define-matrix.outputs.projects) }}
     name: ERC+DRC
     steps:
       - name: Checkout
@@ -15,7 +30,7 @@ jobs:
         uses: sparkengineering/kicad-action@v4
         if: '!cancelled()'
         with:
-          kicad_sch: *.kicad_sch
+          kicad_sch: ${{ matrix.project }}/${{ matrix.project }}.kicad_sch
           sch_erc: true
 
       - name: Run KiCad DRC
@@ -23,7 +38,7 @@ jobs:
         uses: sparkengineering/kicad-action@v4
         if: '!cancelled()'
         with:
-          kicad_pcb: *.kicad_pcb
+          kicad_pcb: ${{ matrix.project }}/${{ matrix.project }}.kicad_pcb
           pcb_drc: true
 
       # Upload ERC report only if ERC failed
