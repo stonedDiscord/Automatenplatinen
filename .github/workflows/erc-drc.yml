@@ -55,20 +55,9 @@ jobs:
           kicad_pcb: ${{ matrix.project }}/${{ matrix.project }}.kicad_pcb
           pcb_drc: true
 
-      # Upload ERC report only if ERC failed
-      - name: Upload ERC report
+      - name: Upload report
         uses: actions/upload-artifact@v7
-        if: ${{ failure() && steps.erc.conclusion == 'failure' }}
+        if: ${{ failure() }}
         with:
           name: ${{ matrix.project }}-erc.rpt
-          archive: false
-          path: ${{ github.workspace }}/${{ matrix.project }}/erc.rpt
-
-      # Upload DRC report only if DRC failed
-      - name: Upload DRC report
-        uses: actions/upload-artifact@v7
-        if: ${{ failure() && steps.drc.conclusion == 'failure' }}
-        with:
-          name: ${{ matrix.project }}-drc.rpt
-          archive: false
-          path: ${{ github.workspace }}/${{ matrix.project }}/drc.rpt
+          path: ${{ github.workspace }}/${{ matrix.project }}/*.rpt
