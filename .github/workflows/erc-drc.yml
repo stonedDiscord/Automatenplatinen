@@ -15,19 +15,25 @@ jobs:
       - name: List Projects
         id: projects
         run: |
-          projects=()
+          projects_json="[]"
           for dir in */; do
             dir=${dir%/}
             if [ -d "$dir" ]; then
-              sch_files=("$dir"/*.kicad_sch)
-              pcb_files=("$dir"/*.kicad_pcb)
-              if [ -e "${sch_files[0]}" ] && [ -e "${pcb_files[0]}" ]; then
-                projects+=("$dir")
+              sch_file=$(ls "$dir"/*.kicad_sch 2>/dev/null | head -n 1)
+              pcb_file=$(ls "$dir"/*.kicad_pcb 2>/dev/null | head -n 1)
+          
+              if [ -n "$sch_file" ] && [ -n "$pcb_file" ]; then
+                projects_json=$(jq -c \
+                  --arg name "$dir" \
+                  --arg sch "$sch_file" \
+                  --arg pcb "$pcb_file" \
+                  '. += [{name: $name, sch: $sch, pcb: $pcb}]' \
+                  <<< "$projects_json")
               fi
             fi
           done
-          json_output=$(printf '%s\n' "${projects[@]}" | jq -R . | jq -s -c .)
-          echo "projects=$json_output" >> "$GITHUB_OUTPUT"
+          echo "Matrix JSON: $projects_json"
+          echo "projects=$projects_json" >> "$GITHUB_OUTPUT"
   kicad_job:
     runs-on: ubuntu-latest
     needs: define-matrix
@@ -45,19 +51,20 @@ jobs:
         id: erc
         uses: sparkengineering/kicad-action@v4
         with:
-          kicad_sch: ${{ matrix.project }}/${{ matrix.project }}.kicad_sch
+          kicad_sch: ${{ matrix.project.sch }}
           sch_erc: true
 
       - name: Run KiCad DRC
         id: drc
         uses: sparkengineering/kicad-action@v4
         with:
-          kicad_pcb: ${{ matrix.project }}/${{ matrix.project }}.kicad_pcb
+          kicad_pcb: ${{ matrix.project.pcb }}
           pcb_drc: true
 
       - name: Upload report
         uses: actions/upload-artifact@v7
         if: ${{ failure() }}
         with:
-          name: ${{ matrix.project }}-erc.rpt
-          path: ${{ github.workspace }}/${{ matrix.project }}/*.rpt
+          name: ${{ matrix.project.name }}.rpt
+          path: ${{ github.workspace }}/${{ matrix.project.name }}/*.rpt
+
