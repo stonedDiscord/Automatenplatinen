@@ -1,0 +1,43 @@
+name: Run ERC and DRC checks
+
+on: [push]
+
+jobs:
+  kicad_job:
+    runs-on: ubuntu-latest
+    name: ERC+DRC
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run KiCad ERC
+        id: erc
+        uses: sparkengineering/kicad-action@v4
+        if: '!cancelled()'
+        with:
+          kicad_sch: **.kicad_sch
+          sch_erc: true
+
+      - name: Run KiCad DRC
+        id: drc
+        uses: sparkengineering/kicad-action@v4
+        if: '!cancelled()'
+        with:
+          kicad_pcb: **.kicad_pcb
+          pcb_drc: true
+
+      # Upload ERC report only if ERC failed
+      - name: Upload ERC report
+        uses: actions/upload-artifact@v4
+        if: ${{ failure() && steps.erc.conclusion == 'failure' }}
+        with:
+          name: erc.rpt
+          path: ${{ github.workspace }}/erc.rpt
+
+      # Upload DRC report only if DRC failed
+      - name: Upload DRC report
+        uses: actions/upload-artifact@v4
+        if: ${{ failure() && steps.drc.conclusion == 'failure' }}
+        with:
+          name: drc.rpt
+          path: ${{ github.workspace }}/drc.rpt
