@@ -63,9 +63,7 @@ jobs:
           pcb_drc: true
 
       - name: Upload report
-        uses: actions/upload-artifact@v7
         if: ${{ failure() }}
-        with:
-          name: ${{ matrix.project.name }}.rpt
-          path: ${{ github.workspace }}/${{ matrix.project.name }}/*.rpt
+        run: |
+          cat ${{ github.workspace }}/${{ matrix.project.name }}/*.rpt >> $GITHUB_STEP_SUMMARY
 
