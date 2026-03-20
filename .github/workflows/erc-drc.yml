@@ -19,6 +19,7 @@ jobs:
   kicad_job:
     runs-on: ubuntu-latest
     needs: define-matrix
+    continue-on-error: true
     strategy:
       fail-fast: false
       matrix:
@@ -48,7 +49,7 @@ jobs:
         if: ${{ failure() && steps.erc.conclusion == 'failure' }}
         with:
           name: erc.rpt
-          path: ${{ github.workspace }}/erc.rpt
+          path: ${{ github.workspace }}/${{ matrix.project }}/erc.rpt
 
       # Upload DRC report only if DRC failed
       - name: Upload DRC report
@@ -56,4 +57,4 @@ jobs:
         if: ${{ failure() && steps.drc.conclusion == 'failure' }}
         with:
           name: drc.rpt
-          path: ${{ github.workspace }}/drc.rpt
+          path: ${{ github.workspace }}/${{ matrix.project }}/drc.rpt
