@@ -57,7 +57,7 @@ jobs:
 
       # Upload ERC report only if ERC failed
       - name: Upload ERC report
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         if: ${{ failure() && steps.erc.conclusion == 'failure' }}
         with:
           name: ${{ matrix.project }}-erc.rpt
@@ -66,7 +66,7 @@ jobs:
 
       # Upload DRC report only if DRC failed
       - name: Upload DRC report
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         if: ${{ failure() && steps.drc.conclusion == 'failure' }}
         with:
           name: ${{ matrix.project }}-drc.rpt
