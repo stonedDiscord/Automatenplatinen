@@ -10,6 +10,8 @@ jobs:
       projects: ${{ steps.projects.outputs.projects }}
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v6
       - name: List Projects
         id: projects
         run: |
@@ -23,12 +25,11 @@ jobs:
     name: ERC+DRC
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Run KiCad ERC
         id: erc
         uses: sparkengineering/kicad-action@v4
-        if: '!cancelled()'
         with:
           kicad_sch: ${{ matrix.project }}/${{ matrix.project }}.kicad_sch
           sch_erc: true
@@ -36,14 +37,13 @@ jobs:
       - name: Run KiCad DRC
         id: drc
         uses: sparkengineering/kicad-action@v4
-        if: '!cancelled()'
         with:
           kicad_pcb: ${{ matrix.project }}/${{ matrix.project }}.kicad_pcb
           pcb_drc: true
 
       # Upload ERC report only if ERC failed
       - name: Upload ERC report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         if: ${{ failure() && steps.erc.conclusion == 'failure' }}
         with:
           name: erc.rpt
@@ -51,7 +51,7 @@ jobs:
 
       # Upload DRC report only if DRC failed
       - name: Upload DRC report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         if: ${{ failure() && steps.drc.conclusion == 'failure' }}
         with:
           name: drc.rpt
