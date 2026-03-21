@@ -1402,6 +1402,12 @@
 		(uuid "5c9c4df3-bfb7-4659-af1d-c8755b2a1545")
 	)
 	(junction
+		(at 99.06 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a3c1c1a-37d2-44c1-a89b-ffb4b3924e21")
+	)
+	(junction
 		(at 105.41 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1418,6 +1424,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ccd01bab-63c4-458b-b5a5-1cfae31d5a26")
+	)
+	(junction
+		(at 83.82 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e86b9b5f-3f08-4d83-ba42-41850658b016")
 	)
 	(wire
 		(pts
@@ -1757,7 +1769,7 @@
 			(uuid "878b7404-7575-4892-8b5f-db7e3b93f06a")
 		)
 		(instances
-			(project ""
+			(project "LEDlamp"
 				(path "/186e1dbe-8864-41f9-b675-7b909ed375e3"
 					(reference "#PWR02")
 					(unit 1)
@@ -1821,9 +1833,75 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "LEDlamp"
 				(path "/186e1dbe-8864-41f9-b675-7b909ed375e3"
 					(reference "FID1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 99.06 91.44 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5aa0fd4b-e1b0-4a1a-8fa6-c37eaf59c080")
+		(property "Reference" "#FLG04"
+			(at 99.06 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 99.06 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 99.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a5f5b39-f351-46b8-bdc1-dfcf6cc8d120")
+		)
+		(instances
+			(project "LEDlamp"
+				(path "/186e1dbe-8864-41f9-b675-7b909ed375e3"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -1888,7 +1966,7 @@
 			(uuid "b7ed183a-f2fc-4f37-a151-792d682f3556")
 		)
 		(instances
-			(project ""
+			(project "LEDlamp"
 				(path "/186e1dbe-8864-41f9-b675-7b909ed375e3"
 					(reference "#FLG01")
 					(unit 1)
@@ -1967,6 +2045,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 83.82 91.44 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f00acf7-a05f-4371-b31d-2c968b498d9d")
+		(property "Reference" "#FLG03"
+			(at 83.82 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 83.82 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 83.82 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10515a87-7e58-4554-967b-f8da953e330a")
+		)
+		(instances
+			(project "LEDlamp"
+				(path "/186e1dbe-8864-41f9-b675-7b909ed375e3"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 105.41 74.93 0)
 		(unit 1)
@@ -2024,7 +2168,7 @@
 			(uuid "709b754c-5b9b-468f-bec3-307ec55c599f")
 		)
 		(instances
-			(project ""
+			(project "LEDlamp"
 				(path "/186e1dbe-8864-41f9-b675-7b909ed375e3"
 					(reference "#PWR01")
 					(unit 1)
@@ -2369,7 +2513,7 @@
 			(uuid "53539b73-1f60-4825-a126-0a386fc45351")
 		)
 		(instances
-			(project ""
+			(project "LEDlamp"
 				(path "/186e1dbe-8864-41f9-b675-7b909ed375e3"
 					(reference "HS1")
 					(unit 1)
@@ -2509,7 +2653,7 @@
 			(uuid "fb86029c-2a78-4869-b4fb-0824f367c8fb")
 		)
 		(instances
-			(project ""
+			(project "LEDlamp"
 				(path "/186e1dbe-8864-41f9-b675-7b909ed375e3"
 					(reference "LA1")
 					(unit 1)
@@ -2584,7 +2728,7 @@
 			(uuid "77f87482-acfb-427a-8c3b-5d295b3917a4")
 		)
 		(instances
-			(project ""
+			(project "LEDlamp"
 				(path "/186e1dbe-8864-41f9-b675-7b909ed375e3"
 					(reference "D1")
 					(unit 1)

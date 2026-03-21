@@ -1322,10 +1322,22 @@
 		(uuid "7ef8605d-e642-416b-b7e3-60c863b4567c")
 	)
 	(junction
+		(at 133.35 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "849d8a63-5113-40f0-bb1d-37e45788cdd1")
+	)
+	(junction
 		(at 139.7 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9e91f950-14ae-4d52-9de4-2dc623dad776")
+	)
+	(junction
+		(at 118.11 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae6ea2f3-c98e-4a20-9753-35523c97a642")
 	)
 	(wire
 		(pts
@@ -1426,6 +1438,72 @@
 			(justify left bottom)
 		)
 		(uuid "94ab5005-f161-4378-a222-bbded3a8be61")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 118.11 138.43 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09cb7115-806e-458f-8723-c3d04856ea5b")
+		(property "Reference" "#FLG03"
+			(at 118.11 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 118.11 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 118.11 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f52f9cdb-37fd-4521-ab9d-657739863af9")
+		)
+		(instances
+			(project "LEDlampklein"
+				(path "/82feac3a-fa4b-4675-8833-e8bd5242c6f6"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -1758,6 +1836,72 @@
 			(project "LEDlampklein"
 				(path "/82feac3a-fa4b-4675-8833-e8bd5242c6f6"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 133.35 138.43 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b042ef1-735b-490d-ba19-6f629bbab249")
+		(property "Reference" "#FLG04"
+			(at 133.35 140.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 133.35 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 133.35 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "77863c4c-1e01-4955-afda-e34e282217f0")
+		)
+		(instances
+			(project "LEDlampklein"
+				(path "/82feac3a-fa4b-4675-8833-e8bd5242c6f6"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
