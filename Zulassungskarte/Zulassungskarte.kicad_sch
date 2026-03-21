@@ -1362,6 +1362,101 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Graphic:SYM_Arrow_Normal"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "#SYM"
+				(at 0 1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "SYM_Arrow_Normal"
+				(at 0.254 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Filled arrow, 200mil"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Enable" "0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "symbol arrow"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SYM_Arrow_Normal_0_1"
+				(polyline
+					(pts
+						(xy 1.524 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 0.762 -0.508) (xy 0.762 0.508) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_Microchip_ATmega:ATmega48-20A"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2027,7 +2122,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "Mechanical:Fiducial"
-			(exclude_from_sim yes)
+			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "FID"
@@ -2110,7 +2205,7 @@
 			(pin_names
 				(offset 1.016)
 			)
-			(exclude_from_sim yes)
+			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
@@ -2246,96 +2341,6 @@
 				)
 			)
 			(symbol "ESDA6V1U1_0_0"
-				(pin unspecified line
-					(at -12.7 -2.54 0)
-					(length 2.54)
-					(name "I/O_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -12.7 -5.08 0)
-					(length 2.54)
-					(name "I/O_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -12.7 -7.62 0)
-					(length 2.54)
-					(name "I/O_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -12.7 -10.16 0)
-					(length 2.54)
-					(name "I/O_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 12.7 -2.54 180)
-					(length 2.54)
-					(name "I/O_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at 12.7 -5.08 180)
 					(length 2.54)
@@ -2365,24 +2370,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 12.7 -10.16 180)
-					(length 2.54)
-					(name "I/O_5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2594,6 +2581,116 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "ESDA6V1U1_1_0"
+				(pin passive line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "I/O_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "I/O_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -7.62 0)
+					(length 2.54)
+					(name "I/O_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -10.16 0)
+					(length 2.54)
+					(name "I/O_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "I/O_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -10.16 180)
+					(length 2.54)
+					(name "I/O_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -2838,6 +2935,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VCC"
 			(power)
 			(pin_numbers
@@ -2995,6 +3193,12 @@
 		(uuid "16ed3458-862d-42bb-9fc9-09bcd9fef981")
 	)
 	(junction
+		(at 48.26 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d82ab6c-a1af-4296-b3fa-17734d567827")
+	)
+	(junction
 		(at 87.63 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3017,6 +3221,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b96b96b-8696-4254-b021-f161c2e4f47a")
+	)
+	(junction
+		(at 140.97 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f80376d-ff86-4e40-9445-e022b89dc739")
 	)
 	(junction
 		(at 87.63 82.55)
@@ -3067,6 +3277,12 @@
 		(uuid "b633d1c1-3a90-4961-b374-92bd26970925")
 	)
 	(junction
+		(at 35.56 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1af8f44-ef35-4874-81d5-9c518a8e4f8c")
+	)
+	(junction
 		(at 73.66 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3091,19 +3307,19 @@
 		(uuid "fb25f9e0-e7e5-47b1-86df-83f9af66994e")
 	)
 	(no_connect
-		(at 58.42 29.21)
+		(at 48.26 36.83)
 		(uuid "09dd0f4b-a904-435f-9e4f-64215a5abd52")
 	)
 	(no_connect
-		(at 90.17 29.21)
+		(at 80.01 36.83)
 		(uuid "158bb5ed-0701-4303-93be-28f1e6024c25")
 	)
 	(no_connect
-		(at 77.47 29.21)
+		(at 67.31 36.83)
 		(uuid "1a9ae565-8172-4f51-a3a2-06a7e4ef551d")
 	)
 	(no_connect
-		(at 45.72 29.21)
+		(at 35.56 36.83)
 		(uuid "a080d247-0bde-468d-97b3-5513377f9a54")
 	)
 	(wire
@@ -3178,6 +3394,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 22.86) (xy 48.26 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d34b4f2-1ae5-41e9-8374-86d5746b8e6c")
+	)
+	(wire
+		(pts
 			(xy 87.63 86.36) (xy 87.63 87.63)
 		)
 		(stroke
@@ -3235,6 +3461,16 @@
 			(type default)
 		)
 		(uuid "4da55e67-0650-4a11-a774-9ab1044f6d26")
+	)
+	(wire
+		(pts
+			(xy 35.56 22.86) (xy 35.56 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55e80eda-2928-4e21-82c6-6eb0f125aacd")
 	)
 	(wire
 		(pts
@@ -3500,7 +3736,7 @@
 	)
 	(global_label "RST"
 		(shape input)
-		(at 45.72 24.13 180)
+		(at 35.56 31.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3510,7 +3746,7 @@
 		)
 		(uuid "2649e3f5-f734-4480-9fb7-ecd2ca3b6432")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.2877 24.13 0)
+			(at 29.1277 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3632,7 +3868,7 @@
 	)
 	(global_label "MOSI"
 		(shape input)
-		(at 90.17 24.13 0)
+		(at 80.01 31.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3642,7 +3878,7 @@
 		)
 		(uuid "6852bc67-458c-462a-b2a8-30da40c26822")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.7514 24.13 0)
+			(at 87.5914 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3720,7 +3956,7 @@
 	)
 	(global_label "SCK"
 		(shape input)
-		(at 77.47 26.67 180)
+		(at 67.31 34.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3730,7 +3966,7 @@
 		)
 		(uuid "7a85dce4-763a-4b85-ada6-d6afa1b085d5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 70.7353 26.67 0)
+			(at 60.5753 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3742,7 +3978,7 @@
 	)
 	(global_label "MISO"
 		(shape input)
-		(at 90.17 26.67 0)
+		(at 80.01 34.29 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3752,7 +3988,7 @@
 		)
 		(uuid "86596265-8ec7-4f73-a3d2-a5aa6f7274bd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.7514 26.67 0)
+			(at 87.5914 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3786,7 +4022,7 @@
 	)
 	(global_label "MOSI"
 		(shape input)
-		(at 58.42 24.13 0)
+		(at 48.26 31.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3796,7 +4032,7 @@
 		)
 		(uuid "8a57471c-0505-49c2-881a-05a256ca52d9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.0014 24.13 0)
+			(at 55.8414 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3918,7 +4154,7 @@
 	)
 	(global_label "SCK"
 		(shape input)
-		(at 45.72 26.67 180)
+		(at 35.56 34.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3928,7 +4164,7 @@
 		)
 		(uuid "a7c4ef92-2b31-40e0-acd4-1241e17d4cfc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.9853 26.67 0)
+			(at 28.8253 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4006,7 +4242,7 @@
 	)
 	(global_label "MISO"
 		(shape input)
-		(at 58.42 26.67 0)
+		(at 48.26 34.29 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4016,7 +4252,7 @@
 		)
 		(uuid "def6c4fb-e2fd-45ab-bdc3-c7f93a9b64a8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.0014 26.67 0)
+			(at 55.8414 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4028,7 +4264,7 @@
 	)
 	(global_label "RST"
 		(shape input)
-		(at 77.47 24.13 180)
+		(at 67.31 31.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4038,7 +4274,7 @@
 		)
 		(uuid "fafe1d69-ef61-4270-b9e8-eb4bae9dc2ec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.0377 24.13 0)
+			(at 60.8777 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4337,7 +4573,7 @@
 			(uuid "5bb5dc41-606b-4063-99a8-d169a70e01e5")
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "R3")
 					(unit 1)
@@ -4480,7 +4716,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 90.17 21.59 90)
+		(at 80.01 29.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4489,7 +4725,7 @@
 		(fields_autoplaced yes)
 		(uuid "21e294ce-21cb-45f6-bcfc-4979f45f35be")
 		(property "Reference" "#PWR05"
-			(at 96.52 21.59 0)
+			(at 86.36 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4498,7 +4734,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 21.5899 90)
+			(at 83.82 29.2099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4507,7 +4743,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 21.59 0)
+			(at 80.01 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4516,7 +4752,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 21.59 0)
+			(at 80.01 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4525,7 +4761,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 90.17 21.59 0)
+			(at 80.01 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4591,7 +4827,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "MISO"
 			(at 109.22 67.31 0)
 			(effects
 				(font
@@ -4815,7 +5051,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x04_Counter_Clockwise")
-		(at 50.8 24.13 0)
+		(at 40.64 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -4824,7 +5060,7 @@
 		(fields_autoplaced yes)
 		(uuid "3650ba77-d8f4-459e-93c9-9d16de8b7c98")
 		(property "Reference" "J2"
-			(at 52.07 15.24 0)
+			(at 41.91 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4832,7 +5068,7 @@
 			)
 		)
 		(property "Value" "Conn_02x04_Counter_Clockwise"
-			(at 52.07 17.78 0)
+			(at 41.91 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4840,7 +5076,7 @@
 			)
 		)
 		(property "Footprint" "SIM:ZLK"
-			(at 50.8 24.13 0)
+			(at 40.64 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4849,7 +5085,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 24.13 0)
+			(at 40.64 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4858,7 +5094,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 50.8 24.13 0)
+			(at 40.64 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4891,7 +5127,7 @@
 			(uuid "8a57c260-c1f7-43fe-8083-e0432562ca7a")
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "J2")
 					(unit 1)
@@ -4901,7 +5137,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x04_Counter_Clockwise")
-		(at 82.55 24.13 0)
+		(at 72.39 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -4910,7 +5146,7 @@
 		(fields_autoplaced yes)
 		(uuid "38901deb-f4ef-40e5-ab79-06a62f025179")
 		(property "Reference" "J1"
-			(at 83.82 15.24 0)
+			(at 73.66 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4918,7 +5154,7 @@
 			)
 		)
 		(property "Value" "Conn_02x04_Counter_Clockwise"
-			(at 83.82 17.78 0)
+			(at 73.66 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4926,7 +5162,7 @@
 			)
 		)
 		(property "Footprint" "SIM:ZLK"
-			(at 82.55 24.13 0)
+			(at 72.39 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4935,7 +5171,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 24.13 0)
+			(at 72.39 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4944,7 +5180,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x04, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 82.55 24.13 0)
+			(at 72.39 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5184,7 +5420,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 133.35 121.92 90)
+		(at 133.35 135.89 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5193,7 +5429,7 @@
 		(fields_autoplaced yes)
 		(uuid "4d254c41-dee5-444c-a20a-9e9520898f1b")
 		(property "Reference" "#PWR034"
-			(at 137.16 121.92 0)
+			(at 137.16 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5202,7 +5438,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 129.54 121.9199 90)
+			(at 129.54 135.8899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5211,7 +5447,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 121.92 0)
+			(at 133.35 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5220,7 +5456,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 121.92 0)
+			(at 133.35 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5229,7 +5465,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 133.35 121.92 0)
+			(at 133.35 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5572,7 +5808,7 @@
 			(uuid "71d5649f-f659-44f1-a4cf-f7f5ef20a0c4")
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "TP1")
 					(unit 1)
@@ -5849,6 +6085,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 140.97 135.89 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66c80050-a03e-484e-8043-e962dd77ffda")
+		(property "Reference" "#FLG03"
+			(at 140.97 137.795 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 140.97 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 140.97 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f095da9-4eb9-4644-b8ff-29bad0c909ec")
+		)
+		(instances
+			(project "Zulassungskarte"
+				(path "/f437cf05-d297-460e-8639-991b777c08ac"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
 		(at 27.94 85.09 0)
 		(unit 1)
@@ -5920,7 +6222,7 @@
 			(uuid "bcc735d3-b361-44b3-bccf-73bc5082dd66")
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "J4")
 					(unit 1)
@@ -6065,7 +6367,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 137.16 121.92 90)
+		(at 137.16 135.89 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6074,7 +6376,7 @@
 		(fields_autoplaced yes)
 		(uuid "7c5f7148-a473-4eab-89b0-0242f0ef4df6")
 		(property "Reference" "R1"
-			(at 137.16 115.57 90)
+			(at 137.16 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6082,7 +6384,7 @@
 			)
 		)
 		(property "Value" "270"
-			(at 137.16 118.11 90)
+			(at 137.16 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6090,7 +6392,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 137.16 123.698 90)
+			(at 137.16 137.668 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6099,7 +6401,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.16 121.92 0)
+			(at 137.16 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6108,7 +6410,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 137.16 121.92 0)
+			(at 137.16 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6189,7 +6491,7 @@
 			(uuid "c4711908-1c9f-4329-96be-54bb1faf450c")
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "#PWR07")
 					(unit 1)
@@ -6554,7 +6856,7 @@
 			(uuid "b8f6bc85-b919-46af-a332-c042a695f907")
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "U1")
 					(unit 1)
@@ -6564,7 +6866,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 77.47 21.59 90)
+		(at 67.31 29.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6573,7 +6875,7 @@
 		(fields_autoplaced yes)
 		(uuid "8b8d200b-775a-4851-9360-73fd02417c98")
 		(property "Reference" "#PWR032"
-			(at 81.28 21.59 0)
+			(at 71.12 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6582,7 +6884,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 73.66 21.5899 90)
+			(at 63.5 29.2099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6591,7 +6893,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 21.59 0)
+			(at 67.31 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6600,7 +6902,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 21.59 0)
+			(at 67.31 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6609,7 +6911,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 77.47 21.59 0)
+			(at 67.31 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6778,7 +7080,7 @@
 			(uuid "72756f80-1595-45c9-92d7-2154653e3fd9")
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "D1")
 					(unit 1)
@@ -6842,7 +7144,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "H1")
 					(unit 1)
@@ -7319,7 +7621,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 140.97 121.92 270)
+		(at 140.97 135.89 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7328,7 +7630,7 @@
 		(fields_autoplaced yes)
 		(uuid "b3656bd5-93e9-4534-a27c-c4eca522ad07")
 		(property "Reference" "#PWR09"
-			(at 137.16 121.92 0)
+			(at 137.16 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7337,7 +7639,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 144.78 121.9199 90)
+			(at 144.78 135.8899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7346,7 +7648,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 121.92 0)
+			(at 140.97 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7355,7 +7657,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 121.92 0)
+			(at 140.97 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7364,7 +7666,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 140.97 121.92 0)
+			(at 140.97 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7376,7 +7678,7 @@
 			(uuid "7039f51c-3767-4759-b689-3c3e4c8b3297")
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "#PWR09")
 					(unit 1)
@@ -7452,6 +7754,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 48.26 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7053362-3368-4809-ab7a-15ec785f75f3")
+		(property "Reference" "#FLG02"
+			(at 48.26 20.955 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 48.26 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 48.26 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0444d6b8-fb9b-4c8a-8b6f-c4fa7bd8b5af")
+		)
+		(instances
+			(project "Zulassungskarte"
+				(path "/f437cf05-d297-460e-8639-991b777c08ac"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:Fiducial")
 		(at 19.05 114.3 0)
 		(unit 1)
@@ -7510,6 +7878,72 @@
 			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "FID2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 35.56 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba96fbec-b5fa-448b-94f9-aed4dadf974b")
+		(property "Reference" "#FLG01"
+			(at 35.56 20.955 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 35.56 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 35.56 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a2354e40-d174-42ec-89f9-2d345ccc4ffd")
+		)
+		(instances
+			(project "Zulassungskarte"
+				(path "/f437cf05-d297-460e-8639-991b777c08ac"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -7584,7 +8018,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 58.42 21.59 90)
+		(at 48.26 29.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7593,7 +8027,7 @@
 		(fields_autoplaced yes)
 		(uuid "bea4c959-ba5c-4fb0-b99e-b3d9b9f4dd63")
 		(property "Reference" "#PWR06"
-			(at 64.77 21.59 0)
+			(at 54.61 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7602,7 +8036,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 62.23 21.5899 90)
+			(at 52.07 29.2099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7611,7 +8045,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 21.59 0)
+			(at 48.26 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7620,7 +8054,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 21.59 0)
+			(at 48.26 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7629,7 +8063,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 21.59 0)
+			(at 48.26 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7775,7 +8209,7 @@
 			(uuid "3f4bbf4e-a0c9-47b5-be3e-cb1e690e18ee")
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "#PWR04")
 					(unit 1)
@@ -7845,7 +8279,7 @@
 			(uuid "ee82b468-0a27-4461-aba8-f0d2c85ef557")
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "C1")
 					(unit 1)
@@ -8110,7 +8544,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "FID1")
 					(unit 1)
@@ -8453,6 +8887,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Graphic:SYM_Arrow_Normal")
+		(at 22.86 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5582367-c483-4c1a-9a5c-e1a9a036fdec")
+		(property "Reference" "SYM1"
+			(at 22.86 164.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Arrow_Normal"
+			(at 23.114 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Symbol:WEEE-Logo_4.2x6mm_SilkScreen"
+			(at 22.86 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Filled arrow, 200mil"
+			(at 22.86 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 22.86 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Zulassungskarte"
+				(path "/f437cf05-d297-460e-8639-991b777c08ac"
+					(reference "SYM1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 120.65 41.91 0)
 		(unit 1)
@@ -8655,7 +9162,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 45.72 21.59 90)
+		(at 35.56 29.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8664,7 +9171,7 @@
 		(fields_autoplaced yes)
 		(uuid "e2c78734-83d7-4bce-8777-b51440da8469")
 		(property "Reference" "#PWR031"
-			(at 49.53 21.59 0)
+			(at 39.37 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8673,7 +9180,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 41.91 21.5899 90)
+			(at 31.75 29.2099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8682,7 +9189,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 21.59 0)
+			(at 35.56 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8691,7 +9198,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 21.59 0)
+			(at 35.56 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8700,7 +9207,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 45.72 21.59 0)
+			(at 35.56 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8712,7 +9219,7 @@
 			(uuid "cf932198-5507-4e9d-bbaa-bebf0fcbff74")
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "#PWR031")
 					(unit 1)
@@ -8932,7 +9439,7 @@
 			(uuid "591e221a-5b99-4aa4-b165-83778747876d")
 		)
 		(instances
-			(project ""
+			(project "Zulassungskarte"
 				(path "/f437cf05-d297-460e-8639-991b777c08ac"
 					(reference "D2")
 					(unit 1)

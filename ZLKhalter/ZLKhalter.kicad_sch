@@ -1432,6 +1432,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VCC"
 			(power)
 			(pin_numbers
@@ -1558,6 +1659,24 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 138.43 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38a8d54b-7dca-4dda-96a2-6dd8c7c09faf")
+	)
+	(junction
+		(at 130.81 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b922c47-3b22-4b4a-b582-23c6a2b29e1c")
+	)
+	(junction
+		(at 128.27 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3b5a2d4-d4e8-4f8d-8f57-c8795031f93d")
+	)
 	(no_connect
 		(at 92.71 39.37)
 		(uuid "1bf5b75a-77a6-481f-839e-95722811b8cf")
@@ -1573,6 +1692,26 @@
 	(no_connect
 		(at 92.71 59.69)
 		(uuid "f6f4a544-0ddc-4fb3-9f40-59e67700449a")
+	)
+	(wire
+		(pts
+			(xy 138.43 73.66) (xy 128.27 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "645f1f77-0e2c-4b59-a22c-55c1a0cc5db1")
+	)
+	(wire
+		(pts
+			(xy 138.43 73.66) (xy 138.43 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eecce4bf-d006-423a-8fdd-05b2d0cd3f55")
 	)
 	(global_label "MOSI"
 		(shape input)
@@ -2130,7 +2269,7 @@
 			(uuid "3051827f-95e6-4a88-992e-10bfa7a893b2")
 		)
 		(instances
-			(project ""
+			(project "ZLKhalter"
 				(path "/6d698739-3fd1-4868-bb72-a082367901de"
 					(reference "J6")
 					(unit 1)
@@ -2344,7 +2483,7 @@
 			(uuid "0f976d38-0168-4f4b-85a5-7ae55ad260a2")
 		)
 		(instances
-			(project ""
+			(project "ZLKhalter"
 				(path "/6d698739-3fd1-4868-bb72-a082367901de"
 					(reference "R1")
 					(unit 1)
@@ -2681,7 +2820,7 @@
 			(uuid "45c5bc15-4a21-41a9-bee1-df3d0467e01b")
 		)
 		(instances
-			(project ""
+			(project "ZLKhalter"
 				(path "/6d698739-3fd1-4868-bb72-a082367901de"
 					(reference "#PWR04")
 					(unit 1)
@@ -2847,7 +2986,7 @@
 			(uuid "23dfd7d3-0bba-46c6-9c82-206fe22b52f8")
 		)
 		(instances
-			(project ""
+			(project "ZLKhalter"
 				(path "/6d698739-3fd1-4868-bb72-a082367901de"
 					(reference "J1")
 					(unit 1)
@@ -3270,7 +3409,7 @@
 			(uuid "12aa8820-aa1e-4883-aed7-2db41797be62")
 		)
 		(instances
-			(project ""
+			(project "ZLKhalter"
 				(path "/6d698739-3fd1-4868-bb72-a082367901de"
 					(reference "#PWR011")
 					(unit 1)
@@ -3280,7 +3419,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 128.27 73.66 90)
+		(at 138.43 73.66 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3289,7 +3428,7 @@
 		(fields_autoplaced yes)
 		(uuid "b3d345b2-0d4d-4eba-9a72-4e2935a12de5")
 		(property "Reference" "#PWR01"
-			(at 134.62 73.66 0)
+			(at 144.78 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3298,7 +3437,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 132.08 73.6599 90)
+			(at 142.24 73.6599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3307,7 +3446,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 73.66 0)
+			(at 138.43 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3316,7 +3455,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 73.66 0)
+			(at 138.43 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3325,7 +3464,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 73.66 0)
+			(at 138.43 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3337,9 +3476,141 @@
 			(uuid "7c81c2f5-52c3-42eb-9c88-45faa855cb15")
 		)
 		(instances
-			(project ""
+			(project "ZLKhalter"
 				(path "/6d698739-3fd1-4868-bb72-a082367901de"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 138.43 76.2 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4624bd5-e4ff-4f33-a702-89bf65955e68")
+		(property "Reference" "#FLG02"
+			(at 138.43 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 138.43 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 138.43 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "993b58e9-7406-4a0e-b357-26ad11fbc040")
+		)
+		(instances
+			(project "ZLKhalter"
+				(path "/6d698739-3fd1-4868-bb72-a082367901de"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 130.81 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d73f93bf-5763-4bc2-a672-31ff2f47712d")
+		(property "Reference" "#FLG01"
+			(at 130.81 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 130.81 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 130.81 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d8747c8-c9f1-42f6-a710-19ac8aacb002")
+		)
+		(instances
+			(project "ZLKhalter"
+				(path "/6d698739-3fd1-4868-bb72-a082367901de"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -3411,9 +3682,75 @@
 			(uuid "426dd05d-de93-4e9c-bba0-7038f70cef67")
 		)
 		(instances
-			(project ""
+			(project "ZLKhalter"
 				(path "/6d698739-3fd1-4868-bb72-a082367901de"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 128.27 76.2 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e81cd24c-1619-4859-9037-2012117d6ad2")
+		(property "Reference" "#FLG03"
+			(at 128.27 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 128.27 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 128.27 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c72d530d-68d1-4873-9c27-e12cd976a2c8")
+		)
+		(instances
+			(project "ZLKhalter"
+				(path "/6d698739-3fd1-4868-bb72-a082367901de"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
