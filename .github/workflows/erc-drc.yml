@@ -36,6 +36,7 @@ jobs:
           echo "projects=$projects_json" >> "$GITHUB_OUTPUT"
   kicad_job:
     runs-on: ubuntu-latest
+    container: kicad/kicad:10.0
     needs: define-matrix
     continue-on-error: true
     strategy:
@@ -49,18 +50,14 @@ jobs:
 
       - name: Run KiCad ERC
         id: erc
-        uses: sparkengineering/kicad-action@v4
-        with:
-          kicad_sch: ${{ matrix.project.name }}/${{ matrix.project.sch }}
-          sch_erc: true
+        working-directory: ${{ matrix.project.name }}
+        run: kicad-cli sch erc ${{ matrix.project.sch }}
 
       - name: Run KiCad DRC
         id: drc
         if: always()
-        uses: sparkengineering/kicad-action@v4
-        with:
-          kicad_pcb: ${{ matrix.project.name }}/${{ matrix.project.pcb }}
-          pcb_drc: true
+        working-directory: ${{ matrix.project.name }}
+        run: kicad-cli pcb drc ${{ matrix.project.pcb }}
 
       - name: Upload report
         if: ${{ failure() }}
