@@ -36,7 +36,9 @@ jobs:
           echo "projects=$projects_json" >> "$GITHUB_OUTPUT"
   kicad_job:
     runs-on: ubuntu-latest
-    container: kicad/kicad:10.0
+    container:
+      image: kicad/kicad:10.0
+      options: --user root
     needs: define-matrix
     continue-on-error: true
     strategy:
