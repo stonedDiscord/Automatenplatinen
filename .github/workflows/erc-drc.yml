@@ -52,8 +52,8 @@ jobs:
 
       - name: Setup libraries
         run: |
-          mkdir -p /root/.config/kicad/$(kicad-cli -v | cut -d . -f 1,2)
-          cp /usr/share/kicad/template/*-lib-table /root/.config/kicad/$(kicad-cli -v | cut -d . -f 1,2)
+          mkdir -p $HOME/.config
+          cp -r /home/kicad/.config/kica* $HOME/.config/
 
       - name: Run KiCad ERC
         id: erc
