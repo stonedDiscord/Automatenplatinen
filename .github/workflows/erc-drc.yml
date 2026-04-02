@@ -53,13 +53,13 @@ jobs:
       - name: Run KiCad ERC
         id: erc
         working-directory: ${{ matrix.project.name }}
-        run: kicad-cli sch erc ${{ matrix.project.sch }}
+        run: kicad-cli sch erc --exit-code-violations ${{ matrix.project.sch }}
 
       - name: Run KiCad DRC
         id: drc
         if: always()
         working-directory: ${{ matrix.project.name }}
-        run: kicad-cli pcb drc ${{ matrix.project.pcb }}
+        run: kicad-cli pcb drc --exit-code-violations ${{ matrix.project.pcb }}
 
       - name: Upload report
         if: ${{ failure() }}
