@@ -53,24 +53,24 @@ jobs:
       - name: Run KiCad ERC
         id: erc
         working-directory: ${{ matrix.project.name }}
-        run: kicad-cli sch erc --exit-code-violations ${{ matrix.project.sch }}
+        run: kicad-cli sch erc --output erc.rpt --exit-code-violations ${{ matrix.project.sch }}
 
       - name: Run KiCad DRC
         id: drc
         if: always()
         working-directory: ${{ matrix.project.name }}
-        run: kicad-cli pcb drc --exit-code-violations ${{ matrix.project.pcb }}
+        run: kicad-cli pcb drc --output drc.rpt --exit-code-violations ${{ matrix.project.pcb }}
 
       - name: Upload report
         if: ${{ failure() }}
         run: |
           echo "<details><summary>ERC</summary>" >> $GITHUB_STEP_SUMMARY
           echo "<pre><code>" >> $GITHUB_STEP_SUMMARY
-          cat ${{ github.workspace }}/${{ matrix.project.name }}/*-erc.rpt >> $GITHUB_STEP_SUMMARY
+          cat ${{ github.workspace }}/${{ matrix.project.name }}/erc.rpt >> $GITHUB_STEP_SUMMARY
           echo "</code></pre>" >> $GITHUB_STEP_SUMMARY
           echo "</details><details><summary>DRC</summary>" >> $GITHUB_STEP_SUMMARY
           echo "<pre><code>" >> $GITHUB_STEP_SUMMARY
-          cat ${{ github.workspace }}/${{ matrix.project.name }}/*-drc.rpt >> $GITHUB_STEP_SUMMARY
+          cat ${{ github.workspace }}/${{ matrix.project.name }}/drc.rpt >> $GITHUB_STEP_SUMMARY
           echo "</code></pre>" >> $GITHUB_STEP_SUMMARY
           echo "</details>"  >> $GITHUB_STEP_SUMMARY
 
