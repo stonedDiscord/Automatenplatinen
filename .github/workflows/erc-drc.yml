@@ -37,7 +37,7 @@ jobs:
   kicad_job:
     runs-on: ubuntu-latest
     container:
-      image: kicad/kicad:10.0
+      image: kicad/kicad:10.0-full
       options: --user root
     needs: define-matrix
     continue-on-error: true
