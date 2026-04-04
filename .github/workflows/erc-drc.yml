@@ -36,6 +36,9 @@ jobs:
           echo "projects=$projects_json" >> "$GITHUB_OUTPUT"
   kicad_job:
     runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0-full
+      options: --user root
     needs: define-matrix
     continue-on-error: true
     strategy:
@@ -47,31 +50,32 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Setup libraries
+        run: |
+          mkdir -p $HOME/.config
+          cp -r /home/kicad/.config/kica* $HOME/.config/
+
       - name: Run KiCad ERC
         id: erc
-        uses: sparkengineering/kicad-action@v4
-        with:
-          kicad_sch: ${{ matrix.project.name }}/${{ matrix.project.sch }}
-          sch_erc: true
+        working-directory: ${{ matrix.project.name }}
+        run: kicad-cli sch erc --output erc.rpt --exit-code-violations ${{ matrix.project.sch }}
 
       - name: Run KiCad DRC
         id: drc
         if: always()
-        uses: sparkengineering/kicad-action@v4
-        with:
-          kicad_pcb: ${{ matrix.project.name }}/${{ matrix.project.pcb }}
-          pcb_drc: true
+        working-directory: ${{ matrix.project.name }}
+        run: kicad-cli pcb drc --output drc.rpt --exit-code-violations ${{ matrix.project.pcb }}
 
       - name: Upload report
         if: ${{ failure() }}
         run: |
           echo "<details><summary>ERC</summary>" >> $GITHUB_STEP_SUMMARY
           echo "<pre><code>" >> $GITHUB_STEP_SUMMARY
-          cat ${{ github.workspace }}/${{ matrix.project.name }}/erc.rpt >> $GITHUB_STEP_SUMMARY
+          cat ${{ matrix.project.name }}/erc.rpt >> $GITHUB_STEP_SUMMARY
           echo "</code></pre>" >> $GITHUB_STEP_SUMMARY
           echo "</details><details><summary>DRC</summary>" >> $GITHUB_STEP_SUMMARY
           echo "<pre><code>" >> $GITHUB_STEP_SUMMARY
-          cat ${{ github.workspace }}/${{ matrix.project.name }}/drc.rpt >> $GITHUB_STEP_SUMMARY
+          cat ${{ matrix.project.name }}/drc.rpt >> $GITHUB_STEP_SUMMARY
           echo "</code></pre>" >> $GITHUB_STEP_SUMMARY
           echo "</details>"  >> $GITHUB_STEP_SUMMARY
 
