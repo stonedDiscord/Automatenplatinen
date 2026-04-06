@@ -1,0 +1,161 @@
+(footprint "REPM1000"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Renata Power Module")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "e9876be6-bdfb-48ce-b09a-9a1edf7f72f2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "REPM1000"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "331d069e-9ed3-4e82-b364-4d658fdff689")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "631e4361-76bd-4210-98ef-75dd5f7e6fba")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ef1c055d-cd4b-4a9e-a59d-76fccab40409")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -14 -14)
+		(end -14 13)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3593f87f-3f63-42ec-aa7d-95d80343366d")
+	)
+	(fp_line
+		(start -14 -14)
+		(end 13 -14)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "44b508f6-06a2-4fda-8bbd-7668ee9a9929")
+	)
+	(fp_line
+		(start -12.999999 13.999999)
+		(end 13 13.999999)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "e073cf16-e815-43cb-933f-83a23d943345")
+	)
+	(fp_line
+		(start 14 -13)
+		(end 14 13)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "88818acc-5c02-4ba9-9bd3-a7e49df7b153")
+	)
+	(fp_arc
+		(start -12.999999 13.999999)
+		(mid -13.707106 13.707106)
+		(end -13.999999 12.999999)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8a093ed8-6aac-453b-818c-c0346d4b503c")
+	)
+	(fp_arc
+		(start 13 -14)
+		(mid 13.707107 -13.707107)
+		(end 14 -13)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "fcc72165-7c86-4779-bcd9-46399b270a8a")
+	)
+	(fp_arc
+		(start 13.999999 12.999999)
+		(mid 13.707106 13.707106)
+		(end 12.999999 13.999999)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c2ef0caf-4e87-4631-bc4a-1fc5e9e5277a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "dd19eb81-8c03-40f0-a6f1-91fdae5a4610")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -12.5 -12.5)
+		(size 2.54 2.54)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0b8539f0-6dc3-4c14-8e26-aecdae2bf09b")
+	)
+	(pad "2" thru_hole circle
+		(at 12.5 12.5)
+		(size 2.54 2.54)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "58333370-62d8-41f9-83d5-3ae93145f319")
+	)
+	(embedded_fonts no)
+)
