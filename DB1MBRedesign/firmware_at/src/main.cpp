@@ -9,7 +9,7 @@
 #include "bdm.h"
 
 /* 
- * PIN MAPPINGS (Corrected for Binary Alignment)
+ * PIN MAPPINGS
  * ----------------------------------
  * RTC4543SB:
  *   CLK:  PB5, DATA: PC4, CE: PB1, WR: PB3
@@ -186,7 +186,7 @@ int main() {
                     g_state = 0x01;
                 }
                 // Long delay
-                for (volatile uint32_t i = 0x1869ff; i > 0; i--);
+                for (volatile uint32_t i = 1599999; i > 0; i--);
                 break;
         }
     }
