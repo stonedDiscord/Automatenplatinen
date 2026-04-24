@@ -3059,6 +3059,12 @@
 		)
 	)
 	(junction
+		(at 232.41 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0016fc29-1190-4509-9de2-2db1877ff068")
+	)
+	(junction
 		(at 167.64 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3122,7 +3128,7 @@
 		(at 204.47 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bf2b6809-4caa-4644-8d8b-325692ac1ef0")
+		(uuid "a6a9ffda-53a6-4294-846c-ff4261653150")
 	)
 	(junction
 		(at 137.16 88.9)
@@ -3274,7 +3280,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 55.88) (xy 219.71 55.88)
+			(xy 204.47 55.88) (xy 232.41 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3304,7 +3310,17 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 60.96) (xy 219.71 60.96)
+			(xy 232.41 60.96) (xy 243.84 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac2ca858-2239-4168-8207-ab336b45a9ef")
+	)
+	(wire
+		(pts
+			(xy 204.47 60.96) (xy 232.41 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3453,7 +3469,7 @@
 				)
 			)
 		)
-		(property "Value" "Laden"
+		(property "Value" "L"
 			(at 77.978 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4922,7 +4938,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 219.71 60.96 270)
+		(at 232.41 60.96 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4933,7 +4949,7 @@
 		(fields_autoplaced yes)
 		(uuid "65fb09e9-4708-4265-a1e5-f62d5ccc39a2")
 		(property "Reference" "TP4"
-			(at 224.79 59.6899 90)
+			(at 237.49 59.6899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4944,7 +4960,7 @@
 			)
 		)
 		(property "Value" "MINUS"
-			(at 224.79 62.2299 90)
+			(at 237.49 62.2299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4955,7 +4971,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 219.71 66.04 0)
+			(at 232.41 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4966,7 +4982,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 219.71 66.04 0)
+			(at 232.41 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4977,7 +4993,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 219.71 60.96 0)
+			(at 232.41 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5476,6 +5492,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 243.84 60.96 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8133aa5f-6ce7-4dc6-9c7b-79086c5567ef")
+		(property "Reference" "TP5"
+			(at 248.92 59.6899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MINUS"
+			(at 248.92 62.2299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 243.84 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 243.84 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aaa2785f-fbe0-4c71-b5eb-4468b7a374de")
+		)
+		(instances
+			(project "DBCharger"
+				(path "/4f58be4d-3c03-47f1-8d83-b117db14792f"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 100.33 78.74 0)
 		(unit 1)
@@ -5628,6 +5723,85 @@
 			(project "DBCharger"
 				(path "/4f58be4d-3c03-47f1-8d83-b117db14792f"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 199.39 60.96 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8338e27c-9aea-4a10-bd24-756257ec50e7")
+		(property "Reference" "J7"
+			(at 196.85 59.6899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MINUS"
+			(at 196.85 62.2299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical"
+			(at 199.39 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 199.39 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e1c7c851-a21b-4f35-bee9-f84fb3323f2b")
+		)
+		(instances
+			(project "DBCharger"
+				(path "/4f58be4d-3c03-47f1-8d83-b117db14792f"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -6192,8 +6366,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 219.71 55.88 270)
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 227.33 60.96 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6201,10 +6376,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ef3e315-0ae8-4ab7-a97c-99bbedd40ee3")
-		(property "Reference" "TP3"
-			(at 224.79 54.6099 90)
+		(uuid "9e947774-db22-4cf5-8676-071118097f27")
+		(property "Reference" "J8"
+			(at 224.79 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6214,8 +6388,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BATT+"
-			(at 224.79 57.1499 90)
+		(property "Value" "MINUS"
+			(at 224.79 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6225,8 +6399,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 219.71 60.96 0)
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical"
+			(at 227.33 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6237,7 +6411,86 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 219.71 60.96 0)
+			(at 227.33 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 227.33 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba70fe8c-7b12-432c-b37c-76d542a66481")
+		)
+		(instances
+			(project "DBCharger"
+				(path "/4f58be4d-3c03-47f1-8d83-b117db14792f"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 232.41 55.88 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ef3e315-0ae8-4ab7-a97c-99bbedd40ee3")
+		(property "Reference" "TP3"
+			(at 237.49 54.6099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BATT+"
+			(at 237.49 57.1499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 232.41 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6248,7 +6501,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 219.71 55.88 0)
+			(at 232.41 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6457,7 +6710,7 @@
 				)
 			)
 		)
-		(property "Value" "Standby"
+		(property "Value" "S"
 			(at 72.898 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
