@@ -4877,6 +4877,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "0x8000100"
 		(exclude_from_sim no)
@@ -4975,6 +5090,18 @@
 		(uuid "0d0a3fb5-2ff9-4e99-902e-8caa3c2a4bc8")
 	)
 	(junction
+		(at 287.02 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1828c0b7-94ca-458e-8efb-7a5fed5ab0bf")
+	)
+	(junction
+		(at 287.02 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2cbab179-d42a-48a7-acc8-66adaec228cd")
+	)
+	(junction
 		(at 161.29 217.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5029,6 +5156,14 @@
 		(uuid "ed7bf58a-60ca-4305-b5c9-56c46683f63d")
 	)
 	(no_connect
+		(at 236.22 261.62)
+		(uuid "0f14c61f-2893-4e8c-b3d5-cf31bfd8fb52")
+	)
+	(no_connect
+		(at 236.22 246.38)
+		(uuid "0fb0c977-a8bd-4053-9563-b8de8d4936fa")
+	)
+	(no_connect
 		(at 78.74 160.02)
 		(uuid "1eb0bb59-f253-4f1e-8060-c973b616fa3a")
 	)
@@ -5045,8 +5180,24 @@
 		(uuid "4452e551-d3ba-42f2-8273-eb3bb32ac240")
 	)
 	(no_connect
+		(at 251.46 229.87)
+		(uuid "6368b603-7d34-4d51-a23e-668307bd43cc")
+	)
+	(no_connect
 		(at 163.83 154.94)
 		(uuid "80f483da-927d-4a5e-83e3-cc695fb30be2")
+	)
+	(no_connect
+		(at 236.22 232.41)
+		(uuid "82e7f461-32f3-4af2-9af0-7d32b292589c")
+	)
+	(no_connect
+		(at 236.22 256.54)
+		(uuid "83551b57-3e13-4884-aed9-fa98918a7eac")
+	)
+	(no_connect
+		(at 251.46 259.08)
+		(uuid "99e90903-7d7a-42b2-95a0-c5c3bde62236")
 	)
 	(no_connect
 		(at 198.12 46.99)
@@ -5061,8 +5212,20 @@
 		(uuid "cacc3915-62aa-4519-a1b1-7446f2be9c73")
 	)
 	(no_connect
+		(at 236.22 227.33)
+		(uuid "d8209793-46cb-43e5-951d-ab97ad981416")
+	)
+	(no_connect
 		(at 227.33 41.91)
 		(uuid "df7ff0f4-61c9-45b9-89bd-b04df10ad34f")
+	)
+	(no_connect
+		(at 236.22 241.3)
+		(uuid "e4847a85-8ff3-4807-a7e4-5cddf3988558")
+	)
+	(no_connect
+		(at 251.46 243.84)
+		(uuid "e71e87a6-00fc-4da2-bb0a-534dcd01983b")
 	)
 	(no_connect
 		(at 78.74 162.56)
@@ -7186,7 +7349,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 151.13 216.408 90)
 			(hide yes)
 			(show_name no)
@@ -7407,88 +7570,6 @@
 			(project "ProgrammierStation"
 				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
 					(reference "D13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 17.78 40.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0b26ca56-1f14-47e4-b7b9-1c4c693353d7")
-		(property "Reference" "H4"
-			(at 20.32 39.3699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 20.32 41.9099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
-			(at 17.78 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 17.78 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 17.78 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "ProgrammierStation"
-				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-			(project "Steuereinheit"
-				(path "/f18b0f09-702c-4d8f-95d7-df7f8e7948eb"
-					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -8296,7 +8377,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 151.13 203.708 90)
 			(hide yes)
 			(show_name no)
@@ -8378,7 +8459,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 37.592 175.26 90)
 			(hide yes)
 			(show_name no)
@@ -8560,7 +8641,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 151.13 211.328 90)
 			(hide yes)
 			(show_name no)
@@ -10092,7 +10173,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 41.91 224.028 90)
 			(hide yes)
 			(show_name no)
@@ -10389,7 +10470,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 151.13 213.868 90)
 			(hide yes)
 			(show_name no)
@@ -10814,88 +10895,6 @@
 			(project "ProgrammierStation"
 				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
 					(reference "#PWR059")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 17.78 17.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "434bd000-0c1e-4769-b3fa-0930d25bec87")
-		(property "Reference" "H1"
-			(at 20.32 16.5099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 20.32 19.0499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
-			(at 17.78 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 17.78 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 17.78 17.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "ProgrammierStation"
-				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-			(project "Steuereinheit"
-				(path "/f18b0f09-702c-4d8f-95d7-df7f8e7948eb"
-					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -11725,7 +11724,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 151.13 218.948 90)
 			(hide yes)
 			(show_name no)
@@ -11806,7 +11805,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 249.682 147.32 90)
 			(hide yes)
 			(show_name no)
@@ -13142,88 +13141,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 17.78 33.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "778302f0-ee45-4058-93f9-f696b052eaf5")
-		(property "Reference" "H3"
-			(at 20.32 31.7499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 20.32 34.2899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
-			(at 17.78 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 17.78 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 17.78 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "ProgrammierStation"
-				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-			(project "Steuereinheit"
-				(path "/f18b0f09-702c-4d8f-95d7-df7f8e7948eb"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 46.99 104.14 90)
 		(unit 1)
@@ -13340,7 +13257,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 71.12 46.228 90)
 			(hide yes)
 			(show_name no)
@@ -13428,7 +13345,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 40.132 121.92 90)
 			(hide yes)
 			(show_name no)
@@ -13516,7 +13433,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 151.13 221.488 90)
 			(hide yes)
 			(show_name no)
@@ -14008,19 +13925,30 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 17.78 55.88 0)
+		(lib_id "power:PWR_FLAG")
+		(at 287.02 153.67 270)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8bd02319-80af-4f32-b63e-b8ea5041a19b")
-		(property "Reference" "H6"
-			(at 20.32 54.6099 0)
+		(uuid "893dc863-70d5-419f-97b5-4bf7eebc20f9")
+		(property "Reference" "#FLG01"
+			(at 288.925 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 290.83 153.6699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14030,19 +13958,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 20.32 57.1499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
-			(at 17.78 55.88 0)
+		(property "Footprint" ""
+			(at 287.02 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14053,7 +13970,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 17.78 55.88 0)
+			(at 287.02 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14063,8 +13980,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 17.78 55.88 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 287.02 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14073,11 +13990,209 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "c3215996-54d7-4445-9edc-cf6a90793431")
 		)
 		(instances
 			(project "ProgrammierStation"
 				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
-					(reference "H6")
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC02")
+		(at 243.84 259.08 0)
+		(unit 4)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89e3e190-a30c-47db-b977-483bb4360615")
+		(property "Reference" "U3"
+			(at 243.84 250.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC02"
+			(at 243.84 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 243.84 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc02"
+			(at 243.84 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "quad 2-input NOR gate"
+			(at 243.84 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "b779b992-9860-4227-b51a-29376f12ca93")
+		)
+		(pin "11"
+			(uuid "2e2fa32d-a668-4efa-83e4-04e3def1077a")
+		)
+		(pin "9"
+			(uuid "441f6b18-8a94-4eb0-80dd-4530212b0f1a")
+		)
+		(pin "4"
+			(uuid "7ad8f7aa-6dff-490d-bb27-06a460eadafc")
+		)
+		(pin "14"
+			(uuid "fd518cb7-ecd7-45db-831b-9acbba7ab8e9")
+		)
+		(pin "8"
+			(uuid "a004dd3e-0af5-4acb-b519-7852c53b35d2")
+		)
+		(pin "6"
+			(uuid "aba3f9f6-8e0f-4c52-8a39-a5b24c583dac")
+		)
+		(pin "7"
+			(uuid "cb0ec1e7-23ae-468a-a236-a23b0358c04a")
+		)
+		(pin "10"
+			(uuid "9557daf8-467a-4fb6-9a89-ddfd008965fd")
+		)
+		(pin "1"
+			(uuid "cb1d68a5-0d20-467a-b8cf-7867c05ad2a7")
+		)
+		(pin "13"
+			(uuid "12aa331a-ff59-40d1-ba41-6f7124dbac94")
+		)
+		(pin "12"
+			(uuid "744eed7d-e045-4fd1-9cc7-7a15886dda41")
+		)
+		(pin "3"
+			(uuid "c2cb52ed-420f-421b-acb4-9d5031dd806a")
+		)
+		(pin "2"
+			(uuid "41b3bc7d-3e44-42f4-b57d-f810f8d57acc")
+		)
+		(instances
+			(project "ProgrammierStation"
+				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
+					(reference "U3")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 287.02 161.29 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8bc4ff0a-3ca0-4cb1-82b6-b1ddc3f6338b")
+		(property "Reference" "#FLG02"
+			(at 288.925 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 290.83 161.2899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 287.02 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 287.02 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 287.02 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "68c103fd-1212-4855-81b6-bdf98c24e64b")
+		)
+		(instances
+			(project "ProgrammierStation"
+				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -14788,7 +14903,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 41.91 210.312 90)
 			(hide yes)
 			(show_name no)
@@ -15175,7 +15290,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 151.13 206.248 90)
 			(hide yes)
 			(show_name no)
@@ -16176,7 +16291,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 86.36 163.322 90)
 			(hide yes)
 			(show_name no)
@@ -16343,7 +16458,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 151.13 208.788 90)
 			(hide yes)
 			(show_name no)
@@ -16933,7 +17048,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 99.568 149.86 90)
 			(hide yes)
 			(show_name no)
@@ -17191,6 +17306,122 @@
 		)
 	)
 	(symbol
+		(lib_id "74xx:74HC02")
+		(at 243.84 243.84 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e86efab1-53e5-4a66-aae0-1d9bd02d00ad")
+		(property "Reference" "U3"
+			(at 243.84 234.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC02"
+			(at 243.84 237.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 243.84 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc02"
+			(at 243.84 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "quad 2-input NOR gate"
+			(at 243.84 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "a9b22fb0-87c1-4f4d-89e8-020d4a7fe571")
+		)
+		(pin "11"
+			(uuid "2e2fa32d-a668-4efa-83e4-04e3def1077a")
+		)
+		(pin "9"
+			(uuid "441f6b18-8a94-4eb0-80dd-4530212b0f1a")
+		)
+		(pin "4"
+			(uuid "5e096210-2b90-4d26-b00d-4488bc5d1275")
+		)
+		(pin "14"
+			(uuid "fd518cb7-ecd7-45db-831b-9acbba7ab8e9")
+		)
+		(pin "8"
+			(uuid "a004dd3e-0af5-4acb-b519-7852c53b35d2")
+		)
+		(pin "6"
+			(uuid "d22dfc20-68af-484d-adff-5457b3f75b18")
+		)
+		(pin "7"
+			(uuid "cb0ec1e7-23ae-468a-a236-a23b0358c04a")
+		)
+		(pin "10"
+			(uuid "9557daf8-467a-4fb6-9a89-ddfd008965fd")
+		)
+		(pin "1"
+			(uuid "cb1d68a5-0d20-467a-b8cf-7867c05ad2a7")
+		)
+		(pin "13"
+			(uuid "12aa331a-ff59-40d1-ba41-6f7124dbac94")
+		)
+		(pin "12"
+			(uuid "744eed7d-e045-4fd1-9cc7-7a15886dda41")
+		)
+		(pin "3"
+			(uuid "c2cb52ed-420f-421b-acb4-9d5031dd806a")
+		)
+		(pin "2"
+			(uuid "41b3bc7d-3e44-42f4-b57d-f810f8d57acc")
+		)
+		(instances
+			(project "ProgrammierStation"
+				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
+					(reference "U3")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 59.69 119.38 0)
 		(unit 1)
@@ -17308,7 +17539,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 191.77 164.338 90)
 			(hide yes)
 			(show_name no)
@@ -17351,6 +17582,122 @@
 			(project "ProgrammierStation"
 				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
 					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC02")
+		(at 243.84 229.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee18083a-c8ae-4185-a8af-b35778c165e6")
+		(property "Reference" "U3"
+			(at 243.84 220.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC02"
+			(at 243.84 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+			(at 243.84 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc02"
+			(at 243.84 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "quad 2-input NOR gate"
+			(at 243.84 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "a9b22fb0-87c1-4f4d-89e8-020d4a7fe571")
+		)
+		(pin "11"
+			(uuid "2e2fa32d-a668-4efa-83e4-04e3def1077a")
+		)
+		(pin "9"
+			(uuid "441f6b18-8a94-4eb0-80dd-4530212b0f1a")
+		)
+		(pin "4"
+			(uuid "5e096210-2b90-4d26-b00d-4488bc5d1275")
+		)
+		(pin "14"
+			(uuid "fd518cb7-ecd7-45db-831b-9acbba7ab8e9")
+		)
+		(pin "8"
+			(uuid "a004dd3e-0af5-4acb-b519-7852c53b35d2")
+		)
+		(pin "6"
+			(uuid "d22dfc20-68af-484d-adff-5457b3f75b18")
+		)
+		(pin "7"
+			(uuid "cb0ec1e7-23ae-468a-a236-a23b0358c04a")
+		)
+		(pin "10"
+			(uuid "9557daf8-467a-4fb6-9a89-ddfd008965fd")
+		)
+		(pin "1"
+			(uuid "2d6a5bb7-83ef-497f-b12d-db208fd6d54d")
+		)
+		(pin "13"
+			(uuid "12aa331a-ff59-40d1-ba41-6f7124dbac94")
+		)
+		(pin "12"
+			(uuid "744eed7d-e045-4fd1-9cc7-7a15886dda41")
+		)
+		(pin "3"
+			(uuid "a7a4e446-6b0e-41ea-b2f2-716b2d344410")
+		)
+		(pin "2"
+			(uuid "c505f7ae-e277-453b-a3d1-3061ab2450d1")
+		)
+		(instances
+			(project "ProgrammierStation"
+				(path "/8791464e-45ca-4793-8042-4a41a8adeea1"
+					(reference "U3")
 					(unit 1)
 				)
 			)

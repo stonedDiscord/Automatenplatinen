@@ -131,7 +131,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.2,
+        "min_clearance": 0.22,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -196,6 +196,7 @@
       ],
       "track_widths": [
         0.0,
+        0.2,
         0.635
       ],
       "tuning_pattern_settings": {
@@ -446,13 +447,13 @@
       "endpoint_off_grid": "warning",
       "extra_units": "error",
       "field_name_whitespace": "warning",
-      "footprint_filter": "ignore",
+      "footprint_filter": "warning",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "warning",
       "global_label_dangling": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
-      "isolated_pin_label": "warning",
+      "isolated_pin_label": "ignore",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -473,7 +474,7 @@
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
-      "simulation_model_issue": "ignore",
+      "simulation_model_issue": "warning",
       "single_global_label": "ignore",
       "stacked_pin_name": "warning",
       "unannotated": "error",
@@ -666,7 +667,7 @@
         "uuid": "8791464e-45ca-4793-8042-4a41a8adeea1"
       }
     ],
-    "used_designators": "#PWR237",
+    "used_designators": "U4-5,#FLG1-2",
     "variants": []
   },
   "sheets": [
