@@ -21,173 +21,242 @@
  *   PROBE: PB1 (Pulsed), SENSE: PD5 (T1 Input)
  */
 
-#define LED_PIN         PD1
-#define PHOTO_PIN       ADC1  // Photodiode on ADC1 (PC1)
 
-#define BDM_DSCLK_PIN   PC0
-#define BDM_DSI_PIN     PC3
-#define BDM_DSO_PIN     PD6
-#define BDM_DSO_IN      PIND
-#define BDM_FREEZE_PIN  PB2
 
+// RTC pins
 #define RTC_CLK_PIN     PB5
 #define RTC_DATA_PIN    PC4
 #define RTC_CE_PIN      PB1
 #define RTC_WR_PIN      PB3
 
-// MC68332 Register Addresses
-#define SIMCR               0x00FFFA00
-#define SYNCR               0x00FFFA04
-#define SYPCR               0x00FFFA20
-#define CSPAR0              0x00FFFA44
-#define CSPAR1              0x00FFFA46
-#define CSBARBT             0x00FFFA48
-#define CSORBT              0x00FFFA4A
-#define CSBAR0              0x00FFFA4C
-#define CSOR0               0x00FFFA4E
+// MC68332 ColdFire register addresses (mapped via BDM)
+#define SIMCR           0x00FFFA00
+#define SYNCR           0x00FFFA04
+#define SYPCR           0x00FFFA20
+#define CSPAR0          0x00FFFA44
+#define CSPAR1          0x00FFFA46
+#define CSBARBT         0x00FFFA48
+#define CSORBT          0x00FFFA4A
+#define CSBAR0          0x00FFFA4C
+#define CSOR0           0x00FFFA4E
 
-volatile uint8_t g_state = 0x01;
+// System state machine
+typedef enum {
+    STATE_IDLE      = 0x01,
+    STATE_INTRUSION = 0x02,
+    STATE_ACTIVE    = 0x03
+} system_state_t;
 
-uint16_t bdm_transfer(uint16_t data_out) {
-    uint32_t val = (uint32_t)data_out;
-    for (uint8_t i = 0; i < 15; i++) val <<= 1;
-    
-    for (uint8_t i = 0; i < 17; i++) {
-        bool bit = (val & 0x10000);
-        val <<= 1;
-        
-        PORTC &= ~((1 << BDM_DSCLK_PIN) | (1 << BDM_DSI_PIN));
-        _delay_us(2); // 5-loop delay
-        
-        if (bit) PORTC |= (1 << BDM_DSI_PIN);
-        if (PIND & (1 << BDM_DSO_PIN)) val |= 1;
-        
-        PORTC |= (1 << BDM_DSCLK_PIN);
-        _delay_us(2);
-    }
-    return (uint16_t)(val & 0xFFFF);
-}
+volatile system_state_t g_state = STATE_IDLE;
 
-void bdm_write_word(uint32_t addr, uint16_t data) {
-    bdm_transfer(BDM_WRITE | SIZE_WORD); // WRITE(B/W)
-    bdm_transfer(addr >> 16); // MS ADDR
-    bdm_transfer(addr & 0xFFFF); // LS ADDR
-    bdm_transfer(data); // DATA
-    // WRITE MEMORY LOCATION
-}
-
-typedef struct {
-    uint8_t sec, min, hour, day, month, year, week;
-} rtc_time_t;
+// ============================================================================
+// RTC support
+// ============================================================================
 
 void rtc_read_52bits(uint8_t *buffer) {
     for (uint8_t i = 0; i < 7; i++) buffer[i] = 0;
-    PORTB &= ~(1 << RTC_WR_PIN);
-    PORTB |= (1 << RTC_CE_PIN);
-    _delay_us(2);
-    for (uint8_t i = 0; i < 52; i++) {
+    
+    // WR high (read mode), CE high to start transfer
+    PORTB |= (1 << RTC_WR_PIN) | (1 << RTC_CE_PIN);
+    _delay_us(1);
+    
+    // Clock out 52 bits, sample DATA on each rising edge
+    for (uint8_t bit = 0; bit < 52; bit++) {
         PORTB |= (1 << RTC_CLK_PIN);
-        _delay_us(2);
+        _delay_us(1);
         if (PINC & (1 << RTC_DATA_PIN)) {
-            buffer[i/8] |= (1 << (i%8));
+            buffer[bit / 8] |= (1 << (bit % 8));
         }
         PORTB &= ~(1 << RTC_CLK_PIN);
-        _delay_us(2);
+        _delay_us(1);
     }
+    
+    // CE low to latch
     PORTB &= ~(1 << RTC_CE_PIN);
 }
 
+// ============================================================================
+// Intrusion detection
+// ============================================================================
+
 uint8_t check_intrusion() {
-    TCCR1A = 0;
+    // Stop and reset Timer1
     TCCR1B = 0;
     TCNT1 = 0;
-    PINB = (1 << PB1); // Toggle PB1 probe
-    TCCR1B = 0x07;     // Ext clock on T1 (PD5), rising edge
     
-    // Software delay
+    // Pulse PB1 (probe)
+    PORTB |= (1 << PB1);
+    _delay_us(10);
+    PORTB &= ~(1 << PB1);
+    
+    // Timer1: external clock on T1 (PD5), rising edge
+    TCCR1B = (1 << CS12) | (1 << CS11);  // External clock source
+    
+    // Software delay while timer counts external pulses on PD5
     for (volatile uint16_t i = 7999; i > 0; i--);
     
-    TCCR1B = 0; // Stop timer
-    return (TCNT1 >= 0x15); 
+    TCCR1B = 0;  // Stop timer
+    // Firmware: return 1 if TCNT1 >= 0x15
+    return (TCNT1 >= 0x15) ? 1 : 0;
 }
 
+// ============================================================================
+// Target MC68332 initialization
+// ============================================================================
+
 void target_init() {
-    bdm_write_word(SIMCR,   0x40CF);
-    bdm_write_word(SYNCR,   0x7F03);
+    // Initialize ColdFire core registers
+    bdm_write_word(SIMCR,  0x40CF);
+    bdm_write_word(SYNCR,  0x7F03);
     _delay_ms(20);
-    bdm_write_word(SYPCR,   0x004C);
-    bdm_write_word(CSPAR0,  0x3FFF);
-    bdm_write_word(CSPAR1,  0x03FD);
+    bdm_write_word(SYPCR,  0x004C);
+    bdm_write_word(CSPAR0, 0x3FFF);
+    bdm_write_word(CSPAR1, 0x03FD);
     bdm_write_word(CSBARBT, 0x0007);
     bdm_write_word(CSORBT,  0x6C70);
-    bdm_write_word(CSBAR0,  0x0007);
-    bdm_write_word(CSOR0,   0x7470);
+    bdm_write_word(CSBAR0, 0x0007);
+    bdm_write_word(CSOR0,  0x7470);
     
-    for (uint16_t addr = 0; addr < 0x40; addr += 2) {
+    // Load EEPROM contents to target RAM at 0x3C0 (0x40 words)
+    for (uint16_t addr = 0x0000; addr < 0x0040; addr += 2) {
         uint16_t data = eeprom_read_word((uint16_t*)addr);
-        bdm_write_word(0x3C0 + addr, data);
+        bdm_write_word(0x03C0 + addr, data);
+    }
+    
+    // NOTE: Firmware performs additional BDM register writes after EEPROM load
+    // (peripheral/timer/UART configuration). TODO
+}
+
+// ============================================================================
+// Timer2 Compare A ISR – main power‑management / state machine
+// ============================================================================
+
+ISR(TIMER2_COMPA_vect) {
+    switch (g_state) {
+        case STATE_IDLE:
+            if (check_intrusion()) {
+                g_state = STATE_INTRUSION;
+            }
+            // Else remain idle – will sleep again
+            break;
+            
+        case STATE_INTRUSION:
+            target_init();
+            g_state = STATE_ACTIVE;
+            break;
+            
+        case STATE_ACTIVE:
+            if (!check_intrusion()) {
+                g_state = STATE_IDLE;
+            }
+            // Long processing delay (~1.6 s) as in firmware
+            for (volatile uint32_t i = 1599999; i > 0; i--);
+            break;
+            
+        default:
+            g_state = STATE_IDLE;
+            break;
     }
 }
 
+// ============================================================================
+// TIMER0_COMPA ISR – not used; firmware redirects all ints here
+// ============================================================================
+
+ISR(TIMER0_COMPA_vect) {
+    // Firmware's interrupt vectors for INT0‑7, PCINT, WDT all rjmp to RESET.
+    // Empty ISR prevents unwanted resets if accidentally enabled.
+}
+
+ISR(TIMER1_COMPA_vect) {
+    // Firmware redirects this vector to TIMER0_COMPA. Keep empty.
+}
+
+// ============================================================================
+// Hardware initialization
+// ============================================================================
+
 void system_init() {
     cli();
-    // Watchdog Disable
+    
+    // Disable watchdog
     wdt_reset();
     WDTCSR |= (1 << WDCE) | (1 << WDE);
     WDTCSR = 0x00;
     
-    // Power Reduction and Digital Input Disable
-    PRR = 0xAE; 
+    // Power reduction: turn off unused modules (firmware: PRR=0xAE)
+    PRR = 0xAE;
+    
+    // Digital input disable: disable buffers on ADC/T1 pins
     DIDR0 = 0x2E;
     DIDR1 = 0x02;
     
-    // Pin Directions
-    DDRB |= (1 << PB1) | (1 << PB3) | (1 << PB5);
-    DDRC |= (1 << PC0) | (1 << PC3);
-    DDRC &= ~(1 << PC4);
-    DDRD &= ~((1 << PD4) | (1 << PD5) | (1 << PD6));
+    // Pin directions (per firmware)
+    DDRB |= (1 << PB1) | (1 << PB3) | (1 << PB5);  // RTC CE/WR/CLK outputs
+    DDRC |= (1 << PC0) | (1 << PC3);               // BDM DSCLK/DSI outputs
+    DDRC &= ~(1 << PC4);                            // RTC DATA input
+    DDRD &= ~((1 << PD4) | (1 << PD5) | (1 << PD6)); // Intrusion sense, BDM DSO inputs
     
+    // Pull-ups: BDM lines idle high
     PORTC |= (1 << PC0) | (1 << PC3);
     
-    // Timer 1 Setup
-    TCCR1A = 0x00;
-    TCCR1B = 0x04; // Initial prescaler
-    TCCR1C = 0x00;
+    // Timer1: stopped; configured in check_intrusion() for ext clock on PD5/T1
+    TCCR1A = 0;
+    TCCR1B = 0;
+    TCCR1C = 0;
     
-    sei();
+    // Timer2: async mode, external 32.768 kHz crystal
+    // ASSR.AS2=1, TCCR2B:CS22:CS21=11 (ext clock, falling edge), OCR2A=0
+    ASSR = (1 << AS2);
+    TCCR2A = 0x00;
+    TCCR2B = (1 << CS22) | (1 << CS21);
+    OCR2A = 0;
+    TCNT2 = 0;
+    
+    // Wait for async registers to synchronize
+    while (ASSR & ((1 << TCN2UB) | (1 << OCR2AUB) | (1 << TCR2BUB)));
+    
+    // Clear Timer2 Compare A flag and enable interrupt
+    TIFR2 = (1 << OCF2A);
+    TIMSK2 = (1 << OCIE2A);
+    
+    sei();  // Global interrupt enable
 }
+
+// ============================================================================
+// Main entry point
+// ============================================================================
 
 int main() {
     system_init();
     
-    uint8_t buf[7];
-    rtc_read_52bits(buf);
-    rtc_read_52bits(buf); // Double read
+    // Read RTC to clear shift register (double-read per firmware)
+    uint8_t rtc_buf[7];
+    rtc_read_52bits(rtc_buf);
+    rtc_read_52bits(rtc_buf);
+    
+    g_state = STATE_IDLE;
     
     while (1) {
-        switch (g_state) {
-            case 0x01: // Idle
-                if (check_intrusion()) {
-                    g_state = 0x02; // Intrusion detected
-                } else {
-                    set_sleep_mode(SLEEP_MODE_PWR_DOWN);
-                    TCCR0B = (TCCR0B & 0xF1) | 0x04;
-                    TCCR0B |= 0x01;
-                    sleep_mode();
-                    TCCR0B &= ~0x01;
-                }
-                break;
-            case 0x02: // Intrusion
-                target_init();
-                g_state = 0x03;
-                break;
-            case 0x03: // Active
-                if (!check_intrusion()) {
-                    g_state = 0x01;
-                }
-                // Long delay
-                for (volatile uint32_t i = 1599999; i > 0; i--);
-                break;
+        if (g_state == STATE_IDLE) {
+            // Sleep until Timer2 Compare A wakes the CPU
+            set_sleep_mode(SLEEP_MODE_PWR_DOWN);
+            sleep_mode();
+            // On wake, ISR will handle state transition
+        }
+        else if (g_state == STATE_INTRUSION) {
+            target_init();
+            g_state = STATE_ACTIVE;
+        }
+        else if (g_state == STATE_ACTIVE) {
+            if (!check_intrusion()) {
+                g_state = STATE_IDLE;
+            }
+            // Long delay mimicking firmware loop
+            for (volatile uint32_t i = 1599999; i > 0; i--);
+        }
+        else {
+            g_state = STATE_IDLE;
         }
     }
 }
