@@ -7,6 +7,7 @@
 #include <avr/eeprom.h>
 
 #include "bdm.h"
+#include "rtc.h"
 
 /* 
  * PIN MAPPINGS
@@ -21,15 +22,7 @@
  *   PROBE: PB1 (Pulsed), SENSE: PD5 (T1 Input)
  */
 
-
-
-// RTC pins
-#define RTC_CLK_PIN     PB5
-#define RTC_DATA_PIN    PC4
-#define RTC_CE_PIN      PB1
-#define RTC_WR_PIN      PB3
-
-// MC68332 ColdFire register addresses (mapped via BDM)
+// MC68332 CPU32 register addresses
 #define SIMCR           0x00FFFA00
 #define SYNCR           0x00FFFA04
 #define SYPCR           0x00FFFA20
@@ -48,32 +41,6 @@ typedef enum {
 } system_state_t;
 
 volatile system_state_t g_state = STATE_IDLE;
-
-// ============================================================================
-// RTC support
-// ============================================================================
-
-void rtc_read_52bits(uint8_t *buffer) {
-    for (uint8_t i = 0; i < 7; i++) buffer[i] = 0;
-    
-    // WR high (read mode), CE high to start transfer
-    PORTB |= (1 << RTC_WR_PIN) | (1 << RTC_CE_PIN);
-    _delay_us(1);
-    
-    // Clock out 52 bits, sample DATA on each rising edge
-    for (uint8_t bit = 0; bit < 52; bit++) {
-        PORTB |= (1 << RTC_CLK_PIN);
-        _delay_us(1);
-        if (PINC & (1 << RTC_DATA_PIN)) {
-            buffer[bit / 8] |= (1 << (bit % 8));
-        }
-        PORTB &= ~(1 << RTC_CLK_PIN);
-        _delay_us(1);
-    }
-    
-    // CE low to latch
-    PORTB &= ~(1 << RTC_CE_PIN);
-}
 
 // ============================================================================
 // Intrusion detection
@@ -105,7 +72,7 @@ uint8_t check_intrusion() {
 // ============================================================================
 
 void target_init() {
-    // Initialize ColdFire core registers
+    // Initialize CPU32 core registers
     bdm_write_word(SIMCR,  0x40CF);
     bdm_write_word(SYNCR,  0x7F03);
     _delay_ms(20);
