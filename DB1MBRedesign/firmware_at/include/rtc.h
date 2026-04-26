@@ -7,6 +7,6 @@
 #define RTC_CE_PIN      PB1
 #define RTC_WR_PIN      PB3
 
-void rtc_read_52bits(uint8_t *buffer);
+void rtc_4543_read(uint8_t *buffer);
 
 #endif // RTC_H

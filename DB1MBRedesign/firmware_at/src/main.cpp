@@ -199,8 +199,8 @@ int main() {
     
     // Read RTC to clear shift register (double-read per firmware)
     uint8_t rtc_buf[7];
-    rtc_read_52bits(rtc_buf);
-    rtc_read_52bits(rtc_buf);
+    rtc_4543_read(rtc_buf);
+    rtc_4543_read(rtc_buf);
     
     g_state = STATE_IDLE;
     

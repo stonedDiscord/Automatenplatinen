@@ -9,7 +9,7 @@
 // RTC support
 // ============================================================================
 
-void rtc_read_52bits(uint8_t *buffer) {
+void rtc_4543_read(uint8_t *buffer) {
     for (uint8_t i = 0; i < 7; i++) buffer[i] = 0;
     
     // WR high (read mode), CE high to start transfer
