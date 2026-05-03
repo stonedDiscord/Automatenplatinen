@@ -1,4 +1,4 @@
-// MC68332 CPU32 register addresses
+// MC68331 CPU32 register addresses
 #define SIMCR           0x00FFFA00
 #define SYNCR           0x00FFFA04
 #define SYPCR           0x00FFFA20

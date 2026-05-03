@@ -9,7 +9,7 @@
 #include "bdm.h"
 #include "rtc.h"
 
-#include "mc68332.h"
+#include "mc68331.h"
 
 /* 
  * PIN MAPPINGS
@@ -59,7 +59,7 @@ uint8_t check_intrusion() {
 }
 
 // ============================================================================
-// Target MC68332 initialization
+// Target MC68331 initialization
 // ============================================================================
 
 void target_init() {
