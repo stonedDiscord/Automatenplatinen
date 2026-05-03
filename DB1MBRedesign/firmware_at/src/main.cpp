@@ -74,6 +74,10 @@ void target_init() {
     bdm_write_word(CSORBT,  0x6C70);
     bdm_write_word(CSBAR0, 0x0007);
     bdm_write_word(CSOR0,  0x7470);
+    bdm_write_word(CSBAR1, 0x0007);
+    bdm_write_word(CSOR1,  0x7070);
+    bdm_write_word(CSBAR2, 0x0007);
+    bdm_write_word(CSOR2,  0x7070);
     
     // Load EEPROM contents to target RAM at 0x3C0 (0x40 words)
     for (uint16_t addr = 0x0000; addr < 0x0040; addr += 2) {
