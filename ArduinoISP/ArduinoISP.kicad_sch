@@ -5,7 +5,9 @@
 	(uuid "0d35483a-0b12-46cc-b9f2-896fd6831779")
 	(paper "A5")
 	(title_block
-		(date "sam. 04 avril 2015")
+		(title "ArduinoISP")
+		(date "2026-04-11")
+		(company "sD")
 	)
 	(lib_symbols
 		(symbol "Connector:AVR-ISP-10"
@@ -2145,6 +2147,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VCC"
 			(power global)
 			(pin_numbers
@@ -2292,10 +2409,34 @@
 		(uuid "1823f0d6-986a-4e82-a0f3-23d5b08a4de2")
 	)
 	(junction
+		(at 27.94 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31d50d3f-fd39-4dc3-a09e-eaaadf1314a5")
+	)
+	(junction
+		(at 33.02 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38d24e17-5ea0-41b0-a99b-f33fdebdbcb4")
+	)
+	(junction
+		(at 33.02 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46ea6faa-34ab-4b9f-8d88-c7c9e1cf143a")
+	)
+	(junction
 		(at 101.6 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "61bc1134-072d-4684-8375-8d866df22720")
+	)
+	(junction
+		(at 30.48 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f998a09-b778-4611-94fe-cbedd53897bb")
 	)
 	(junction
 		(at 115.57 95.25)
@@ -2369,7 +2510,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 24.13) (xy 30.48 54.61)
+			(xy 30.48 21.59) (xy 30.48 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2499,7 +2640,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 24.13) (xy 33.02 29.21)
+			(xy 33.02 21.59) (xy 33.02 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2536,16 +2677,6 @@
 			(type solid)
 		)
 		(uuid "890dba85-5364-490f-b26f-bd65acd5d756")
-	)
-	(wire
-		(pts
-			(xy 27.94 24.13) (xy 27.94 62.23)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "8991b924-f721-48ae-a82d-04118434898d")
 	)
 	(wire
 		(pts
@@ -3499,6 +3630,164 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 33.02 21.59 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "169e4283-b96b-416c-9712-762265d7e1e2")
+		(property "Reference" "#FLG01"
+			(at 34.925 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 36.83 21.5899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 33.02 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "630dde6d-facd-4dc3-98a6-793393f11797")
+		)
+		(instances
+			(project "ArduinoISP"
+				(path "/0d35483a-0b12-46cc-b9f2-896fd6831779"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 30.48 21.59 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22b613ae-73f8-4593-a6e0-cafdeaf619bd")
+		(property "Reference" "#FLG03"
+			(at 28.575 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 26.67 21.5899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 30.48 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4c44f9eb-6528-49af-a1ea-18c90f735430")
+		)
+		(instances
+			(project "ArduinoISP"
+				(path "/0d35483a-0b12-46cc-b9f2-896fd6831779"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 106.68 26.67 270)
 		(unit 1)
@@ -3948,7 +4237,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 30.48 24.13 0)
+		(at 30.48 21.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3958,7 +4247,7 @@
 		(dnp no)
 		(uuid "64d63185-6201-47f7-9382-f0edd99f9af9")
 		(property "Reference" "#PWR0103"
-			(at 30.48 27.94 0)
+			(at 30.48 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3969,7 +4258,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 30.48 20.574 90)
+			(at 30.48 18.034 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3980,7 +4269,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 24.13 0)
+			(at 30.48 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3991,7 +4280,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 24.13 0)
+			(at 30.48 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4002,7 +4291,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 30.48 24.13 0)
+			(at 30.48 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4026,7 +4315,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 33.02 24.13 0)
+		(at 33.02 21.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4036,7 +4325,7 @@
 		(dnp no)
 		(uuid "6a687ce9-fb57-4ecb-8030-aa131281c14a")
 		(property "Reference" "#PWR0102"
-			(at 33.02 27.94 0)
+			(at 33.02 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4047,7 +4336,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 33.02 20.574 90)
+			(at 33.02 18.034 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4058,7 +4347,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 24.13 0)
+			(at 33.02 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4069,7 +4358,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 24.13 0)
+			(at 33.02 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4080,7 +4369,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 33.02 24.13 0)
+			(at 33.02 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4104,7 +4393,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 27.94 24.13 0)
+		(at 27.94 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4114,7 +4403,7 @@
 		(dnp no)
 		(uuid "7bf09870-c7ef-41a9-9a8c-4910c93d4ef8")
 		(property "Reference" "#PWR0101"
-			(at 27.94 27.94 0)
+			(at 27.94 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4125,7 +4414,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 27.94 20.32 90)
+			(at 27.94 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4136,7 +4425,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 27.94 24.13 0)
+			(at 27.94 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4147,7 +4436,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 24.13 0)
+			(at 27.94 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4158,7 +4447,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 27.94 24.13 0)
+			(at 27.94 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4175,6 +4464,85 @@
 			(project "ArduinoISP"
 				(path "/0d35483a-0b12-46cc-b9f2-896fd6831779"
 					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 27.94 62.23 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81ae6bde-1e06-4d08-b442-96381107dfb5")
+		(property "Reference" "#FLG04"
+			(at 26.035 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 24.13 62.2299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 27.94 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec74b05e-f639-45eb-b250-214a6db9ca29")
+		)
+		(instances
+			(project "ArduinoISP"
+				(path "/0d35483a-0b12-46cc-b9f2-896fd6831779"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -4266,6 +4634,85 @@
 			(project "ArduinoISP"
 				(path "/0d35483a-0b12-46cc-b9f2-896fd6831779"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 33.02 64.77 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ae0447d-58b7-43df-a516-0411152da5ac")
+		(property "Reference" "#FLG02"
+			(at 31.115 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 29.21 64.7699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 33.02 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "22f23f46-eb41-4bdc-a95e-cac3ddeaedfa")
+		)
+		(instances
+			(project "ArduinoISP"
+				(path "/0d35483a-0b12-46cc-b9f2-896fd6831779"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -4383,7 +4830,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Arduino_MountingHole:IDC-Header_2x03_P2.54mm_Horizontal"
+		(property "Footprint" "ArduinoISP:IDC-Header_2x03_P2.54mm_Horizontal"
 			(at 156.21 41.91 90)
 			(hide yes)
 			(show_name no)
