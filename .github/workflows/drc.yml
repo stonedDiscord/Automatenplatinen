@@ -1,6 +1,9 @@
-name: Run ERC and DRC checks
+name: Run DRC checks
 
-on: [push]
+on:
+  push:
+    paths:
+      - '**/*.kicad_pcb'
 
 jobs:
   define-matrix:
@@ -19,22 +22,20 @@ jobs:
           for dir in */; do
             dir=${dir%/}
             if [ -d "$dir" ]; then
-              sch_file=$(ls "$dir"/*.kicad_sch 2>/dev/null | head -n 1)
               pcb_file=$(ls "$dir"/*.kicad_pcb 2>/dev/null | head -n 1)
-              if [ -n "$sch_file" ] && [ -n "$pcb_file" ]; then
-                sch_file=${sch_file#$dir/}
+              if [ -n "$pcb_file" ]; then
                 pcb_file=${pcb_file#$dir/}
                 projects_json=$(jq -c \
                   --arg name "$dir" \
-                  --arg sch "$sch_file" \
                   --arg pcb "$pcb_file" \
-                  '. += [{name: $name, sch: $sch, pcb: $pcb}]' \
+                  '. += [{name: $name, pcb: $pcb}]' \
                   <<< "$projects_json")
               fi
             fi
           done
           echo "projects=$projects_json" >> "$GITHUB_OUTPUT"
-  kicad_job:
+
+  kicad_drc:
     runs-on: ubuntu-latest
     container:
       image: kicad/kicad:10.0-full
@@ -45,7 +46,7 @@ jobs:
       fail-fast: false
       matrix:
         project: ${{ fromJSON(needs.define-matrix.outputs.projects) }}
-    name: ERC+DRC
+    name: DRC
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -55,27 +56,16 @@ jobs:
           mkdir -p $HOME/.config
           cp -r /home/kicad/.config/kica* $HOME/.config/
 
-      - name: Run KiCad ERC
-        id: erc
-        working-directory: ${{ matrix.project.name }}
-        run: kicad-cli sch erc --output erc.rpt --exit-code-violations ${{ matrix.project.sch }}
-
       - name: Run KiCad DRC
         id: drc
-        if: always()
         working-directory: ${{ matrix.project.name }}
         run: kicad-cli pcb drc --output drc.rpt --exit-code-violations ${{ matrix.project.pcb }}
 
       - name: Upload report
         if: ${{ failure() }}
         run: |
-          echo "<details><summary>ERC</summary>" >> $GITHUB_STEP_SUMMARY
-          echo "<pre><code>" >> $GITHUB_STEP_SUMMARY
-          cat ${{ matrix.project.name }}/erc.rpt >> $GITHUB_STEP_SUMMARY
-          echo "</code></pre>" >> $GITHUB_STEP_SUMMARY
-          echo "</details><details><summary>DRC</summary>" >> $GITHUB_STEP_SUMMARY
+          echo "<details><summary>DRC</summary>" >> $GITHUB_STEP_SUMMARY
           echo "<pre><code>" >> $GITHUB_STEP_SUMMARY
           cat ${{ matrix.project.name }}/drc.rpt >> $GITHUB_STEP_SUMMARY
           echo "</code></pre>" >> $GITHUB_STEP_SUMMARY
-          echo "</details>"  >> $GITHUB_STEP_SUMMARY
-
+          echo "</details>" >> $GITHUB_STEP_SUMMARY

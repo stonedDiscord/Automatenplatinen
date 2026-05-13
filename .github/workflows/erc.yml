@@ -1,0 +1,71 @@
+name: Run ERC checks
+
+on:
+  push:
+    paths:
+      - '**/*.kicad_sch'
+
+jobs:
+  define-matrix:
+    runs-on: ubuntu-latest
+
+    outputs:
+      projects: ${{ steps.projects.outputs.projects }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: List Projects
+        id: projects
+        run: |
+          projects_json="[]"
+          for dir in */; do
+            dir=${dir%/}
+            if [ -d "$dir" ]; then
+              sch_file=$(ls "$dir"/*.kicad_sch 2>/dev/null | head -n 1)
+              if [ -n "$sch_file" ]; then
+                sch_file=${sch_file#$dir/}
+                projects_json=$(jq -c \
+                  --arg name "$dir" \
+                  --arg sch "$sch_file" \
+                  '. += [{name: $name, sch: $sch}]' \
+                  <<< "$projects_json")
+              fi
+            fi
+          done
+          echo "projects=$projects_json" >> "$GITHUB_OUTPUT"
+
+  kicad_erc:
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0-full
+      options: --user root
+    needs: define-matrix
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        project: ${{ fromJSON(needs.define-matrix.outputs.projects) }}
+    name: ERC
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup libraries
+        run: |
+          mkdir -p $HOME/.config
+          cp -r /home/kicad/.config/kica* $HOME/.config/
+
+      - name: Run KiCad ERC
+        id: erc
+        working-directory: ${{ matrix.project.name }}
+        run: kicad-cli sch erc --output erc.rpt --exit-code-violations ${{ matrix.project.sch }}
+
+      - name: Upload report
+        if: ${{ failure() }}
+        run: |
+          echo "<details><summary>ERC</summary>" >> $GITHUB_STEP_SUMMARY
+          echo "<pre><code>" >> $GITHUB_STEP_SUMMARY
+          cat ${{ matrix.project.name }}/erc.rpt >> $GITHUB_STEP_SUMMARY
+          echo "</code></pre>" >> $GITHUB_STEP_SUMMARY
+          echo "</details>" >> $GITHUB_STEP_SUMMARY
