@@ -7,7 +7,7 @@ SCCR0 = 0xfffffc08
 
     .org 0xfc0
 
-    moveal #SCCR0, %a0
+    moveaw #SCCR0, %a0
     | sci baud clock rate = 16,78MHz / (32 * X)
     | 16,78MHz / (32 * 9) = 58264 Hz
     |      close enough to          57600 bd
@@ -16,10 +16,10 @@ SCCR0 = 0xfffffc08
     | SCCR1 enable TE and RE
     movew #0xc, (%a0)+
     | A0 +2 -> SCSR = status
-    moveal %a0, %a1
+    moveaw %a0, %a1
     addqw #0x2, %a1
     | A1 +2 -> SCDR = data
-    moveal #0x400, %a2
+    moveaw #0x400, %a2
     | set target addr in A2
     clrw %d0
     clrw %d1
@@ -27,12 +27,12 @@ SCCR0 = 0xfffffc08
 wait_for_rx_full:
     | test bit 6 RDRF — Receive Data Register Full
     btstb #0x6, 1(%a0)
-    beq wait_for_rx_full
+    beq.b wait_for_rx_full
     | move status into D0
     moveb 1(%a0), %d0
     | bits 0-4 are parity,framing,noise,overrun errors
     andib #0xf, %d0
-    bne onfinish
+    bne.w onfinish
     | move data from SCDR into 0x400 and then advance to the next addr
     moveb 1(%a1), (%a2)+
     tstw %d3
