@@ -12772,10 +12772,6 @@
 		(at 241.3 265.43)
 		(uuid "d24d72cd-b022-4b80-8ca5-99b229408825")
 	)
-	(no_connect
-		(at 184.15 265.43)
-		(uuid "f6aa5544-9483-439f-a80c-1bae95802d82")
-	)
 	(wire
 		(pts
 			(xy 152.4 80.01) (xy 152.4 76.2)
@@ -14256,7 +14252,7 @@
 		)
 		(uuid "860f0c75-abe4-40f5-be53-c2a2e922671a")
 	)
-	(label "TUERK"
+	(label "Tuerkontakt"
 		(at 261.62 265.43 0)
 		(effects
 			(font
@@ -14360,7 +14356,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D15"
+	(global_label "DBIO15"
 		(shape bidirectional)
 		(at 251.46 167.64 0)
 		(fields_autoplaced yes)
@@ -14384,7 +14380,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A5"
+	(global_label "ADRIO5"
 		(shape input)
 		(at 165.1 270.51 0)
 		(fields_autoplaced yes)
@@ -14456,7 +14452,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D13"
+	(global_label "DBIO13"
 		(shape bidirectional)
 		(at 189.23 177.8 180)
 		(fields_autoplaced yes)
@@ -14840,7 +14836,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D6"
+	(global_label "DBIO6"
 		(shape bidirectional)
 		(at 163.83 182.88 0)
 		(fields_autoplaced yes)
@@ -14960,7 +14956,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A8"
+	(global_label "ADRIO8"
 		(shape input)
 		(at 165.1 273.05 0)
 		(fields_autoplaced yes)
@@ -14984,7 +14980,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D15"
+	(global_label "DBIO15"
 		(shape bidirectional)
 		(at 189.23 167.64 180)
 		(fields_autoplaced yes)
@@ -15056,7 +15052,7 @@
 			)
 		)
 	)
-	(global_label "p1_b6"
+	(global_label "IODTACK"
 		(shape output)
 		(at 184.15 262.89 0)
 		(fields_autoplaced yes)
@@ -15128,7 +15124,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D0"
+	(global_label "DBIO0"
 		(shape bidirectional)
 		(at 101.6 177.8 180)
 		(fields_autoplaced yes)
@@ -15488,7 +15484,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D7"
+	(global_label "DBIO7"
 		(shape bidirectional)
 		(at 163.83 167.64 0)
 		(fields_autoplaced yes)
@@ -15536,7 +15532,7 @@
 			)
 		)
 	)
-	(global_label "CLOCKOUT"
+	(global_label "EXTCLK"
 		(shape output)
 		(at 102.87 20.32 0)
 		(fields_autoplaced yes)
@@ -15632,7 +15628,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A3"
+	(global_label "ADRIO3"
 		(shape output)
 		(at 62.23 170.18 0)
 		(fields_autoplaced yes)
@@ -15701,6 +15697,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "~{CEACRT}"
+		(shape input)
+		(at 184.15 265.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "338e473e-033b-4526-b4a1-d79ce46cf85c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.1504 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -15776,7 +15796,7 @@
 			)
 		)
 	)
-	(global_label "p1_b6"
+	(global_label "IODTACK"
 		(shape input)
 		(at 382.27 71.12 180)
 		(fields_autoplaced yes)
@@ -15896,7 +15916,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D8"
+	(global_label "DBIO8"
 		(shape bidirectional)
 		(at 281.94 255.27 0)
 		(fields_autoplaced yes)
@@ -15944,7 +15964,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D1"
+	(global_label "DBIO1"
 		(shape bidirectional)
 		(at 101.6 180.34 180)
 		(fields_autoplaced yes)
@@ -15992,7 +16012,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D8"
+	(global_label "DBIO8"
 		(shape bidirectional)
 		(at 251.46 170.18 0)
 		(fields_autoplaced yes)
@@ -16088,7 +16108,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D4"
+	(global_label "DBIO4"
 		(shape bidirectional)
 		(at 163.83 172.72 0)
 		(fields_autoplaced yes)
@@ -16136,7 +16156,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A6"
+	(global_label "ADRIO6"
 		(shape input)
 		(at 203.2 273.05 0)
 		(fields_autoplaced yes)
@@ -16256,7 +16276,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D7"
+	(global_label "DBIO7"
 		(shape bidirectional)
 		(at 101.6 167.64 180)
 		(fields_autoplaced yes)
@@ -16280,7 +16300,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D5"
+	(global_label "DBIO5"
 		(shape bidirectional)
 		(at 101.6 170.18 180)
 		(fields_autoplaced yes)
@@ -16304,7 +16324,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D0"
+	(global_label "DBIO0"
 		(shape bidirectional)
 		(at 203.2 255.27 0)
 		(fields_autoplaced yes)
@@ -16328,7 +16348,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A5"
+	(global_label "ADRIO5"
 		(shape output)
 		(at 62.23 180.34 0)
 		(fields_autoplaced yes)
@@ -16616,7 +16636,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D9"
+	(global_label "DBIO9"
 		(shape bidirectional)
 		(at 189.23 172.72 180)
 		(fields_autoplaced yes)
@@ -16664,7 +16684,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D14"
+	(global_label "DBIO14"
 		(shape bidirectional)
 		(at 251.46 175.26 0)
 		(fields_autoplaced yes)
@@ -16712,7 +16732,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D2"
+	(global_label "DBIO2"
 		(shape bidirectional)
 		(at 165.1 255.27 0)
 		(fields_autoplaced yes)
@@ -16736,7 +16756,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A4"
+	(global_label "ADRIO4"
 		(shape input)
 		(at 184.15 270.51 0)
 		(fields_autoplaced yes)
@@ -16832,7 +16852,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D5"
+	(global_label "DBIO5"
 		(shape bidirectional)
 		(at 163.83 170.18 0)
 		(fields_autoplaced yes)
@@ -16856,7 +16876,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D1"
+	(global_label "DBIO1"
 		(shape bidirectional)
 		(at 184.15 255.27 0)
 		(fields_autoplaced yes)
@@ -17264,7 +17284,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D14"
+	(global_label "DBIO14"
 		(shape bidirectional)
 		(at 261.62 260.35 0)
 		(fields_autoplaced yes)
@@ -17384,7 +17404,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D11"
+	(global_label "DBIO11"
 		(shape bidirectional)
 		(at 189.23 185.42 180)
 		(fields_autoplaced yes)
@@ -17456,7 +17476,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D13"
+	(global_label "DBIO13"
 		(shape bidirectional)
 		(at 241.3 257.81 0)
 		(fields_autoplaced yes)
@@ -17552,7 +17572,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A1"
+	(global_label "ADRIO1"
 		(shape output)
 		(at 62.23 167.64 0)
 		(fields_autoplaced yes)
@@ -17600,7 +17620,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D15"
+	(global_label "DBIO15"
 		(shape bidirectional)
 		(at 241.3 260.35 0)
 		(fields_autoplaced yes)
@@ -17672,7 +17692,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D8"
+	(global_label "DBIO8"
 		(shape bidirectional)
 		(at 189.23 170.18 180)
 		(fields_autoplaced yes)
@@ -17840,7 +17860,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D7"
+	(global_label "DBIO7"
 		(shape bidirectional)
 		(at 165.1 260.35 0)
 		(fields_autoplaced yes)
@@ -17888,7 +17908,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D3"
+	(global_label "DBIO3"
 		(shape bidirectional)
 		(at 203.2 257.81 0)
 		(fields_autoplaced yes)
@@ -18104,7 +18124,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D2"
+	(global_label "DBIO2"
 		(shape bidirectional)
 		(at 101.6 175.26 180)
 		(fields_autoplaced yes)
@@ -18272,7 +18292,7 @@
 			)
 		)
 	)
-	(global_label "p1_b6"
+	(global_label "IODTACK"
 		(shape input)
 		(at 398.78 26.67 0)
 		(fields_autoplaced yes)
@@ -18368,7 +18388,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D10"
+	(global_label "DBIO10"
 		(shape bidirectional)
 		(at 241.3 255.27 0)
 		(fields_autoplaced yes)
@@ -18488,7 +18508,7 @@
 			)
 		)
 	)
-	(global_label "p1_b6"
+	(global_label "IODTACK"
 		(shape input)
 		(at 398.78 36.83 0)
 		(fields_autoplaced yes)
@@ -18632,7 +18652,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D3"
+	(global_label "DBIO3"
 		(shape bidirectional)
 		(at 101.6 185.42 180)
 		(fields_autoplaced yes)
@@ -18656,7 +18676,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D9"
+	(global_label "DBIO9"
 		(shape bidirectional)
 		(at 251.46 172.72 0)
 		(fields_autoplaced yes)
@@ -18752,7 +18772,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D2"
+	(global_label "DBIO2"
 		(shape bidirectional)
 		(at 163.83 175.26 0)
 		(fields_autoplaced yes)
@@ -18872,7 +18892,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D11"
+	(global_label "DBIO11"
 		(shape bidirectional)
 		(at 251.46 185.42 0)
 		(fields_autoplaced yes)
@@ -18968,7 +18988,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D5"
+	(global_label "DBIO5"
 		(shape bidirectional)
 		(at 165.1 257.81 0)
 		(fields_autoplaced yes)
@@ -19112,7 +19132,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A6"
+	(global_label "ADRIO6"
 		(shape output)
 		(at 62.23 177.8 0)
 		(fields_autoplaced yes)
@@ -19352,7 +19372,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D1"
+	(global_label "DBIO1"
 		(shape bidirectional)
 		(at 163.83 180.34 0)
 		(fields_autoplaced yes)
@@ -19424,7 +19444,7 @@
 			)
 		)
 	)
-	(global_label "cBERR"
+	(global_label "EXTRES"
 		(shape input)
 		(at 30.48 127 180)
 		(fields_autoplaced yes)
@@ -19448,7 +19468,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D9"
+	(global_label "DBIO9"
 		(shape bidirectional)
 		(at 261.62 255.27 0)
 		(fields_autoplaced yes)
@@ -19544,7 +19564,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D6"
+	(global_label "DBIO6"
 		(shape bidirectional)
 		(at 101.6 182.88 180)
 		(fields_autoplaced yes)
@@ -19640,7 +19660,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A4"
+	(global_label "ADRIO4"
 		(shape output)
 		(at 62.23 175.26 0)
 		(fields_autoplaced yes)
@@ -19664,7 +19684,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A1"
+	(global_label "ADRIO1"
 		(shape input)
 		(at 184.15 267.97 0)
 		(fields_autoplaced yes)
@@ -19904,7 +19924,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D4"
+	(global_label "DBIO4"
 		(shape bidirectional)
 		(at 184.15 257.81 0)
 		(fields_autoplaced yes)
@@ -19952,7 +19972,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A8"
+	(global_label "ADRIO8"
 		(shape output)
 		(at 62.23 182.88 0)
 		(fields_autoplaced yes)
@@ -20264,7 +20284,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D6"
+	(global_label "DBIO6"
 		(shape bidirectional)
 		(at 184.15 260.35 0)
 		(fields_autoplaced yes)
@@ -20288,7 +20308,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D12"
+	(global_label "DBIO12"
 		(shape bidirectional)
 		(at 251.46 180.34 0)
 		(fields_autoplaced yes)
@@ -20552,7 +20572,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A2"
+	(global_label "ADRIO2"
 		(shape input)
 		(at 165.1 267.97 0)
 		(fields_autoplaced yes)
@@ -20912,7 +20932,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D12"
+	(global_label "DBIO12"
 		(shape bidirectional)
 		(at 261.62 257.81 0)
 		(fields_autoplaced yes)
@@ -20984,7 +21004,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D10"
+	(global_label "DBIO10"
 		(shape bidirectional)
 		(at 189.23 182.88 180)
 		(fields_autoplaced yes)
@@ -21056,7 +21076,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D13"
+	(global_label "DBIO13"
 		(shape bidirectional)
 		(at 251.46 177.8 0)
 		(fields_autoplaced yes)
@@ -21152,7 +21172,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A3"
+	(global_label "ADRIO3"
 		(shape input)
 		(at 203.2 270.51 0)
 		(fields_autoplaced yes)
@@ -21296,7 +21316,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A7"
+	(global_label "ADRIO7"
 		(shape output)
 		(at 62.23 185.42 0)
 		(fields_autoplaced yes)
@@ -21440,7 +21460,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D3"
+	(global_label "DBIO3"
 		(shape bidirectional)
 		(at 163.83 185.42 0)
 		(fields_autoplaced yes)
@@ -21488,7 +21508,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D12"
+	(global_label "DBIO12"
 		(shape bidirectional)
 		(at 189.23 180.34 180)
 		(fields_autoplaced yes)
@@ -21584,7 +21604,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D14"
+	(global_label "DBIO14"
 		(shape bidirectional)
 		(at 189.23 175.26 180)
 		(fields_autoplaced yes)
@@ -21680,7 +21700,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D0"
+	(global_label "DBIO0"
 		(shape bidirectional)
 		(at 163.83 177.8 0)
 		(fields_autoplaced yes)
@@ -22016,7 +22036,7 @@
 			)
 		)
 	)
-	(global_label "cBERR"
+	(global_label "EXTRES"
 		(shape input)
 		(at 165.1 265.43 0)
 		(fields_autoplaced yes)
@@ -22040,7 +22060,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A2"
+	(global_label "ADRIO2"
 		(shape output)
 		(at 62.23 172.72 0)
 		(fields_autoplaced yes)
@@ -22088,7 +22108,7 @@
 			)
 		)
 	)
-	(global_label "CLOCKOUT"
+	(global_label "EXTCLK"
 		(shape input)
 		(at 203.2 265.43 0)
 		(fields_autoplaced yes)
@@ -22184,7 +22204,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D4"
+	(global_label "DBIO4"
 		(shape bidirectional)
 		(at 101.6 172.72 180)
 		(fields_autoplaced yes)
@@ -22208,7 +22228,7 @@
 			)
 		)
 	)
-	(global_label "EXT_A7"
+	(global_label "ADRIO7"
 		(shape input)
 		(at 184.15 273.05 0)
 		(fields_autoplaced yes)
@@ -22232,7 +22252,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D11"
+	(global_label "DBIO11"
 		(shape bidirectional)
 		(at 281.94 257.81 0)
 		(fields_autoplaced yes)
@@ -22328,7 +22348,7 @@
 			)
 		)
 	)
-	(global_label "EXT_D10"
+	(global_label "DBIO10"
 		(shape bidirectional)
 		(at 251.46 182.88 0)
 		(fields_autoplaced yes)
@@ -28568,10 +28588,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5660e05b-5fa7-4862-baae-e1a1b3f370e4")
 		(property "Reference" "P1"
-			(at 154.94 265.4301 0)
+			(at 160.02 250.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29942,10 +29961,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "66f7c9d4-0363-43ff-be87-22f41e802456")
 		(property "Reference" "P1"
-			(at 193.04 265.4301 0)
+			(at 198.12 250.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -30993,10 +31011,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "70580103-70bb-44d9-bd15-d3c12733f02d")
 		(property "Reference" "P2"
-			(at 271.78 265.4301 0)
+			(at 276.86 250.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31631,10 +31648,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7474f4ae-7c01-4b17-94c8-f93e6183afea")
 		(property "Reference" "P2"
-			(at 251.46 265.4301 0)
+			(at 256.54 250.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32115,10 +32131,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7bf611b9-4329-428a-a616-db091ca34a4a")
 		(property "Reference" "P1"
-			(at 173.99 265.4301 0)
+			(at 179.07 250.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36559,10 +36574,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a3ef46ba-d9d9-4843-beff-66b70283940c")
 		(property "Reference" "P2"
-			(at 231.14 265.4301 0)
+			(at 236.22 250.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
