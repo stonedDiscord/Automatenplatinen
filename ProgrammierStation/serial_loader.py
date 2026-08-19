@@ -47,6 +47,8 @@ class SerialLoaderApp(tk.Tk):
         self.serial_port: Optional[serial.Serial] = None
         self.serial_lock = threading.Lock()
         self.rx_queue: queue.Queue = queue.Queue()
+        # Serial reads are allowed to split a two-byte status response.
+        self._rx_pending = bytearray()
         self.stop_upload = threading.Event()
 
         # Build UI
@@ -168,7 +170,10 @@ class SerialLoaderApp(tk.Tk):
                     else:
                         time.sleep(0.05)
                 except serial.SerialException:
-                    break
+                    # Exit when the connection is actually gone.
+                    if not (self.serial_port and self.serial_port.is_open):
+                        break
+                    time.sleep(0.01)
         except Exception as e:
             self.log('Reader error: ' + str(e))
 
@@ -183,10 +188,10 @@ class SerialLoaderApp(tk.Tk):
         self.after(100, self.process_rx_queue)
 
     def handle_incoming(self, data: bytes):
-        # if byte == 0x1B, show the hex of it and next byte
-        if len(data) <= 1:
-            return
-        if data[0] == 0xFF:
+        # Keep incomplete ESC/status pairs until the next serial read.
+        self._rx_pending.extend(data)
+        data = bytes(self._rx_pending)
+        if not data:
             return
         responses = {
             0x31: "Unbekannter Befehl",
@@ -194,7 +199,7 @@ class SerialLoaderApp(tk.Tk):
             0x33: "Datei OK, wird gestartet.",
             0x34: "Initialisierung der Daten abgeschlossen."
         }
-        for i in range(len(data)-1):
+        for i in range(len(data) - 1):
             if data[i] == 0x1B:
                 code = data[i+1]
                 if code in responses:
@@ -203,6 +208,11 @@ class SerialLoaderApp(tk.Tk):
                     self.status_var.set(msg)
                 else:
                     self.status_var.set(f"{data[i]:02X} {data[i+1]:02X}")
+        # An ESC at the end may be the start of a response arriving in pieces.
+        if data[-1] == 0x1B:
+            self._rx_pending = bytearray(data[-1:])
+        else:
+            self._rx_pending.clear()
         # also log raw incoming as hex
         self.log('RX: ' + ' '.join(f"{b:02X}" for b in data))
 
@@ -404,10 +414,12 @@ class SerialLoaderApp(tk.Tk):
                     self.progress['value'] = i
                 time.sleep(0.025)
                 if self.schnelleDB:
-                    # reopen at 115200
+                    # Match the C# loader: reopen when switching to the fast
+                    # transfer baud rate so adapter state is reset identically.
                     with self.serial_lock:
+                        self.serial_port.close()
                         self.serial_port.baudrate = 115200
-                        # depending on implementation, need to reopen - pyserial allows changing baudrate
+                        self.serial_port.open()
                 num = 256
                 while num < len(data) - self.int_2:
                     if self.stop_upload.is_set():
@@ -441,10 +453,9 @@ class SerialLoaderApp(tk.Tk):
                 self.log('Upload fertig...!')
                 # restore baudrate to 57600 if we changed it
                 with self.serial_lock:
-                    try:
-                        self.serial_port.baudrate = 57600
-                    except Exception:
-                        pass
+                    self.serial_port.close()
+                    self.serial_port.baudrate = 57600
+                    self.serial_port.open()
                 self.bool_2 = False
             else:
                 self.log('Upload fertig...!')
