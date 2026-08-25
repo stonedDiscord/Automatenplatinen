@@ -50,6 +50,7 @@ class SerialLoaderApp(tk.Tk):
         # Serial reads are allowed to split a two-byte status response.
         self._rx_pending = bytearray()
         self.stop_upload = threading.Event()
+        self._reader_stop = threading.Event()
 
         # Build UI
         self.create_widgets()
@@ -80,6 +81,7 @@ class SerialLoaderApp(tk.Tk):
 
         self.btn_go = ttk.Button(frm_top, text='Los', command=self.on_go)
         self.btn_go.grid(row=1, column=2, padx=4)
+
 
         # File controls
         frm_file = ttk.LabelFrame(self, text='Loader')
@@ -135,6 +137,7 @@ class SerialLoaderApp(tk.Tk):
     def on_connect(self):
         try:
             if self.serial_port and self.serial_port.is_open:
+                self._reader_stop.set()
                 with self.serial_lock:
                     self.serial_port.close()
                 self.serial_port = None
@@ -147,10 +150,20 @@ class SerialLoaderApp(tk.Tk):
                 if not port:
                     messagebox.showerror('Fehler','Kein Port ausgewählt')
                     return
-                ser = serial.Serial(port=port, baudrate=57600, timeout=0.1, write_timeout=2.5)
+                ser = serial.Serial(
+                    port=None,
+                    baudrate=57600,
+                    timeout=0.1,
+                    write_timeout=2.5
+                )
+                ser.dtr = False
+                ser.rts = False
+                ser.port = port
+                ser.open()
                 with self.serial_lock:
                     self.serial_port = ser
                 # start reader thread
+                self._reader_stop = threading.Event()
                 threading.Thread(target=self.reader_thread, daemon=True).start()
                 self.btn_connect.config(text='Trennen')
                 self.combo_ports['state'] = 'disabled'
@@ -160,22 +173,33 @@ class SerialLoaderApp(tk.Tk):
             self.log(str(e))
 
     def reader_thread(self):
-        # Read from serial and push to rx_queue
-        try:
-            while self.serial_port and self.serial_port.is_open:
-                try:
-                    data = self.serial_port.read(self.serial_port.in_waiting or 1)
-                    if data:
-                        self.rx_queue.put(data)
-                    else:
-                        time.sleep(0.05)
-                except serial.SerialException:
-                    # Exit when the connection is actually gone.
-                    if not (self.serial_port and self.serial_port.is_open):
-                        break
-                    time.sleep(0.01)
-        except Exception as e:
-            self.log('Reader error: ' + str(e))
+        while not self._reader_stop.is_set():
+            ser = self.serial_port
+            if ser is None or not ser.is_open:
+                time.sleep(0.05)
+                continue
+            try:
+                with self.serial_lock:
+                    if self.serial_port is not ser or not ser.is_open:
+                        continue
+                    waiting = ser.in_waiting
+                    size = waiting if isinstance(waiting, int) and waiting > 0 else 1
+                    data = ser.read(size)
+                if data:
+                    self.rx_queue.put(data)
+                else:
+                    time.sleep(0.05)
+            except serial.SerialException:
+                if self._reader_stop.is_set():
+                    break
+                time.sleep(0.01)
+            except (TypeError, ValueError):
+                if self._reader_stop.is_set():
+                    break
+                time.sleep(0.01)
+            except Exception as e:
+                self.log('Reader error: ' + str(e))
+                time.sleep(0.05)
 
     def process_rx_queue(self):
         # Called in main thread periodically
@@ -188,33 +212,21 @@ class SerialLoaderApp(tk.Tk):
         self.after(100, self.process_rx_queue)
 
     def handle_incoming(self, data: bytes):
-        # Keep incomplete ESC/status pairs until the next serial read.
-        self._rx_pending.extend(data)
-        data = bytes(self._rx_pending)
+        # discord 0xFF
+        data = bytes(b for b in data if b != 0xFF)
         if not data:
             return
-        responses = {
-            0x31: "Unbekannter Befehl",
-            0x32: "Warte auf weitere Daten.",
-            0x33: "Datei OK, wird gestartet.",
-            0x34: "Initialisierung der Daten abgeschlossen."
-        }
-        for i in range(len(data) - 1):
-            if data[i] == 0x1B:
-                code = data[i+1]
-                if code in responses:
-                    msg = responses[code]
-                    self.log(msg)
-                    self.status_var.set(msg)
-                else:
-                    self.status_var.set(f"{data[i]:02X} {data[i+1]:02X}")
-        # An ESC at the end may be the start of a response arriving in pieces.
-        if data[-1] == 0x1B:
-            self._rx_pending = bytearray(data[-1:])
-        else:
-            self._rx_pending.clear()
-        # also log raw incoming as hex
-        self.log('RX: ' + ' '.join(f"{b:02X}" for b in data))
+        # buffer
+        self._rx_pending.extend(data)
+        while len(self._rx_pending) >= 2:
+            while self._rx_pending and self._rx_pending[0] != 0x1B:
+                self._rx_pending.pop(0)
+            if len(self._rx_pending) < 2:
+                break
+            msg = f"{self._rx_pending[0]:02X} {self._rx_pending[1]:02X}"
+            self.status_var.set(msg)
+            self.log("RX: " + msg)
+            del self._rx_pending[:2]
 
     def on_go(self):
         idx = self.combo_func.current()
@@ -326,9 +338,7 @@ class SerialLoaderApp(tk.Tk):
 
             # write buffer byte by byte with small delay
             for b in buffer:
-                with self.serial_lock:
-                    if self.serial_port and self.serial_port.is_open:
-                        self.serial_port.write(bytes([b]))
+                self._serial_write(bytes([b]))
                 time.sleep(0.002)
 
             if self.bool_2:
@@ -368,7 +378,11 @@ class SerialLoaderApp(tk.Tk):
                         # check magic numbers roughly as original
                         mag = self.magicNumber
                         groupA = {826366210, 826366246, 1633972226, 1633972227}
-                        groupB = {1633944322,1633944579,1633944580,1633944836,1633945092}
+                        groupB = {
+                            0x61640302,
+                            1633944322, 1633944579, 1633944580,
+                            1633944836, 1633945092,
+                        }
                         if mag in groupA:
                             self.schnelleDB = False
                             self.status_var.set('\nTyp A')
@@ -391,15 +405,13 @@ class SerialLoaderApp(tk.Tk):
 
     def upload_thread(self):
         try:
+            fast_transfer = self.schnelleDB
+            self.log(f"Übertragung: {'115200' if fast_transfer else '57600'} Baud nach 256 Bytes")
             with self.serial_lock:
                 if not (self.serial_port and self.serial_port.is_open):
                     self.log('Nicht verbunden...!')
                     return
-                # discard out buffer not directly available; flush output
-                try:
-                    self.serial_port.reset_output_buffer()
-                except Exception:
-                    pass
+                self.serial_port.reset_output_buffer()
 
             if self.bool_2:
                 # first 256 bytes
@@ -409,29 +421,24 @@ class SerialLoaderApp(tk.Tk):
                     if self.stop_upload.is_set():
                         self.log('Upload abgebrochen...!')
                         return
-                    with self.serial_lock:
-                        self.serial_port.write(bytes([data[i]]))
+                    self._serial_write(bytes([data[i]]))
                     self.progress['value'] = i
-                time.sleep(0.025)
-                if self.schnelleDB:
-                    # Match the C# loader: reopen when switching to the fast
-                    # transfer baud rate so adapter state is reset identically.
+                time.sleep(0.100)
+                if fast_transfer:
+                    # On Linux, reopening a USB serial device can reset it
                     with self.serial_lock:
-                        self.serial_port.close()
                         self.serial_port.baudrate = 115200
-                        self.serial_port.open()
+                    time.sleep(0.02)
                 num = 256
                 while num < len(data) - self.int_2:
                     if self.stop_upload.is_set():
                         self.log('Upload abgebrochen...!')
                         return
-                    with self.serial_lock:
-                        self.serial_port.write(data[num:num+64])
+                    self._serial_write(data[num:num+64])
                     self.progress['value'] = num
                     num += 64
                 # final remainder
-                with self.serial_lock:
-                    self.serial_port.write(data[num:num+self.int_2])
+                self._serial_write(data[num:num+self.int_2])
                 self.progress['value'] = num + self.int_2
             else:
                 data = self.fileData
@@ -440,22 +447,20 @@ class SerialLoaderApp(tk.Tk):
                     if self.stop_upload.is_set():
                         self.log('Upload abgebrochen...!')
                         return
-                    with self.serial_lock:
-                        self.serial_port.write(data[num:num+64])
+                    self._serial_write(data[num:num+64])
                     self.progress['value'] = num
                     num += 64
-                with self.serial_lock:
-                    self.serial_port.write(data[num:num+self.int_1])
+                self._serial_write(data[num:num+self.int_1])
                 self.progress['value'] = num + self.int_1
 
             # finish
             if self.bool_2:
+                # Switch back so we catch the reply
+                if fast_transfer:
+                    with self.serial_lock:
+                        self.serial_port.baudrate = 57600
+                    time.sleep(0.02)
                 self.log('Upload fertig...!')
-                # restore baudrate to 57600 if we changed it
-                with self.serial_lock:
-                    self.serial_port.close()
-                    self.serial_port.baudrate = 57600
-                    self.serial_port.open()
                 self.bool_2 = False
             else:
                 self.log('Upload fertig...!')
@@ -466,6 +471,17 @@ class SerialLoaderApp(tk.Tk):
             self.bool_1 = False
 
     # Helper functions
+    def _serial_write(self, data: bytes) -> None:
+        """Write using the same single-call semantics as SerialPort.Write."""
+        if not data:
+            return
+        with self.serial_lock:
+            ser = self.serial_port
+            if ser is None or not ser.is_open:
+                raise serial.SerialException('Serial port is not open')
+            ser.write(data)
+            ser.flush()
+
     def convert_hex_string_to_byte_array(self, hex_string: str) -> bytes:
         if len(hex_string) % 2 != 0:
             raise ValueError(f"Der Binärschlüssel muss gerade sein: {hex_string}")
@@ -482,6 +498,7 @@ class SerialLoaderApp(tk.Tk):
         return struct.unpack('<I', bytes(chunk))[0]
 
     def on_close(self):
+        self._reader_stop.set()
         try:
             if self.serial_port and self.serial_port.is_open:
                 self.serial_port.close()
