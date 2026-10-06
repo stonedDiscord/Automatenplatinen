@@ -84,13 +84,13 @@
         "annular_width": "error",
         "clearance": "error",
         "connection_width": "warning",
-        "copper_edge_clearance": "ignore",
+        "copper_edge_clearance": "warning",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
-        "drill_out_of_range": "ignore",
+        "drill_out_of_range": "warning",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
@@ -540,6 +540,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -662,7 +663,7 @@
         "uuid": "4f58be4d-3c03-47f1-8d83-b117db14792f"
       }
     ],
-    "used_designators": "#PWR26-29,TP5,J7-10",
+    "used_designators": "Q1,U2,#PWR17,#PWR24,#PWR26-39,R7,TP5,J7-10",
     "variants": []
   },
   "sheets": [
