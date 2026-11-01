@@ -14156,6 +14156,194 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -21876,6 +22064,12 @@
 		(uuid "77e36118-b763-4aee-ba94-60537d833a46")
 	)
 	(junction
+		(at 436.88 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7921db1b-7bb8-4d28-a2da-8380eff34108")
+	)
+	(junction
 		(at 431.8 186.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -23131,7 +23325,7 @@
 	)
 	(wire
 		(pts
-			(xy 426.72 100.33) (xy 480.06 100.33)
+			(xy 426.72 100.33) (xy 436.88 100.33)
 		)
 		(stroke
 			(width 0)
@@ -23981,7 +24175,7 @@
 	)
 	(wire
 		(pts
-			(xy 426.72 95.25) (xy 426.72 100.33)
+			(xy 426.72 97.79) (xy 426.72 100.33)
 		)
 		(stroke
 			(width 0)
@@ -24008,6 +24202,16 @@
 			(type default)
 		)
 		(uuid "38816765-3cfa-46b5-84e3-440ca3ef5fb6")
+	)
+	(wire
+		(pts
+			(xy 436.88 85.09) (xy 435.61 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38818af9-afa6-4d43-901b-94780adadcd3")
 	)
 	(wire
 		(pts
@@ -24428,6 +24632,16 @@
 			(type default)
 		)
 		(uuid "47cd417c-d6a2-4818-b5d7-b0d89a7eb180")
+	)
+	(wire
+		(pts
+			(xy 436.88 97.79) (xy 436.88 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48030969-eb87-4770-b9d8-e4d887c2810b")
 	)
 	(wire
 		(pts
@@ -25811,6 +26025,16 @@
 	)
 	(wire
 		(pts
+			(xy 426.72 85.09) (xy 427.99 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82084022-815e-4200-bec2-4b7d59cab859")
+	)
+	(wire
+		(pts
 			(xy 488.95 198.12) (xy 497.84 198.12)
 		)
 		(stroke
@@ -25938,6 +26162,16 @@
 			(type default)
 		)
 		(uuid "87b0114f-5a52-4df7-aa3f-328b0f2fc5f2")
+	)
+	(wire
+		(pts
+			(xy 426.72 87.63) (xy 426.72 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87c04bd1-2645-40d0-86a0-f48658d4f632")
 	)
 	(wire
 		(pts
@@ -26268,6 +26502,16 @@
 			(type default)
 		)
 		(uuid "9258b3ee-9652-4803-a25e-1233bc153757")
+	)
+	(wire
+		(pts
+			(xy 436.88 100.33) (xy 480.06 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93257ec5-6da6-4442-ba26-a7ab959dcce5")
 	)
 	(wire
 		(pts
@@ -28808,6 +29052,16 @@
 			(type default)
 		)
 		(uuid "f9666a58-3923-4333-bbc8-0a6e1557b757")
+	)
+	(wire
+		(pts
+			(xy 436.88 87.63) (xy 436.88 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fab15f2b-171a-4dd4-afb3-d82993f9b1b7")
 	)
 	(wire
 		(pts
@@ -40548,6 +40802,7 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 166.37 137.16 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -40555,10 +40810,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2a33a46b-30ec-47d1-957f-1b51930fd0e3")
 		(property "Reference" "R31"
-			(at 168.91 135.8899 0)
+			(at 163.83 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40569,7 +40823,7 @@
 			)
 		)
 		(property "Value" "4k7"
-			(at 168.91 138.4299 0)
+			(at 163.83 138.4299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40580,7 +40834,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
-			(at 164.592 137.16 90)
+			(at 168.148 137.16 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -43651,6 +43905,108 @@
 			(project "GSE14"
 				(path "/0d663651-6c7b-4714-8032-1663065744f6"
 					(reference "A2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 431.8 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "4bfee653-abbf-42c6-a833-49bf875acc5b")
+		(property "Reference" "D11"
+			(at 431.8 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D"
+			(at 431.8 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 431.8 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 431.8 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 431.8 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 431.8 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 431.8 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a9dba210-c8e3-414a-8e80-e09a4ffea212")
+		)
+		(pin "2"
+			(uuid "fe2fdcb8-c674-459e-94b6-44a8d0408ed5")
+		)
+		(instances
+			(project "GSE14"
+				(path "/0d663651-6c7b-4714-8032-1663065744f6"
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -47278,6 +47634,7 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 158.75 142.24 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -47285,10 +47642,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7133be2d-52d5-4a53-95af-dd29880a6886")
 		(property "Reference" "R20"
-			(at 161.29 140.9699 0)
+			(at 156.21 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47299,7 +47655,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 161.29 143.5099 0)
+			(at 156.21 143.5099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47310,7 +47666,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
-			(at 156.972 142.24 90)
+			(at 160.528 142.24 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51888,7 +52244,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery")
-		(at 426.72 90.17 0)
+		(at 426.72 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -51898,7 +52254,7 @@
 		(dnp no)
 		(uuid "9c83676e-7def-4cd4-b203-79a110348674")
 		(property "Reference" "BT1"
-			(at 427.99 95.25 0)
+			(at 427.99 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -51909,7 +52265,7 @@
 			)
 		)
 		(property "Value" "3,6V 0,1Ah"
-			(at 422.91 86.36 0)
+			(at 421.64 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -51919,8 +52275,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Battery:Battery_Panasonic_CR2032-HFN_Horizontal_CircularHoles"
-			(at 426.72 88.646 90)
+		(property "Footprint" "Varta:Mempac"
+			(at 426.72 91.186 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51931,7 +52287,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 426.72 88.646 90)
+			(at 426.72 91.186 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51942,7 +52298,7 @@
 			)
 		)
 		(property "Description" "Multiple-cell battery"
-			(at 426.72 90.17 0)
+			(at 426.72 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51953,7 +52309,7 @@
 			)
 		)
 		(property "Sim.Device" "V"
-			(at 426.72 90.17 0)
+			(at 426.72 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51964,7 +52320,7 @@
 			)
 		)
 		(property "Sim.Type" "DC"
-			(at 426.72 90.17 0)
+			(at 426.72 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51975,7 +52331,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 426.72 90.17 0)
+			(at 426.72 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -56021,7 +56377,6 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 435.61 62.23 270)
-		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -56031,7 +56386,7 @@
 		(dnp no)
 		(uuid "bc60327c-40d8-447f-a58c-51a21788f332")
 		(property "Reference" "R9"
-			(at 435.61 67.31 90)
+			(at 435.61 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -56041,7 +56396,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 435.61 64.77 90)
+			(at 435.61 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -56051,7 +56406,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
-			(at 435.61 64.008 90)
+			(at 435.61 60.452 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -59459,6 +59814,120 @@
 			(project "GSE14"
 				(path "/0d663651-6c7b-4714-8032-1663065744f6"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Battery")
+		(at 436.88 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "d3d6935b-ffc0-43c7-b9d6-a469a8785684")
+		(property "Reference" "BT2"
+			(at 438.15 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Alternative"
+			(at 433.07 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Battery:Battery_Panasonic_CR2032-HFN_Horizontal_CircularHoles"
+			(at 436.88 91.186 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 436.88 91.186 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Multiple-cell battery"
+			(at 436.88 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 436.88 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 436.88 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 436.88 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fac50cad-cb36-4320-ba10-390f91d29744")
+		)
+		(pin "2"
+			(uuid "9011a18c-311e-4739-878b-da832b469498")
+		)
+		(instances
+			(project "GSE14"
+				(path "/0d663651-6c7b-4714-8032-1663065744f6"
+					(reference "BT2")
 					(unit 1)
 				)
 			)
